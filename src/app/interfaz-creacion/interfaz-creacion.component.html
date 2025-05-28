@@ -1,0 +1,32 @@
+<h1>Creá tu encuesta!</h1>
+
+@for (pregunta of preguntas; track $index){
+<div class="preguntaDiv">
+    <!--Para despues <ng-container *ngComponentOutlet=></ng-container>-->
+    @let preguntaId = "pregunta"+$index;
+    @switch (pregunta.tipo){
+        @case ("opciones_radio"){
+            <label for={{preguntaId}}>{{pregunta.texto}}</label>
+            @for (opcion of pregunta.opciones; track $index){
+                <div>
+                <input type="radio" id="opcion-{{preguntaId}}-{{$index}}" name="opcion-{{preguntaId}}" value={{opcion}}>
+                <label for="opcion-{{preguntaId}}-{{$index}}">{{opcion}}</label>
+                </div>
+            }
+        }
+        @case ("abierta"){
+            <label for={{preguntaId}}>{{pregunta.texto}}</label>
+            <input id={{preguntaId}} type="text" disabled>
+        }
+    }
+</div>    
+}@empty {<li>There are no items.</li>}
+
+<div >
+<select [(ngModel)]="pregunta_a_crear" name="seleccionar_pregunta" id="seleccionar_pregunta">
+    <option *ngFor="let opcion_pregunta of opciones_preguntas">
+      {{opcion_pregunta}}
+    </option>
+</select>
+<button (click)="agregarPregunta()">Agregar pregunta</button>
+</div>
