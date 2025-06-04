@@ -1,0 +1,17 @@
+<div *ngIf="!isAuthenticated">
+  <button (click)="login()">Iniciar sesión</button>
+</div>
+
+<div *ngIf="isAuthenticated">
+  <button (click)="logout()">Cerrar sesión</button>
+  <p>acceso a encuestas.</p>
+  <router-outlet></router-outlet>
+  <app-interfaz-creacion></app-interfaz-creacion>
+</div>
+
+<div style="position: fixed; bottom: 0; background: white; padding: 10px; border-top: 1px solid #ccc;">
+  <h3>Debug:</h3>
+  <ul>
+    <li *ngFor="let msg of debugMessages">{{msg}}</li>
+  </ul>
+</div>
