@@ -73,6 +73,10 @@
     overflow-wrap: break-word;
 }
 
+#boton-eliminar{
+  width: 6rem;
+}
+
 .preguntaDiv .input-ab{
   height: 6.5rem;
 }
