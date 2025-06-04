@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './interfaz-creacion.component.css'
 })
 export class InterfazCreacionComponent {
-  opciones_preguntas : string[] = ["opciones_radio", "abierta"];
+  opciones_preguntas : opcionesPregunta[] = [{valor:"opciones_radio",texto:"Opciones"}, {valor:"abierta",texto:"Pregunta abierta"}];
   pregunta_a_crear: string = "opciones_radio";
 
   preguntas: Pregunta[] = [];
@@ -17,6 +17,7 @@ export class InterfazCreacionComponent {
   agregarPregunta(): void{
     let preguntaCreada: Pregunta;
     let texto = prompt("Ingrese texto de pregunta");
+    console.log(this.pregunta_a_crear)
     switch(this.pregunta_a_crear){
       case "opciones_radio":
         let opciones = prompt("Ingrese opciones separadas por ;")?.split(";");
@@ -43,5 +44,10 @@ class Pregunta{
     this.texto = texto;
     this.opciones = opciones || [];
   }
+}
+
+interface opcionesPregunta{
+  valor : string,
+  texto : string
 }
 
