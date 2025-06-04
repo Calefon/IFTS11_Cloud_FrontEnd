@@ -12,16 +12,21 @@ export class InterfazCreacionComponent {
   opciones_preguntas : opcionesPregunta[] = [{valor:"opciones_radio",texto:"Opciones"}, {valor:"abierta",texto:"Pregunta abierta"}];
   pregunta_a_crear: string = "opciones_radio";
 
+  idEmail: string = "";
   preguntas: Pregunta[] = [];
 
   agregarPregunta(): void{
     let preguntaCreada: Pregunta;
     let texto = prompt("Ingrese texto de pregunta");
-    console.log(this.pregunta_a_crear)
+    if(!texto || texto.length == 0)
+      return
     switch(this.pregunta_a_crear){
       case "opciones_radio":
-        let opciones = prompt("Ingrese opciones separadas por ;")?.split(";");
-        console.log(opciones)
+        let opcionesTxt = prompt("Ingrese opciones separadas por ;");
+        if(!opcionesTxt || opcionesTxt.length == 0)
+            return
+        let opciones = opcionesTxt.split(";");
+        
         preguntaCreada = new Pregunta(this.pregunta_a_crear, texto || "", opciones);
         this.preguntas.push(preguntaCreada);
         break;

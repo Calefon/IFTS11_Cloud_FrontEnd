@@ -1,5 +1,12 @@
 <section id="seccion-creacion">
     <h1 class="inter-500">Creá tu encuesta!</h1>
+
+    <div id="div-email">
+        <label class="inter-300" for="emailCliente">E-mail cliente:</label>
+        <input class="inter-300" type="email" [(ngModel)]="idEmail" id="emailCliente">
+    </div>
+    
+
     @for (pregunta of preguntas; track $index){
     <div class="preguntaDiv">
         <!--Para despues <ng-container *ngComponentOutlet=></ng-container>-->
@@ -33,4 +40,7 @@
         </select>
         <button class="inter-300" (click)="agregarPregunta()">Agregar pregunta</button>
     </div>
+    <button id="boton-crear" class="inter-300">
+        Crear!
+    </button>
 </section>
