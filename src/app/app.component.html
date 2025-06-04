@@ -1,9 +1,19 @@
-<div id="main-container">
+@if (getIsAuthenticated()){
+    <div id="main-container">
     <app-nav-menu></app-nav-menu>
     <main>
         <router-outlet />
     </main>
 </div>
+}
+@else {
+        <ul>
+        <li>
+            <a (click)="login()">Login</a>
+        </li>
+        </ul>
+    }
+
 
 
 
