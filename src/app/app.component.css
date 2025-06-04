@@ -1,0 +1,46 @@
+
+#main-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-color:rgba(11,4,49, 0.91);
+}
+
+app-nav-menu{
+    height: 100%;
+    width: 20%;
+    margin-inline-start: 1rem;
+}
+
+main{
+    margin: 5px 10px 5px auto;
+    width: 75%;
+    min-height: 95vh;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.884);
+}
+
+#welcome-main{
+    width: 100%;
+    min-height: 100vh;
+    background-color:rgba(11,4,49, 0.91);
+    color: rgba(242, 240, 255, 1);
+    flex-direction: column;
+}
+
+#welcome-main h1 {
+    font-size: 4rem;
+    margin-inline-start: 20rem;
+}
+
+#welcome-main h3 {
+    font-size: 2rem;
+    margin-inline-start: 35rem;
+}
+
+#welcome-main a{
+    font-size: 1.5rem;
+    margin-inline-start: 35rem;
+}

@@ -1,0 +1,46 @@
+<section id="seccion-creacion">
+    <h1 class="inter-500">Creá tu encuesta!</h1>
+
+    <div id="div-email">
+        <label class="inter-300" for="emailCliente">E-mail cliente:</label>
+        <input class="inter-300" type="email" [(ngModel)]="idEmail" id="emailCliente">
+    </div>
+    
+
+    @for (pregunta of preguntas; track $index){
+    <div class="preguntaDiv">
+        <!--Para despues <ng-container *ngComponentOutlet=></ng-container>-->
+        @let preguntaId = "pregunta"+$index;
+        @switch (pregunta.tipo){
+        @case ("opciones_radio"){
+        <label class="inter-300" for={{preguntaId}}>{{pregunta.texto}}</label>
+        @for (opcion of pregunta.opciones; track $index){
+        <div>
+            <input class="inter-300" type="radio" id="opcion-{{preguntaId}}-{{$index}}" name="opcion-{{preguntaId}}" value={{opcion}}>
+            <label class="inter-300" for="opcion-{{preguntaId}}-{{$index}}">{{opcion}}</label>
+        </div>
+        }
+        }
+        @case ("abierta"){
+        <label class="inter-300 label-ab" for={{preguntaId}}>{{pregunta.texto}}</label>
+        <input class="inter-300 input-ab" id={{preguntaId}} type="text" disabled>
+        }
+        }
+    </div>
+    }@empty {<h3 class="inter-300">Agregue una pregunta:</h3>}
+
+    <div id="botonera-creacion">
+        <select class="inter-300" [(ngModel)]="pregunta_a_crear" name="seleccionar_pregunta" id="seleccionar_pregunta">
+            @for(opcion_pregunta of opciones_preguntas; track $index){
+                <option class="inter-300" value={{opcion_pregunta.valor}}>
+                {{opcion_pregunta.texto}}
+            </option>
+            }
+            
+        </select>
+        <button class="inter-300" (click)="agregarPregunta()">Agregar pregunta</button>
+    </div>
+    <button id="boton-crear" class="inter-300">
+        Crear!
+    </button>
+</section>

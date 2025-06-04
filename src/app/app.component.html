@@ -1,4 +1,19 @@
+@if (getIsAuthenticated()){
+    <div id="main-container">
+    <app-nav-menu (logOutClickEvent)="logout()"></app-nav-menu>
+    <main>
+        <router-outlet />
+    </main>
+</div>
+}
+@else {
+        <div id="welcome-main"> 
+            <h1 class="inter-700">INQUIRO</h1>
+            <h3 class="inter-500">Bienvenidos!</h3>
+            <a class="inter-500" routerLink="/#" (click)="login()">Login</a>
+        </div> 
+    }
 
 
-<app-interfaz-creacion></app-interfaz-creacion>
-<router-outlet />
+
+
