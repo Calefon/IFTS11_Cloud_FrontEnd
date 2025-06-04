@@ -1,17 +1,10 @@
-app-root{
-    width: 100%;
-    height: 100%;
-}
 
 #main-container{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
-    border: 1.5px solid black;
-    border-radius: 25px;
     align-items: center;
-    max-width: 70rem;
     background-color:rgba(11,4,49, 0.91);
 }
 
@@ -25,7 +18,29 @@ main{
     margin: 5px 10px 5px auto;
     width: 75%;
     height: 95%;
-    border: 1px solid black;
     border-radius: 25px;
     background-color: white;
+}
+
+#welcome-main{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(11,4,49, 0.91);
+    color: rgba(242, 240, 255, 1);
+    flex-direction: column;
+}
+
+#welcome-main h1 {
+    font-size: 4rem;
+    margin-inline-start: 20rem;
+}
+
+#welcome-main h3 {
+    font-size: 2rem;
+    margin-inline-start: 35rem;
+}
+
+#welcome-main a{
+    font-size: 1.5rem;
+    margin-inline-start: 35rem;
 }

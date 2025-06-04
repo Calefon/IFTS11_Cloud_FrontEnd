@@ -1,17 +1,17 @@
 @if (getIsAuthenticated()){
     <div id="main-container">
-    <app-nav-menu></app-nav-menu>
+    <app-nav-menu (logOutClickEvent)="logout()"></app-nav-menu>
     <main>
         <router-outlet />
     </main>
 </div>
 }
 @else {
-        <ul>
-        <li>
-            <a (click)="login()">Login</a>
-        </li>
-        </ul>
+        <div id="welcome-main"> 
+            <h1 class="inter-700">INQUIRO</h1>
+            <h3 class="inter-500">Bienvenidos!</h3>
+            <a class="inter-500" routerLink="/#" (click)="login()">Login</a>
+        </div> 
     }
 
 

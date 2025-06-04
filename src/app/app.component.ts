@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { inject } from '@angular/core';
 import { OidcSecurityService } from 'angular-auth-oidc-client';
@@ -7,7 +7,7 @@ import { OidcSecurityService } from 'angular-auth-oidc-client';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavMenuComponent],
+  imports: [RouterOutlet, NavMenuComponent, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

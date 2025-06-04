@@ -12,7 +12,8 @@ export const appConfig: ApplicationConfig = {
         redirectUrl: 'http://localhost:4200',
         clientId: '3f5ik94ron6j3lsj1hg5t7504b',
         scope: 'phone openid email',
-        responseType: 'code'
+        responseType: 'code',
+        postLogoutRedirectUri: 'http://localhost:4200'
       },
       })]
 };

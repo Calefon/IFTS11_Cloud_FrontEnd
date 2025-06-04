@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,4 +8,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './nav-menu.component.css'
 })
 export class NavMenuComponent {
+  @Output() logOutClickEvent = new EventEmitter<void>();
+
+  logOutClick(){
+    this.logOutClickEvent.emit();
+  }
 }
