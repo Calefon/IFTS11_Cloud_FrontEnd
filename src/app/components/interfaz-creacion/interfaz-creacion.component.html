@@ -11,9 +11,9 @@
     <div class="preguntaDiv">
         <!--Para despues <ng-container *ngComponentOutlet=></ng-container>-->
         @let preguntaId = "pregunta"+$index;
-        @switch (pregunta.tipo){
+        @switch (pregunta.tipoPregunta){
         @case ("opciones_radio"){
-        <label class="inter-300" for={{preguntaId}}>{{pregunta.texto}}</label>
+        <label class="inter-300" for={{preguntaId}}>{{pregunta.pregunta}}</label>
         @for (opcion of pregunta.opciones; track $index){
         <div>
             <input class="inter-300" type="radio" id="opcion-{{preguntaId}}-{{$index}}" name="opcion-{{preguntaId}}" value={{opcion}}>
@@ -22,10 +22,11 @@
         }
         }
         @case ("abierta"){
-        <label class="inter-300 label-ab" for={{preguntaId}}>{{pregunta.texto}}</label>
+        <label class="inter-300 label-ab" for={{preguntaId}}>{{pregunta.pregunta}}</label>
         <input class="inter-300 input-ab" id={{preguntaId}} type="text" disabled>
         }
         }
+        <button class="inter-300" id="boton-eliminar" (click)="eliminarPregunta($index)">Eliminar</button>
     </div>
     }@empty {<h3 class="inter-300">Agregue una pregunta:</h3>}
 
@@ -40,7 +41,7 @@
         </select>
         <button class="inter-300" (click)="agregarPregunta()">Agregar pregunta</button>
     </div>
-    <button id="boton-crear" class="inter-300">
+    <button id="boton-crear" class="inter-300" (click)="crearEncuesta()">
         Crear!
     </button>
 </section>

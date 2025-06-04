@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { EncuestasApiService } from '../../services/encuestas-api.service';
+import { Encuesta, Pregunta} from '../../interfaces/encuestaInterface';
 
 @Component({
   selector: 'app-interfaz-creacion',
@@ -11,12 +13,13 @@ import { FormsModule } from '@angular/forms';
 export class InterfazCreacionComponent {
   opciones_preguntas : opcionesPregunta[] = [{valor:"opciones_radio",texto:"Opciones"}, {valor:"abierta",texto:"Pregunta abierta"}];
   pregunta_a_crear: string = "opciones_radio";
+  encuestasService = inject(EncuestasApiService);
 
   idEmail: string = "";
-  preguntas: Pregunta[] = [];
+  preguntas: PreguntaEnc[] = [];
 
   agregarPregunta(): void{
-    let preguntaCreada: Pregunta;
+    let preguntaCreada: PreguntaEnc;
     let texto = prompt("Ingrese texto de pregunta");
     if(!texto || texto.length == 0)
       return
@@ -27,26 +30,38 @@ export class InterfazCreacionComponent {
             return
         let opciones = opcionesTxt.split(";");
         
-        preguntaCreada = new Pregunta(this.pregunta_a_crear, texto || "", opciones);
+        preguntaCreada = new PreguntaEnc(this.pregunta_a_crear, texto || "", opciones);
         this.preguntas.push(preguntaCreada);
         break;
       case "abierta":
-        preguntaCreada = new Pregunta(this.pregunta_a_crear, texto || "")
+        preguntaCreada = new PreguntaEnc(this.pregunta_a_crear, texto || "")
         this.preguntas.push(preguntaCreada);
         break;
     }
+  }
+
+  eliminarPregunta(index:number){
+    this.preguntas.splice(index,1);
+  }
+
+  crearEncuesta(){
+    let encuesta = <Encuesta>{};
+    encuesta.email =  this.idEmail;
+    encuesta.titulo = "Encuesta";
+    encuesta.preguntas = this.preguntas;
+    this.encuestasService.crearEncuesta(encuesta);
   }
     
 
 }
 
-class Pregunta{
-  tipo: string;
+class PreguntaEnc implements Pregunta{
+  tipoPregunta: string;
   opciones: string[];
-  texto: string;
+  pregunta: string;
   constructor(tipo: string, texto: string, opciones?:string[]) {
-    this.tipo = tipo;
-    this.texto = texto;
+    this.tipoPregunta = tipo;
+    this.pregunta = texto;
     this.opciones = opciones || [];
   }
 }
