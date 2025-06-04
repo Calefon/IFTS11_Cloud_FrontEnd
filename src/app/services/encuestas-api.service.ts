@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Encuesta } from '../interfaces/encuestaInterface';
+import { Encuesta, Pregunta } from '../interfaces/encuestaInterface';
 
 @Injectable({
   providedIn: 'root'
@@ -16,9 +16,23 @@ export class EncuestasApiService {
   constructor() { }
 
   crearEncuesta(encuesta : Encuesta){
-    this.http.post(this.apiLinkEncuestas, encuesta
-    ).subscribe(resp => {
+    this.http.post<EncuestaResponse>(this.apiLinkEncuestas, encuesta
+    ).subscribe((resp) => {
         console.log('Respuesta: ', resp);
+
+        let idEncuesta = resp.InquiroPK;
+
+        if( idEncuesta ){
+          alert(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`)
+        }
     });
   }
+}
+
+interface EncuestaResponse{
+  InquiroPK: string, 
+  InquieroSK: string, 
+  titulo: string, 
+  preguntas: Pregunta[], 
+  fechaCreacion: string
 }
