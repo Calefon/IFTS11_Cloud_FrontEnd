@@ -20,7 +20,7 @@ export class EncuestasApiService {
     ).subscribe((resp) => {
         console.log('Respuesta: ', resp);
 
-        let idEncuesta = resp.InquiroPK;
+        let idEncuesta = resp.InquieroSK;
 
         if( idEncuesta ){
           alert(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`)
