@@ -23,7 +23,8 @@ export class EncuestasApiService {
         let idEncuesta = resp.InquieroSK;
 
         if( idEncuesta ){
-          alert(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`)
+          alert(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`);
+          console.log(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`);
         }
     });
   }
