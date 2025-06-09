@@ -9,7 +9,7 @@ import { environment } from '../../environments/environment';
 export class EncuestasApiService {
 
 
-  private apiLinkEncuestas = environment.INQUIRO_API_LINK;
+  private apiLinkEncuestas = environment.INQUIRO_API_LINK + "/encuestas";
   
   private http = inject(HttpClient)
 

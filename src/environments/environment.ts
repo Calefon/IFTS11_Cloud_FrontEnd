@@ -7,5 +7,5 @@ export const environment = {
         responseType: 'code',
         postLogoutRedirectUri: 'https://www.inquiro.site'
     },
-    INQUIRO_API_LINK: 'http://inquiro-env-1.eba-fzt6xm2r.us-east-1.elasticbeanstalk.com/encuestas'
+    INQUIRO_API_LINK: 'https://api.inquiro.site'
 };
