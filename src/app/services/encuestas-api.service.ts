@@ -1,16 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Encuesta, Pregunta } from '../interfaces/encuestaInterface';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EncuestasApiService {
 
-  //
-  // GABI
-  private apiLinkEncuestas = 'http://inquiro-env-1.eba-fzt6xm2r.us-east-1.elasticbeanstalk.com/encuestas'
-  //private apiLinkEncuestas = 'http://inquiro-back-eze.us-east-1.elasticbeanstalk.com/encuestas'
+
+  private apiLinkEncuestas = environment.INQUIRO_API_LINK;
+  
   private http = inject(HttpClient)
 
   constructor() { }
@@ -20,7 +20,7 @@ export class EncuestasApiService {
     ).subscribe((resp) => {
         console.log('Respuesta: ', resp);
 
-        let idEncuesta = resp.InquieroSK;
+        let idEncuesta = resp.InquiroSK;
 
         if( idEncuesta ){
           alert(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`);
@@ -32,7 +32,7 @@ export class EncuestasApiService {
 
 interface EncuestaResponse{
   InquiroPK: string, 
-  InquieroSK: string, 
+  InquiroSK: string, 
   titulo: string, 
   preguntas: Pregunta[], 
   fechaCreacion: string

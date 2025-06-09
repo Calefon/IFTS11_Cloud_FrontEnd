@@ -47,11 +47,6 @@ export class AppComponent {
 
   login() {
     this.oidcSecurityService.authorize();
-    /* window.location.href = 'https://us-east-2bwy0sbhz9.auth.us-east-2.amazoncognito.com/login?' +
-    'client_id=3oq3snl619jn96q3cm57vqqcd2&' +
-    'response_type=code&' +
-    'scope=email+openid+phone&' +
-    'redirect_uri=' + encodeURIComponent('https://localhost:4200'); */
   }
 
   logout() {
