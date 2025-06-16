@@ -1,8 +1,8 @@
-<nav>
+<!-- <nav>
     <div id="inquiroText" class="inter-500">
     INQUIRO
     </div>
-    
+
         <ul>
         <li>
             <a class="inter-300" routerLink="/nuevo">Crear Encuesta</a>
@@ -14,6 +14,29 @@
             <a class="inter-300" routerLink="/" (click)="logOutClick()">LogOut</a>
         </li>
         </ul>
-    
-    
-</nav>  
+</nav> -->
+<nav class="flex flex-col items-center text-gray-300">
+  <img src="assets/img/inquiroLogo.webp" alt="inquiro logo" class="w-20">
+
+  <ul class="flex flex-col items-start gap-2 pt-3">
+    <li class="w-full py-1 px-2 hover:bg-purple-700 hover:text-white rounded-2xl">
+      <a class="font-medium px-2 py-1" routerLink="/home" routerLinkActive="text-white rounded-2xl">Inicio</a>
+    </li>
+
+    <li class="w-full py-1 px-2 hover:bg-purple-700 hover:text-white rounded-2xl">
+      <a class="font-medium px-2 py-1" routerLink="/history" routerLinkActive="text-white rounded-2xl">Historial</a>
+    </li>
+
+    <li class="w-full py-1 px-2 hover:bg-purple-700 hover:text-white rounded-2xl">
+      <a class="font-medium px-2 py-1" routerLink="/nuevo" routerLinkActive="text-white rounded-2xl">Crear Encuesta</a>
+    </li>
+
+    <li class="w-full py-1 px-2 hover:bg-purple-700 hover:text-white rounded-2xl">
+      <a class="font-medium px-2 py-1" routerLink="/resultados" routerLinkActive="text-white rounded-2xl">Resultados</a>
+    </li>
+
+    <li class="w-full py-1 px-2 hover:bg-purple-700 hover:text-white rounded-2xl">
+      <a class="font-medium px-2 py-1" routerLink="/" (click)="logOutClick()">LogOut</a>
+    </li>
+  </ul>
+</nav>

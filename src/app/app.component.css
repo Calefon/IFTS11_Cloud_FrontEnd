@@ -1,4 +1,4 @@
-
+/*
 #main-container{
     display: flex;
     flex-direction: row;
@@ -20,9 +20,9 @@ main{
     min-height: 95vh;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.884);
-}
+} */
 
-#welcome-main{
+/* #welcome-main{
     width: 100%;
     min-height: 100vh;
     background-color:rgba(11,4,49, 0.91);
@@ -43,4 +43,4 @@ main{
 #welcome-main a{
     font-size: 1.5rem;
     margin-inline-start: 35rem;
-}
+} */
