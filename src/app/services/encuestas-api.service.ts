@@ -13,7 +13,7 @@ export class EncuestasApiService {
 
   private http = inject(HttpClient)
 
-  
+
 
   constructor() { }
 
@@ -28,6 +28,10 @@ export class EncuestasApiService {
           console.log(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`);
         }
     });
+  }
+
+  verEncuestas(){
+
   }
 }
 
