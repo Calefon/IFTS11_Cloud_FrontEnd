@@ -17,6 +17,9 @@
         type="text"
         id="nombreEncuesta"
         placeholder="Nombre de la encuesta"
+        [value]="tituloEncuesta()"
+        (input)="tituloEncuesta.set(txtTituloEncuesta.value)"
+        #txtTituloEncuesta
       />
     </div>
 
@@ -46,6 +49,9 @@
         [(ngModel)]="idEmail"
         id="emailCliente"
         placeholder="Email de la encuesta"
+        [value]="emailEncuesta()"
+        (input)="emailEncuesta.set(txtEmailEncuesta.value)"
+        #txtEmailEncuesta
       />
     </div>
   </section>
@@ -53,7 +59,7 @@
   <div
     class="flex flex-col gap-2 items-start justify-center bg-white px-5 py-4 rounded-2xl w-full"
   >
-    <h3 class="font-bold">Preguntas a realizar</h3>
+    <h3 class="font-bold">Preguntas de la encuesta</h3>
     @for (pregunta of preguntas; track $index){
     <div class="flex flex-col">
       <!--Para despues <ng-container *ngComponentOutlet=></ng-container>-->
@@ -91,7 +97,7 @@
       </div>
       } }
       <button
-        class="bg-red-700 text-white hover:text-gray-200 text-xs font-medium py-2 px-4 mt-3 mb-6 rounded-2xl cursor-pointer w-32"
+        class="bg-red-600 text-white hover:text-gray-200 text-xs font-medium py-2 px-4 mt-3 mb-6 rounded-2xl cursor-pointer w-32"
         id="boton-eliminar"
         (click)="eliminarPregunta($index)"
       >
@@ -99,7 +105,9 @@
       </button>
     </div>
     }@empty {
-    <h3 class="font-medium">No se encontraron preguntas</h3>
+    <h3 class="font-normal italic text-gray-400">
+      No se han agregado preguntas a la encuesta
+    </h3>
     }
   </div>
 
@@ -139,8 +147,6 @@
           [(ngModel)]="pregunta_a_crear"
           name="seleccionar_pregunta"
           id="seleccionar_pregunta"
-          (input)="addOption(txtOption.value)"
-          #txtOption
         >
           @for(opcion_pregunta of opciones_preguntas; track $index) { @if
           (opcion_pregunta.valor !== 'default') {
@@ -161,7 +167,35 @@
     </div>
 
     <div id="container" class="flex flex-col gap-2 text-xm w-full">
-      Seleccione un tipo de pregunta
+      @switch (pregunta_a_crear()) { @case ("default"){
+      <p>Seleccione un tipo de pregunta</p>
+      } @case ("abierta"){
+      <label class="font-medium">Respuesta</label>
+      <input
+        type="text"
+        placeholder="Respuesta del usuario"
+        readonly
+        class="outline-1 outline-black px-3 py-2 w-3/4 placeholder:text-gray-400 placeholder:italic cursor-no-drop"
+      />
+      } @case ("opciones_radio"){
+      <label class="font-medium" for="opcionRadio">Opciones</label>
+      @for(opcion of opcionesRadio(); track $index) {
+      <div class="flex items-center gap-2">
+        <input type="radio" name="opcionRadio" id="opcionRadio-{{ $index }}" />
+        <label for="opcionRadio-{{ $index }}">{{ opcion }}</label>
+      </div>
+      }
+      <input
+        type="text"
+        placeholder="Opción del usuario"
+        class="outline-1 outline-black px-3 py-2 w-3/4 placeholder:text-gray-400 placeholder:italic"
+        name="opcionRadio"
+        id="opcionRadio"
+        [value]="opcionRadio()"
+        (input)="opcionRadio.set(txtOpcionRadio.value)"
+        #txtOpcionRadio
+      />
+      } }
     </div>
 
     <div class="flex gap-2">
@@ -201,7 +235,7 @@
 
       <button
         class="bg-blue-600 text-white hover:text-gray-200 text-xs font-medium px-3 py-2 mt-2 rounded-2xl cursor-pointer w-32"
-        (click)="agregarPreguntaKevin()"
+        (click)="addOptionRadio()"
       >
         Agregar opción
       </button>
@@ -210,12 +244,14 @@
   </section>
 
   <section>
+    @if(this.preguntas.length > 0) {
     <button
       id="boton-crear"
-      class="bg-purple-700 text-white hover:text-gray-200 font-bold py-2 px-4 mt-2 rounded-2xl cursor-pointer"
+      class="bg-green-600 text-white hover:text-gray-200 font-bold py-2 px-4 mt-2 rounded-2xl cursor-pointer"
       (click)="crearEncuesta()"
     >
       Crear
     </button>
+    }
   </section>
 </section>

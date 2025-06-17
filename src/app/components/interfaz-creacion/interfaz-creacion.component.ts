@@ -22,10 +22,14 @@ export class InterfazCreacionComponent {
   pregunta_a_crear = signal<string>('default');
   encuestasService = inject(EncuestasApiService);
 
+  tituloEncuesta = signal<string>('');
+  emailEncuesta = signal<string>('');
+
   idEmail: string = '';
   preguntas: PreguntaEnc[] = [];
 
   preguntaKevin = signal('');
+  opcionRadio = signal<string>('');
   opcionesRadio = signal<string[]>([]);
 
   agregarPregunta(): void {
@@ -77,19 +81,25 @@ export class InterfazCreacionComponent {
         this.resetField();
         break;
       case 'opciones_radio':
-      // let opcionesTxt = prompt('Ingrese opciones separadas por ;');
-      // if (!opcionesTxt || opcionesTxt.length == 0) return;
-      // let opciones = opcionesTxt.split(';');
-
-      // preguntaCreada = new PreguntaEnc(
-      //   this.pregunta_a_crear,
-      //   texto || '',
-      //   opciones
-      // );
-      // this.preguntas.push(preguntaCreada);
-      // break;
+        preguntaCreada = new PreguntaEnc(
+          this.pregunta_a_crear(),
+          this.preguntaKevin() || '',
+          this.opcionesRadio() || []
+        );
+        this.preguntas.push(preguntaCreada);
+        break;
       case 'opciones_checkbox':
     }
+  }
+
+  addOptionRadio() {
+    this.opcionesRadio.update((opciones) => [...opciones, this.opcionRadio()]);
+    console.log(this.opcionesRadio());
+    this.opcionRadio.set('');
+  }
+
+  resetField() {
+    this.preguntaKevin.set('');
   }
 
   eliminarPregunta(index: number) {
@@ -98,68 +108,19 @@ export class InterfazCreacionComponent {
 
   crearEncuesta() {
     let encuesta = <Encuesta>{};
-    encuesta.email = this.idEmail;
-    encuesta.titulo = 'Encuesta';
+    // encuesta.email = this.idEmail;
+    encuesta.email = this.emailEncuesta();
+    // encuesta.titulo = 'Encuesta';
+    encuesta.titulo = this.tituloEncuesta();
     encuesta.preguntas = this.preguntas;
     this.encuestasService.crearEncuesta(encuesta);
-  }
-
-  addOption(preguntaACrear: string) {
-    this.pregunta_a_crear.set(preguntaACrear);
-    const container = document.querySelector('#container');
-    switch (preguntaACrear) {
-      case 'abierta':
-        if (container) {
-          container.innerHTML = `
-          <label class="font-medium">Respuesta</label>
-          <input type="text" placeholder="Respuesta del usuario" readonly class="outline-1 outline-black px-3 py-2 w-3/4 placeholder:text-gray-400 placeholder:italic cursor-no-drop"/>
-          `;
-        }
-        this.pregunta_a_crear.set('default');
-        break;
-      case 'opciones_radio':
-        // let opcionesTxt = prompt('Ingrese opciones separadas por ;');
-        // if (!opcionesTxt || opcionesTxt.length == 0) return;
-        // let opciones = opcionesTxt.split(';');
-
-        // preguntaCreada = new PreguntaEnc(
-        //   this.pregunta_a_crear,
-        //   texto || '',
-        //   opciones
-        // );
-        // this.preguntas.push(preguntaCreada);
-        if (container) {
-          container.innerHTML = `
-          <label class="font-medium">Opciones</label>
-          <input
-            type="text"
-            placeholder="Opción del usuario"
-            class="outline-1 outline-black px-3 py-2 w-3/4 placeholder:text-gray-400 placeholder:italic"
-            (keyup.enter)="addOptionRadio(txtOpcionRadio.value)"
-            #txtOpcionRadio
-          />
-          `;
-        }
-        break;
-      case 'opciones_checkbox':
-        break;
-    }
-  }
-
-  addOptionRadio(opcion: string) {
-    this.opcionesRadio.update((prev) => [...prev, opcion]);
-    console.log(this.opcionesRadio())
-  }
-
-  resetField() {
-    this.preguntaKevin.set('');
   }
 }
 
 class PreguntaEnc implements Pregunta {
   tipoPregunta: string;
-  opciones: string[];
   pregunta: string;
+  opciones: string[];
   constructor(tipo: string, texto: string, opciones?: string[]) {
     this.tipoPregunta = tipo;
     this.pregunta = texto;
