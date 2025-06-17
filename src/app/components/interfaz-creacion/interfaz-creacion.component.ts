@@ -23,6 +23,7 @@ export class InterfazCreacionComponent {
   encuestasService = inject(EncuestasApiService);
 
   tituloEncuesta = signal<string>('');
+  descEncuesta = signal<string>('');
   emailEncuesta = signal<string>('');
 
   idEmail: string = '';
@@ -78,6 +79,7 @@ export class InterfazCreacionComponent {
           this.preguntaKevin() || ''
         );
         this.preguntas.push(preguntaCreada);
+        this.pregunta_a_crear.set('default');
         this.resetField();
         break;
       case 'opciones_radio':
@@ -87,6 +89,8 @@ export class InterfazCreacionComponent {
           this.opcionesRadio() || []
         );
         this.preguntas.push(preguntaCreada);
+        this.pregunta_a_crear.set('default');
+        this.resetField();
         break;
       case 'opciones_checkbox':
     }
@@ -114,6 +118,10 @@ export class InterfazCreacionComponent {
     encuesta.titulo = this.tituloEncuesta();
     encuesta.preguntas = this.preguntas;
     this.encuestasService.crearEncuesta(encuesta);
+    this.tituloEncuesta.set('');
+    this.descEncuesta.set('');
+    this.emailEncuesta.set('');
+    this.preguntas = [];
   }
 }
 
