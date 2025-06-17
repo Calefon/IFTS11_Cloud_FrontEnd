@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
 html{
     width: 100vw;
     min-height: 100vh;
@@ -50,4 +51,13 @@ app-root{
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+}
+
+/* Oculta el scrollbar pero mantiene el scroll funcional */
+.scroll-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
 }

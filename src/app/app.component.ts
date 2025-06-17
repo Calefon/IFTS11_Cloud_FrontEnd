@@ -13,9 +13,10 @@ import { OidcSecurityService } from 'angular-auth-oidc-client';
 })
 export class AppComponent {
   title = 'encuestasFrontTest';
-  private readonly oidcSecurityService = inject(OidcSecurityService); 
+  private readonly oidcSecurityService = inject(OidcSecurityService);
   private isAuthenticated = false;
   private debugMessages: string[] = [];
+  inquiroLogo: string = '../../public/inquiroLogo.webp';
 
 
   ngOnInit() {
@@ -23,7 +24,7 @@ export class AppComponent {
     this.addDebugMessage('AWSService - Constructor iniciado');
 
     this.addDebugMessage('AWSService - Constructor - Iniciando checkAuth()');
-    
+
     this.oidcSecurityService.checkAuth().subscribe({
       next: ({ isAuthenticated, userData, accessToken }) => {
         this.addDebugMessage(`checkAuth() response - Autenticado: ${isAuthenticated}`);

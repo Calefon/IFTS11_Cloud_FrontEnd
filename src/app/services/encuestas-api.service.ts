@@ -10,8 +10,10 @@ export class EncuestasApiService {
 
 
   private apiLinkEncuestas = environment.INQUIRO_API_LINK + "/encuestas";
-  
+
   private http = inject(HttpClient)
+
+  
 
   constructor() { }
 
@@ -21,7 +23,6 @@ export class EncuestasApiService {
         console.log('Respuesta: ', resp);
 
         let idEncuesta = resp.InquiroSK;
-
         if( idEncuesta ){
           alert(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`);
           console.log(`Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`);
@@ -31,9 +32,9 @@ export class EncuestasApiService {
 }
 
 interface EncuestaResponse{
-  InquiroPK: string, 
-  InquiroSK: string, 
-  titulo: string, 
-  preguntas: Pregunta[], 
+  InquiroPK: string,
+  InquiroSK: string,
+  titulo: string,
+  preguntas: Pregunta[],
   fechaCreacion: string
 }

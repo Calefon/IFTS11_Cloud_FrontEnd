@@ -1,73 +1,134 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, Signal, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { EncuestasApiService } from '../../services/encuestas-api.service';
-import { Encuesta, Pregunta} from '../../interfaces/encuestaInterface';
+import { Encuesta, Pregunta } from '../../interfaces/encuestaInterface';
 
 @Component({
   selector: 'app-interfaz-creacion',
   imports: [FormsModule, CommonModule],
   templateUrl: './interfaz-creacion.component.html',
-  styleUrl: './interfaz-creacion.component.css'
+  styleUrl: './interfaz-creacion.component.css',
 })
 export class InterfazCreacionComponent {
-  opciones_preguntas : opcionesPregunta[] = [{valor:"opciones_radio",texto:"Opciones"}, {valor:"abierta",texto:"Pregunta abierta"}];
-  pregunta_a_crear: string = "opciones_radio";
+  opciones_preguntas: opcionesPregunta[] = [
+    { valor: 'default', texto: '-- Elija un tipo --' },
+    { valor: 'abierta', texto: 'Pregunta abierta' },
+    { valor: 'opciones_radio', texto: 'Radio' },
+    { valor: 'opciones_checkbox', texto: 'Checkbox' },
+  ];
+  // pregunta_a_crear: string = 'default';
+
+  pregunta_a_crear = signal<string>('default');
   encuestasService = inject(EncuestasApiService);
 
-  idEmail: string = "";
+  tituloEncuesta = signal<string>('');
+  emailEncuesta = signal<string>('');
+
+  idEmail: string = '';
   preguntas: PreguntaEnc[] = [];
 
-  agregarPregunta(): void{
+  preguntaKevin = signal('');
+  opcionRadio = signal<string>('');
+  opcionesRadio = signal<string[]>([]);
+
+  agregarPregunta(): void {
     let preguntaCreada: PreguntaEnc;
-    let texto = prompt("Ingrese texto de pregunta");
-    if(!texto || texto.length == 0)
-      return
-    switch(this.pregunta_a_crear){
-      case "opciones_radio":
-        let opcionesTxt = prompt("Ingrese opciones separadas por ;");
-        if(!opcionesTxt || opcionesTxt.length == 0)
-            return
-        let opciones = opcionesTxt.split(";");
-        
-        preguntaCreada = new PreguntaEnc(this.pregunta_a_crear, texto || "", opciones);
+    let texto = prompt('Ingrese texto de pregunta');
+    if (!texto || texto.length == 0) return;
+    switch (this.pregunta_a_crear()) {
+      case 'abierta':
+        preguntaCreada = new PreguntaEnc(
+          this.pregunta_a_crear(),
+          this.preguntaKevin() || ''
+        );
         this.preguntas.push(preguntaCreada);
         break;
-      case "abierta":
-        preguntaCreada = new PreguntaEnc(this.pregunta_a_crear, texto || "")
+      case 'opciones_radio':
+        let opcionesTxt = prompt('Ingrese opciones separadas por ;');
+        if (!opcionesTxt || opcionesTxt.length == 0) return;
+        let opciones = opcionesTxt.split(';');
+
+        preguntaCreada = new PreguntaEnc(
+          this.pregunta_a_crear(),
+          texto || '',
+          opciones
+        );
         this.preguntas.push(preguntaCreada);
         break;
+      case 'opciones_checkbox':
+      //     let opcionesTxt = prompt("Ingrese opciones separadas por ;");
+      //     if(!opcionesTxt || opcionesTxt.length == 0)
+      //         return
+      //     let opciones = opcionesTxt.split(";");
+
+      //     preguntaCreada = new PreguntaEnc(this.pregunta_a_crear, texto || "", opciones);
+      //     this.preguntas.push(preguntaCreada);
+      //     break;
     }
   }
 
-  eliminarPregunta(index:number){
-    this.preguntas.splice(index,1);
+  agregarPreguntaKevin(): void {
+    let preguntaCreada: PreguntaEnc;
+
+    switch (this.pregunta_a_crear()) {
+      case 'abierta':
+        preguntaCreada = new PreguntaEnc(
+          this.pregunta_a_crear(),
+          this.preguntaKevin() || ''
+        );
+        this.preguntas.push(preguntaCreada);
+        this.resetField();
+        break;
+      case 'opciones_radio':
+        preguntaCreada = new PreguntaEnc(
+          this.pregunta_a_crear(),
+          this.preguntaKevin() || '',
+          this.opcionesRadio() || []
+        );
+        this.preguntas.push(preguntaCreada);
+        break;
+      case 'opciones_checkbox':
+    }
   }
 
-  crearEncuesta(){
+  addOptionRadio() {
+    this.opcionesRadio.update((opciones) => [...opciones, this.opcionRadio()]);
+    console.log(this.opcionesRadio());
+    this.opcionRadio.set('');
+  }
+
+  resetField() {
+    this.preguntaKevin.set('');
+  }
+
+  eliminarPregunta(index: number) {
+    this.preguntas.splice(index, 1);
+  }
+
+  crearEncuesta() {
     let encuesta = <Encuesta>{};
-    encuesta.email =  this.idEmail;
-    encuesta.titulo = "Encuesta";
+    // encuesta.email = this.idEmail;
+    encuesta.email = this.emailEncuesta();
+    // encuesta.titulo = 'Encuesta';
+    encuesta.titulo = this.tituloEncuesta();
     encuesta.preguntas = this.preguntas;
     this.encuestasService.crearEncuesta(encuesta);
   }
-    
-
 }
 
-class PreguntaEnc implements Pregunta{
+class PreguntaEnc implements Pregunta {
   tipoPregunta: string;
-  opciones: string[];
   pregunta: string;
-  constructor(tipo: string, texto: string, opciones?:string[]) {
+  opciones: string[];
+  constructor(tipo: string, texto: string, opciones?: string[]) {
     this.tipoPregunta = tipo;
     this.pregunta = texto;
     this.opciones = opciones || [];
   }
 }
 
-interface opcionesPregunta{
-  valor : string,
-  texto : string
+interface opcionesPregunta {
+  valor: string;
+  texto: string;
 }
-
