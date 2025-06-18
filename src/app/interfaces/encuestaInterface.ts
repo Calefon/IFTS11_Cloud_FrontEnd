@@ -9,3 +9,15 @@ export interface Pregunta {
   pregunta: string,
   opciones?: string[]
 }
+
+export interface EncuestaHistorial {
+  encuestas: Encuesta[];
+}
+
+export interface EncuestaResponse {
+  InquiroPK: string;
+  InquiroSK: string;
+  titulo: string;
+  preguntas: Pregunta[];
+  fechaCreacion: string;
+}
