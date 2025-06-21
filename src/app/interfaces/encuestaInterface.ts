@@ -1,23 +1,42 @@
 export interface Encuesta {
-    email:string,
-    titulo:string,
-    preguntas: Pregunta[]
+    email: string;
+    titulo: string;
+    preguntas: Pregunta[];
 }
 
 export interface Pregunta {
-  tipoPregunta: string,
-  pregunta: string,
-  opciones?: string[]
+    tipoPregunta: string; // 'abierta', 'opciones_radio', 'opciones_checkbox'
+    pregunta: string;
+    opciones?: string[];
 }
 
 export interface EncuestaHistorial {
-  encuestas: Encuesta[];
+    encuestas: Encuesta[];
 }
 
 export interface EncuestaResponse {
-  InquiroPK: string;
-  InquiroSK: string;
-  titulo: string;
-  preguntas: Pregunta[];
-  fechaCreacion: string;
+    InquiroPK: string;
+    InquiroSK: string;
+    titulo: string;
+    preguntas: Pregunta[];
+    fechaCreacion: string;
+}
+
+export interface RespuestaAPI {
+    respuestasInquiroPK: string;
+    respuestasInquiroSK: string;
+    fechaRespuesta: string;
+    respuestas: Array<{
+        pregunta: string;
+        respuesta: string | string[];
+    }>;
+}
+
+export interface RespuestaEncuesta {
+    respuestaId: string;
+    encuestaId: string;
+    fecha: string;
+    respuestas: {
+        [pregunta: string]: string | string[];
+    };
 }

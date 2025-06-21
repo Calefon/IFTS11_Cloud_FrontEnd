@@ -6,6 +6,17 @@ import type {
   EncuestaResponse,
 } from '../interfaces/encuestaInterface';
 import { environment } from '../../environments/environment';
+import { catchError, firstValueFrom, of } from 'rxjs';
+import { RespuestaAPI,RespuestaEncuesta } from '../interfaces/encuestaInterface';
+
+  
+interface Respuesta {
+  encuestaId: string;
+  fecha: string;
+  respuestas: {
+    [key: string]: string;
+  };
+}
 
 @Injectable({
   providedIn: 'root',
@@ -63,23 +74,115 @@ export class EncuestasApiService {
       });
   }
 
-  verEncuestas() {
-    this.http
-      .get<EncuestaHistorial>('https://api.inquiro.site/encuestas/all')
-      .subscribe((resp) => {
-        const mappedEncuestas = resp.encuestas.map((encuesta: any) => ({
-          InquiroPK: encuesta.InquiroPK,
-          InquiroSK: encuesta.InquiroSK,
-          titulo: encuesta.titulo,
-          preguntas: encuesta.preguntas,
-          fechaCreacion: this.formatearFecha(encuesta.fechaCreacion),
-        }));
-        this.encuestasHistorial.set(mappedEncuestas);
-        console.log(this.encuestasHistorial());
-      });
+  async verEncuestas(): Promise<EncuestaResponse[]> {
+  const url = 'https://api.inquiro.site/encuestas/all';
+  try {
+    const response = await firstValueFrom(this.http.get<EncuestaHistorial>(url));
+    const mappedEncuestas = response.encuestas.map((encuesta: any) => ({
+      InquiroPK: encuesta.InquiroPK,
+      InquiroSK: encuesta.InquiroSK,
+      titulo: encuesta.titulo,
+      preguntas: encuesta.preguntas,
+      fechaCreacion: this.formatearFecha(encuesta.fechaCreacion),
+    }));
+    this.encuestasHistorial.set(mappedEncuestas);
+    return mappedEncuestas;
+  } catch (error) {
+    console.error('Error al obtener encuestas:', error);
+    return [];
+  }
+}
+
+  async verRespuestasEncuesta(pk: string, sk: string): Promise<RespuestaAPI[]> {
+    try {
+      const url = `${this.apiLinkEncuestas}/${pk}/${sk}/respuestas`;
+      const respuestas = await firstValueFrom(
+        this.http.get<RespuestaAPI[]>(url).pipe(
+          catchError(error => {
+            console.error('Error al cargar respuestas:', error);
+            return of([]);
+          })
+        )
+      );
+      return respuestas;
+    } catch (error) {
+      console.error('Error:', error);
+      return [];
+    }
   }
 
-  verRespuestasEncuesta(pk: string, sk: string) {}
+  transformRespuestas(respuestasApi: RespuestaAPI[], encuesta: EncuestaResponse): RespuestaEncuesta[] {
+    return respuestasApi.map(respuesta => ({
+      respuestaId: respuesta.respuestasInquiroSK,
+      encuestaId: respuesta.respuestasInquiroSK,
+      fecha: respuesta.fechaRespuesta,
+      respuestas: this.transformarRespuestasIndividuales(respuesta, encuesta)
+    }));
+  }
+
+  private transformarRespuestasIndividuales(respuestaApi: RespuestaAPI, encuesta: EncuestaResponse): { [key: string]: any } {
+    const respuestas: { [key: string]: any } = {};
+    
+    encuesta.preguntas.forEach(pregunta => {
+      const respuestaEncontrada = respuestaApi.respuestas.find(r => r.pregunta === pregunta.pregunta);
+      
+      if (pregunta.tipoPregunta === 'opciones_checkbox') {
+        respuestas[pregunta.pregunta] = Array.isArray(respuestaEncontrada?.respuesta) 
+          ? respuestaEncontrada?.respuesta 
+          : [respuestaEncontrada?.respuesta].filter(Boolean);
+      } else {
+        respuestas[pregunta.pregunta] = respuestaEncontrada?.respuesta || '';
+      }
+    });
+    
+    return respuestas;
+  }
+
+  descargarCSV(respuestas: RespuestaEncuesta[], encuesta: EncuestaResponse, filename: string): void {
+  const headers = ['ID Respuesta', 'Fecha', ...encuesta.preguntas.map(p => p.pregunta)];
+
+  const rows = respuestas.map(respuesta => {
+    return [
+      respuesta.respuestaId,
+      respuesta.fecha,
+      ...encuesta.preguntas.map(pregunta => {
+        const respuestaPregunta = respuesta.respuestas[pregunta.pregunta];
+        return this.formatCSVField(respuestaPregunta, pregunta.tipoPregunta);
+      })
+    ];
+  });
+
+  let csvContent = headers.join(',') + '\n';
+  rows.forEach(row => {
+    csvContent += row.map(field => this.escapeCSVField(field)).join(',') + '\n';
+  });
+
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const link = document.createElement('a');
+  const url = URL.createObjectURL(blob);
+
+  link.setAttribute('href', url);
+  link.setAttribute('download', filename);
+  link.style.visibility = 'hidden';
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+private formatCSVField(value: any, tipoPregunta: string): string {
+  if (tipoPregunta === 'opciones_checkbox' && Array.isArray(value)) {
+    return value.join('; ');
+  }
+  return value?.toString() || '';
+}
+
+private escapeCSVField(field: any): string {
+  if (typeof field === 'string') {
+    return `"${field.replace(/"/g, '""')}"`;
+  }
+  return `"${field}"`;
+}
 
   formatearFecha(dateISO: string): string {
     const date = new Date(dateISO);
