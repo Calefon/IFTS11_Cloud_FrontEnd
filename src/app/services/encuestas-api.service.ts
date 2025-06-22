@@ -93,23 +93,24 @@ export class EncuestasApiService {
   }
 }
 
-  async verRespuestasEncuesta(pk: string, sk: string): Promise<RespuestaAPI[]> {
-    try {
-      const url = `${this.apiLinkEncuestas}/${pk}/${sk}/respuestas`;
-      const respuestas = await firstValueFrom(
-        this.http.get<RespuestaAPI[]>(url).pipe(
-          catchError(error => {
-            console.error('Error al cargar respuestas:', error);
-            return of([]);
-          })
-        )
-      );
-      return respuestas;
-    } catch (error) {
-      console.error('Error:', error);
-      return [];
-    }
+ async verRespuestasEncuesta(pk: string, sk: string): Promise<RespuestaAPI[]> {
+  try {
+    const url = `${this.apiLinkEncuestas}/${encodeURIComponent(pk)}/${sk}/respuestas`;
+    const respuestas = await firstValueFrom(
+      this.http.get<RespuestaAPI[]>(url).pipe(
+        catchError(error => {
+          console.error('Error al cargar respuestas:', error);
+          return of([]);
+        })
+      )
+    );
+    return respuestas;
+  } catch (error) {
+    console.error('Error:', error);
+    return [];
   }
+}
+
 
   transformRespuestas(respuestasApi: RespuestaAPI[], encuesta: EncuestaResponse): RespuestaEncuesta[] {
     return respuestasApi.map(respuesta => ({
