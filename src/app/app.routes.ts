@@ -21,8 +21,8 @@ export const routes: Routes = [
     component: HistoryPageComponentComponent,
     canActivate: [authGuard],
   },
-  {
-    path: 'response',
+ {
+    path: 'response/:pk/:sk',
     component: ResponsePageComponentComponent,
     canActivate: [authGuard],
   },
