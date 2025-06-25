@@ -14,7 +14,7 @@ import { OidcSecurityService } from 'angular-auth-oidc-client';
 export class AppComponent {
   title = 'encuestasFrontTest';
   private readonly oidcSecurityService = inject(OidcSecurityService);
-  private isAuthenticated = false;
+  public isAuthenticated = false;
   private debugMessages: string[] = [];
   inquiroLogo: string = '../../public/inquiroLogo.webp';
 

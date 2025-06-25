@@ -1,4 +1,4 @@
-@if (getIsAuthenticated()){
+@if (isAuthenticated){
 <div class="bg-indigo-950 w-screen h-screen flex flex-row justify-center p-5 gap-5">
   <app-nav-menu (logOutClickEvent)="logout()"></app-nav-menu>
   <main class="flex-4/5 flex flex-col items-center justify-start bg-gray-100 text-black rounded-3xl p-5 h-full overflow-y-scroll scroll-hidden">
@@ -13,7 +13,7 @@
 </div> -->
 <div class="bg-indigo-950 w-screen h-screen flex flex-row justify-center p-5">
   <section class="flex flex-col items-center text-white">
-    <img src="assets/img/inquiroLogo.webp" alt="inquiro logo" class="w-52 h-52 mx-auto mt-10 mb-5" />
+    <img src="assets/img/inquiroLogo.png" alt="inquiro logo" class="w-52 h-52 mx-auto mt-10 mb-5" />
 
     <div>
       <h2 class="font-bold">Bienvenido a inquiro</h2>
