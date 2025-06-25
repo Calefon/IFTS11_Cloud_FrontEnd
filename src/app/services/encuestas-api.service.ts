@@ -23,6 +23,7 @@ interface Respuesta {
 })
 export class EncuestasApiService {
   private apiLinkEncuestas = environment.INQUIRO_API_LINK + '/encuestas';
+  private apiLinkRespuestas = environment.INQUIRO_API_LINK + '/respuestas';
 
   private http = inject(HttpClient);
 
@@ -95,7 +96,7 @@ export class EncuestasApiService {
 
  async verRespuestasEncuesta(pk: string, sk: string): Promise<RespuestaAPI[]> {
   try {
-    const url = `${this.apiLinkEncuestas}/${encodeURIComponent(pk)}/${sk}/respuestas`;
+    const url = `${this.apiLinkRespuestas}/${sk}`;
     const respuestas = await firstValueFrom(
       this.http.get<RespuestaAPI[]>(url).pipe(
         catchError(error => {

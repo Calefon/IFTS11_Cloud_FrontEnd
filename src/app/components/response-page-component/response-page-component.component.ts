@@ -66,6 +66,7 @@ export class ResponsePageComponentComponent implements OnInit {
       // Usamos directamente una promesa
       const respuestasApi = await this.encuestaService.verRespuestasEncuesta(pk, sk);
 
+      console.log(respuestasApi)
       if (Array.isArray(respuestasApi) && respuestasApi.length > 0 && this.encuesta) {
         this.respuestas = this.transformRespuestas(respuestasApi);
         this.usingMockData = false;
