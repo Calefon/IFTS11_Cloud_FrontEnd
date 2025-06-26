@@ -20,7 +20,6 @@ export class ResponsePageComponentComponent implements OnInit {
   encuesta: EncuestaResponse | null = null;
   isLoading = false;
   errorMessage = '';
-  usingMockData = false;
 
   ngOnInit() {
     this.cargarDatosEncuesta();
@@ -67,17 +66,12 @@ export class ResponsePageComponentComponent implements OnInit {
       const respuestasApi = await this.encuestaService.verRespuestasEncuesta(pk, sk);
 
       console.log(respuestasApi)
-      if (Array.isArray(respuestasApi) && respuestasApi.length > 0 && this.encuesta) {
+      if (Array.isArray(respuestasApi) && this.encuesta) {
         this.respuestas = this.transformRespuestas(respuestasApi);
-        this.usingMockData = false;
-      } else {
-        this.respuestas = this.generarRespuestasMock();
-        this.usingMockData = true;
       }
     } catch (error) {
       console.error('Error al cargar respuestas:', error);
-      this.respuestas = this.generarRespuestasMock();
-      this.usingMockData = true;
+      this.errorMessage = "Error al cargar respuestas."
     }
   }
 
@@ -110,27 +104,6 @@ export class ResponsePageComponentComponent implements OnInit {
     return respuestas;
   }
 
-  generarRespuestasMock(): RespuestaEncuesta[] {
-    if (!this.encuesta) return [];
-
-    const respuestasIniciales: { [key: string]: string | string[] } = {};
-
-    return [{
-      respuestaId: 'mock-' + Math.random().toString(36).substring(2, 9),
-      encuestaId: this.encuesta.InquiroSK,
-      fecha: new Date().toISOString(),
-      respuestas: this.encuesta.preguntas.reduce((acc, pregunta) => {
-        if (pregunta.tipoPregunta === 'abierta') {
-          acc[pregunta.pregunta] = 'Respuesta de ejemplo';
-        } else if (pregunta.tipoPregunta === 'opciones_radio' && pregunta.opciones?.length) {
-          acc[pregunta.pregunta] = pregunta.opciones[0];
-        } else if (pregunta.tipoPregunta === 'opciones_checkbox' && pregunta.opciones?.length) {
-          acc[pregunta.pregunta] = [pregunta.opciones[0]];
-        }
-        return acc;
-      }, respuestasIniciales)
-    }];
-  }
 
   descargarCSV() {
     if (!this.encuesta || this.respuestas.length === 0) {
@@ -143,7 +116,7 @@ export class ResponsePageComponentComponent implements OnInit {
   }
 
   private downloadCSVLocal(respuestas: RespuestaEncuesta[], encuesta: EncuestaResponse, filename: string): void {
-    const headers = ['ID Respuesta', 'Fecha', ...encuesta.preguntas.map(p => p.pregunta)];
+    const headers = ['ID Respuesta', 'Fecha', ...encuesta.preguntas.map(p => this.escapeCSVField(p.pregunta))];
 
     const rows = respuestas.map(respuesta => {
       return [
@@ -192,9 +165,4 @@ export class ResponsePageComponentComponent implements OnInit {
     return Array.isArray(valor);
   }
 
-  mostrarDatosDebug() {
-    console.log('Encuesta actual:', this.encuesta);
-    console.log('Respuestas cargadas:', this.respuestas);
-    console.log('¿Usando mock data?', this.usingMockData);
-  }
 }

@@ -15,9 +15,8 @@ export class InterfazCreacionComponent {
     { valor: 'default', texto: '-- Elija un tipo --' },
     { valor: 'abierta', texto: 'Pregunta abierta' },
     { valor: 'opciones_radio', texto: 'Radio' },
-    { valor: 'opciones_checkbox', texto: 'Checkbox' },
   ];
-  // pregunta_a_crear: string = 'default';
+
 
   pregunta_a_crear = signal<string>('default');
   encuestasService = inject(EncuestasApiService);
@@ -57,15 +56,6 @@ export class InterfazCreacionComponent {
         );
         this.preguntas.push(preguntaCreada);
         break;
-      case 'opciones_checkbox':
-      //     let opcionesTxt = prompt("Ingrese opciones separadas por ;");
-      //     if(!opcionesTxt || opcionesTxt.length == 0)
-      //         return
-      //     let opciones = opcionesTxt.split(";");
-
-      //     preguntaCreada = new PreguntaEnc(this.pregunta_a_crear, texto || "", opciones);
-      //     this.preguntas.push(preguntaCreada);
-      //     break;
     }
   }
 
@@ -88,15 +78,22 @@ export class InterfazCreacionComponent {
           this.preguntaKevin() || '',
           this.opcionesRadio() || []
         );
+        if(preguntaCreada.opciones.length == 0){
+          alert("Agregue opciones!");
+          break;
+        }
         this.preguntas.push(preguntaCreada);
         this.pregunta_a_crear.set('default');
         this.resetField();
         break;
-      case 'opciones_checkbox':
     }
   }
 
   addOptionRadio() {
+    if(this.opcionRadio().length == 0){
+      alert("Ingrese un texto para la opción")
+      return;
+    }
     this.opcionesRadio.update((opciones) => [...opciones, this.opcionRadio()]);
     console.log(this.opcionesRadio());
     this.opcionRadio.set('');
@@ -104,6 +101,7 @@ export class InterfazCreacionComponent {
 
   resetField() {
     this.preguntaKevin.set('');
+    this.opcionesRadio.set([])
   }
 
   eliminarPregunta(index: number) {

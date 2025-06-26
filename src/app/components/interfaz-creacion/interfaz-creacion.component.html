@@ -173,13 +173,7 @@
       @switch (pregunta_a_crear()) { @case ("default"){
       <p>Seleccione un tipo de pregunta</p>
       } @case ("abierta"){
-      <label class="font-medium">Respuesta</label>
-      <input
-        type="text"
-        placeholder="Respuesta del usuario"
-        readonly
-        class="outline-1 outline-black px-3 py-2 w-3/4 placeholder:text-gray-400 placeholder:italic cursor-no-drop"
-      />
+      
       } @case ("opciones_radio"){
       <label class="font-medium" for="opcionRadio">Opciones</label>
       @for(opcion of opcionesRadio(); track $index) {
@@ -190,7 +184,7 @@
       }
       <input
         type="text"
-        placeholder="Opción del usuario"
+        placeholder="Agregue su nueva opción aquí"
         class="outline-1 outline-black px-3 py-2 w-3/4 placeholder:text-gray-400 placeholder:italic"
         name="opcionRadio"
         id="opcionRadio"

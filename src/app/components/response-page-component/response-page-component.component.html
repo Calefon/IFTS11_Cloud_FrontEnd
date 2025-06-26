@@ -13,27 +13,12 @@
     </div>
   }
 
-  <!-- Advertencia de datos mock -->
-  @if (usingMockData && respuestas.length > 0) {
-    <div class="w-full p-4 bg-yellow-50 text-yellow-700 rounded-lg border border-yellow-200">
-      ℹ️ Se están mostrando datos de ejemplo porque no se pudieron cargar las respuestas reales
-    </div>
-  }
-
-  <!-- Botón de debug -->
-  <button 
-    (click)="mostrarDatosDebug()"
-    class="bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm"
-  >
-    Mostrar datos debug
-  </button>
-
   <!-- Información de la encuesta -->
   @if (encuesta) {
     <div class="w-full bg-white p-4 rounded-lg shadow-md border border-gray-200">
       <h2 class="text-2xl font-bold text-gray-800 mb-1">{{ encuesta.titulo }}</h2>
       <div class="flex flex-wrap gap-4 text-sm text-gray-600">
-        <p><span class="font-medium">Creada por:</span> {{ encuesta.InquiroPK }}</p>
+        <p><span class="font-medium">Cliente:</span> {{ encuesta.InquiroPK }}</p>
         <p><span class="font-medium">Fecha creación:</span> {{ encuesta.fechaCreacion }}</p>
         <p><span class="font-medium">Total respuestas:</span> {{ respuestas.length }}</p>
       </div>
