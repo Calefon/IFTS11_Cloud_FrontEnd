@@ -6,6 +6,7 @@ import { HistoryPageComponentComponent } from './components/history-page-compone
 import { ResponsePageComponentComponent } from './components/response-page-component/response-page-component.component';
 
 export const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'nuevo',
     component: InterfazCreacionComponent,

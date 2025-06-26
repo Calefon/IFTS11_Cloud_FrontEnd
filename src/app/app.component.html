@@ -16,14 +16,18 @@
     <img src="assets/img/inquiroLogo.png" alt="inquiro logo" class="w-52 h-52 mx-auto mt-10 mb-5" />
 
     <div>
-      <h2 class="font-bold">Bienvenido a inquiro</h2>
-      <p class="italic">"El puente entre la tecnología y la voz de las personas"</p>
+      <h2 class="text-[100px] font-bold">Inquiro</h2>
+      <p class="text-[20px] italic">"El puente entre la tecnología y la voz de las personas"</p>
     </div>
   </section>
 
-  <section class="bg-white text-black flex-3/4 rounded-3xl flex flex-col items-center justify-center p-10 mx-5">
-    <h2 class="font-bold">Inicia sesión con cognito</h2>
+  <section class="relative  bg-cover bg-center text-black flex-3/4 rounded-3xl  flex flex-col items-center justify-center p-10 mx-5"   style="background-image: url('assets/img/2025-06-26.png');">
+    <div class="absolute inset-0 bg-white/65 backdrop-blur-sm z-0 rounded-3xl"></div>
+  <div class="relative z-10 flex flex-col items-center justify-center">  
+    <h2 class="text-[50px] font-bold">Bienvenidos</h2>
+    <p class="text-[20px] italic">Inicia sesión con cognito</p>
     <a class="bg-indigo-950 text-white hover:text-gray-200 font-bold py-2 px-4 mt-2 rounded-2xl" routerLink="/#" (click)="login()">Login</a>
+  </div>
   </section>
 </div>
 }
