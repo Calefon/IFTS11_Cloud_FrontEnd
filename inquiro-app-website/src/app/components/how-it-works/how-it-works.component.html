@@ -1,1 +1,282 @@
-<p>how-it-works works!</p>,
+<div class="flex flex-col justify-center items-center w-3/4">
+  <h2 class="text-5xl text-[#0B0430] font-medium">From Data to Decisions</h2>
+
+  <div class="flex justify-center items-center w-full">
+    <div class="relative w-1/2 h-[340px] md:h-[420px]">
+      <img
+        src="assets/img/img-howitworks/create-surveys.webp"
+        alt="step 1"
+        class="absolute inset-0 h-full w-full object-contain transition-all duration-300 opacity-0 translate-y-2"
+        [class.opacity-100]="activeIdx() === 0"
+        [class.translate-y-0]="activeIdx() === 0"
+      />
+      <!-- Img Step 2 -->
+      <img
+        src="assets/img/img-howitworks/collect-responses.webp"
+        alt="step 2"
+        class="absolute inset-0 h-full w-full object-contain transition-all duration-300 opacity-0 translate-y-2"
+        [class.opacity-100]="activeIdx() === 1"
+        [class.translate-y-0]="activeIdx() === 1"
+      />
+      <!-- Img Step 3 -->
+      <img
+        src="assets/img/img-howitworks/analyse-with-visuals.webp"
+        alt="step 3"
+        class="absolute inset-0 h-full w-full object-contain transition-all duration-300 opacity-0 translate-y-2"
+        [class.opacity-100]="activeIdx() === 2"
+        [class.translate-y-0]="activeIdx() === 2"
+      />
+      <!-- Img Step 4 -->
+      <img
+        src="assets/img/img-howitworks/get-ai-powered-insights.webp"
+        alt="step 4"
+        class="absolute inset-0 h-full w-full object-contain transition-all duration-300 opacity-0 translate-y-2"
+        [class.opacity-100]="activeIdx() === 3"
+        [class.translate-y-0]="activeIdx() === 3"
+      />
+    </div>
+
+    <div class="hs-accordion-group w-1/3">
+      <div
+        class="hs-accordion hs-accordion-active:border-l-[#0B0430] active bg-white border-2 border-transparent hover:cursor-pointer"
+        id="hs-active-bordered-heading-two"
+      >
+        <button
+          class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-600 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none hover:cursor-pointer"
+          aria-expanded="true"
+          aria-controls="hs-basic-active-bordered-collapse-two"
+          (click)="setActive(0)"
+        >
+          Create Surveys
+
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="3.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="hs-accordion-active:hidden block size-3.5 text-[#0B0430]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            ></path>
+          </svg>
+
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="3.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="hs-accordion-active:block hidden size-3.5 text-[#0B0430]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 15.75 7.5-7.5 7.5 7.5"
+            ></path>
+          </svg>
+        </button>
+        <div
+          id="hs-basic-active-bordered-collapse-two"
+          class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+          role="region"
+          aria-labelledby="hs-active-bordered-heading-two"
+        >
+          <div class="pb-4 px-5">
+            <p class="text-gray-600">
+              Easily design surveys tailored to your business needs. Define the right questions to
+              gather meaningful insights.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="hs-accordion hs-accordion-active:border-l-[#0B0430] bg-white border-2 border-transparent hover:cursor-pointer"
+        id="hs-active-bordered-heading-three"
+      >
+        <button
+          class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-600 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none hover:cursor-pointer"
+          aria-expanded="false"
+          aria-controls="hs-basic-active-bordered-collapse-three"
+          (click)="setActive(1)"
+        >
+          Collect Responses
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="3.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="hs-accordion-active:hidden block size-3.5 text-[#0B0430]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            ></path>
+          </svg>
+
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="3.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="hs-accordion-active:block hidden size-3.5 text-[#0B0430]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 15.75 7.5-7.5 7.5 7.5"
+            ></path>
+          </svg>
+        </button>
+        <div
+          id="hs-basic-active-bordered-collapse-three"
+          class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+          role="region"
+          aria-labelledby="hs-active-bordered-heading-three"
+        >
+          <div class="pb-4 px-5">
+            <p class="text-gray-600">
+              Share your surveys with companies, teams, or customers and gather responses in real
+              time, from any device.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="hs-accordion hs-accordion-active:border-l-[#0B0430] bg-white border-2 border-transparent hover:cursor-pointer"
+        id="hs-active-bordered-heading-three"
+      >
+        <button
+          class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-600 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none hover:cursor-pointer"
+          aria-expanded="false"
+          aria-controls="hs-basic-active-bordered-collapse-three"
+          (click)="setActive(2)"
+        >
+          Analyse with Visuals
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="3.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="hs-accordion-active:hidden block size-3.5 text-[#0B0430]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            ></path>
+          </svg>
+
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="3.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="hs-accordion-active:block hidden size-3.5 text-[#0B0430]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 15.75 7.5-7.5 7.5 7.5"
+            ></path>
+          </svg>
+        </button>
+        <div
+          id="hs-basic-active-bordered-collapse-three"
+          class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+          role="region"
+          aria-labelledby="hs-active-bordered-heading-three"
+        >
+          <div class="pb-4 px-5">
+            <p class="text-gray-600">
+              Transform raw data into clear charts and graphs, making trends and patterns easy to
+              understand.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="hs-accordion hs-accordion-active:border-l-[#0B0430] bg-white border-2 border-transparent hover:cursor-pointer"
+        id="hs-active-bordered-heading-three"
+      >
+        <button
+          class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-600 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none hover:cursor-pointer"
+          aria-expanded="false"
+          aria-controls="hs-basic-active-bordered-collapse-three"
+          (click)="setActive(3)"
+        >
+          Get AI-powered Insights
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="3.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="hs-accordion-active:hidden block size-3.5 text-[#0B0430]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            ></path>
+          </svg>
+
+          <svg
+            data-slot="icon"
+            fill="none"
+            stroke-width="3.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="hs-accordion-active:block hidden size-3.5 text-[#0B0430]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 15.75 7.5-7.5 7.5 7.5"
+            ></path>
+          </svg>
+        </button>
+        <div
+          id="hs-basic-active-bordered-collapse-three"
+          class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+          role="region"
+          aria-labelledby="hs-active-bordered-heading-three"
+        >
+          <div class="pb-4 px-5">
+            <p class="text-gray-600">
+              Use AI to interpret survey results and provide actionable recommendations for your
+              company's next steps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
