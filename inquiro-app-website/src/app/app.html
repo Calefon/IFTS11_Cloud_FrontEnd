@@ -1,11 +1,17 @@
 <app-nav-menu class="fixed w-full"></app-nav-menu>
-<app-home class="flex justify-center items-center w-full h-screen" id="inquiro-home"></app-home>
+<app-home class="flex justify-center items-center w-full h-screen" id="home"></app-home>
 <app-how-it-works
   class="flex justify-center items-center w-full h-screen"
-  id="inquiro-howitworks"
+  id="howitworks"
 ></app-how-it-works>
-<app-featured-technologies id="inquiro-featuredtechnologies"></app-featured-technologies>
-<app-plans></app-plans>
+<app-featured-technologies
+  class="flex gap-8 justify-center items-center w-full h-screen"
+  id="featuredtechnologies"
+></app-featured-technologies>
+<app-plans
+  class="flex flex-col gap-8 justify-center items-center w-full h-screen"
+  id="plans"
+></app-plans>
 <app-testimonials></app-testimonials>
 <app-footer></app-footer>
 <router-outlet />
