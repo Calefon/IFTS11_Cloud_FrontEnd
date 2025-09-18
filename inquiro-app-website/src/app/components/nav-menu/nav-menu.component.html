@@ -17,7 +17,24 @@
   </ul>
 
   <div class="flex gap-9">
-    <button class="hover:bg-[#2A1F5A] p-4 rounded-2xl">Mode</button>
+    <button
+        (click)="toggleTheme()"
+        class="flex items-center justify-center hover:cursor-pointer transition"
+      >
+        @if(themeService.darkMode()){
+        <img
+          src="assets/img/img-menu/dark-mode.svg"
+          alt="dark mode"
+          class="w-[2.5rem] transition-transform duration-300 ease-in-out"
+        />
+        } @else {
+        <img
+          src="assets/img/img-menu/light-mode.svg"
+          alt="light mode"
+          class="w-[2.5rem] transition-transform duration-300 ease-in-out"
+        />
+        }
+      </button>
     <button class="hover:bg-[#2A1F5A] p-4 rounded-2xl">Language</button>
   </div>
 </nav>

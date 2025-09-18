@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ThemeService } from '../../services/theme';
 
 @Component({
   selector: 'app-nav-menu',
@@ -6,4 +7,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './nav-menu.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavMenuComponent { }
+export class NavMenuComponent {
+  themeService = inject(ThemeService);
+
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
+  }
+}
