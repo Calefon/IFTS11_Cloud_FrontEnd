@@ -6,10 +6,11 @@ import { HomeComponent } from './components/home/home.component';
 import { FeaturedTechnologiesComponent } from './components/featured-technologies/featured-technologies.component';
 import { PlansComponent } from './components/plans/plans.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { HowItWorksComponent } from "./components/how-it-works/how-it-works.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavMenuComponent, HomeComponent, FeaturedTechnologiesComponent, PlansComponent, TestimonialsComponent, FooterComponent],
+  imports: [RouterOutlet, NavMenuComponent, HomeComponent, FeaturedTechnologiesComponent, PlansComponent, TestimonialsComponent, FooterComponent, HowItWorksComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
