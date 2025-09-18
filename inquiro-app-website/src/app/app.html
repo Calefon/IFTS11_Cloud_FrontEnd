@@ -1,4 +1,4 @@
-<app-nav-menu class="fixed w-full"></app-nav-menu>
+<app-nav-menu class="fixed w-full z-100"></app-nav-menu>
 <app-home class="flex justify-center items-center w-full h-screen" id="home"></app-home>
 <app-how-it-works
   class="flex justify-center items-center w-full h-screen"
@@ -12,6 +12,9 @@
   class="flex flex-col gap-8 justify-center items-center w-full h-screen"
   id="plans"
 ></app-plans>
-<app-testimonials></app-testimonials>
+<app-testimonials
+  class="flex flex-col gap-8 justify-center items-center w-full h-screen"
+  id="testimonials"
+></app-testimonials>
 <app-footer></app-footer>
 <router-outlet />
