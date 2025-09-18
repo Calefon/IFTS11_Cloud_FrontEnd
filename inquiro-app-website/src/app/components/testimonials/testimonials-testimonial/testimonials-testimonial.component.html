@@ -1,0 +1,17 @@
+<blockquote class="relative border-l-3 border-l-gray-200 hover:border-l-[#0B0430] ps-4 sm:ps-6 transition">
+  <p class="text-gray-800 sm:text-lg italic">"{{ text }}"</p>
+
+  <footer class="mt-4">
+    <div class="flex items-center">
+      <div class="shrink-0">
+        <img class="size-10 rounded-full object-cover" [src]="avatar" [alt]="author" />
+      </div>
+      <div class="ms-4">
+        <div class="text-base font-semibold text-gray-800">{{ author }}</div>
+        @if(role) {
+        <div class="text-xs text-gray-500">{{ role }}</div>
+        }
+      </div>
+    </div>
+  </footer>
+</blockquote>
