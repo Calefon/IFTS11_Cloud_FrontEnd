@@ -1,9 +1,10 @@
 type Plan = {
-  id: string;
+  id: 'starter' | 'pro' | 'business';
   title: string;
   description: string;
-  monthly: number; // price per month (USD)
-  yearly: number; // price per month billed yearly (already discounted)
+  free?: string
+  price?: number;
+  period?: string;
   badge?: string; // e.g. 'Recommended'
   highlight?: boolean; // true to emphasize the card
   ctaLabel: string;

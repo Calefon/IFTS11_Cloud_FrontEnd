@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "how": "So funktioniert es",
+    "features": "Haupttechnologien",
+    "plans": "Pläne",
+    "testimonials": "Referenzen",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Online-Formulare, um schnell Erkenntnisse zu gewinnen",
+    "subtitle": "Erstellen Sie ganz einfach Formulare und Umfragen, um Daten zu sammeln und Erkenntnisse von überall zu erhalten.",
+    "ctaSignIn": "Anmelden",
+    "ctaTry": "Kostenlos testen"
+  },
+  "howItWorks": {
+    "title": "Von Daten zu Entscheidungen",
+    "steps": {
+      "create": {
+        "title": "Umfragen erstellen",
+        "desc": "Gestalten Sie mühelos Umfragen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind. Definieren Sie die richtigen Fragen, um aussagekräftige Erkenntnisse zu gewinnen."
+      },
+      "collect": {
+        "title": "Antworten sammeln",
+        "desc": "Teilen Sie Ihre Umfragen mit Unternehmen, Teams oder Kunden und sammeln Sie Antworten in Echtzeit von jedem Gerät."
+      },
+      "analyse": {
+        "title": "Mit Visualisierungen analysieren",
+        "desc": "Verwandeln Sie Rohdaten in klare Diagramme und Grafiken, um Trends und Muster leicht verständlich zu machen."
+      },
+      "ai": {
+        "title": "KI-gestützte Erkenntnisse erhalten",
+        "desc": "Nutzen Sie KI, um Umfrageergebnisse zu interpretieren und umsetzbare Empfehlungen für die nächsten Schritte Ihres Unternehmens bereitzustellen."
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "Angetrieben von Innovation",
+    "items": {
+      "ai": {
+        "title": "KI-gestützte Erkenntnisse",
+        "desc": "Verwandeln Sie Umfrageantworten mit künstlicher Intelligenz in umsetzbare Empfehlungen."
+      },
+      "data": {
+        "title": "Datenvisualisierung",
+        "desc": "Erkennen Sie Trends auf einen Blick mit klaren Diagrammen und Dashboards."
+      },
+      "surveys": {
+        "title": "Intelligente Umfragen",
+        "desc": "Gestalten und passen Sie Umfragen einfach an die Bedürfnisse Ihres Unternehmens an."
+      },
+      "realtime": {
+        "title": "Echtzeit-Analysen",
+        "desc": "Sammeln Sie Antworten sofort und treffen Sie Entscheidungen auf Grundlage aktueller Echtzeitdaten."
+      }
+    }
+  },
+  "plans": {
+    "title": "Kostenlos starten, mit uns wachsen",
+    "billing": {
+      "monthly": "Monatlich",
+      "yearly": "Jährlich",
+      "save20": "20 % sparen"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Zum Ausprobieren von Umfragen und Basisberichten.",
+        "cta": "Loslegen",
+        "free": "Kostenlos",
+        "features": {
+          "label1": "Bis zu 3 aktive Umfragen",
+          "label2": "100 Antworten / Monat",
+          "label3": "Basisdiagramme",
+          "label4": "KI-Erkenntnisse",
+          "label5": "Teamzusammenarbeit",
+          "label6": "Priorisierter Support"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Empfohlen",
+        "desc": "Erweiterte Analysen und KI-Erkenntnisse für wachsende Teams.",
+        "cta": "Pro starten",
+        "price": "19",
+        "period": "/ Zeitraum",
+        "features": {
+          "label1": "Unbegrenzte Umfragen",
+          "label2": "5.000 Antworten / Monat",
+          "label3": "Erweiterte Diagramme & Exporte",
+          "label4": "KI-Erkenntnisse & Zusammenfassungen",
+          "label5": "Teamzusammenarbeit (5 Benutzer)",
+          "label6": "Priorisierter Support"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Für Organisationen, die Skalierung, Sicherheit und SLA benötigen.",
+        "cta": "Vertrieb kontaktieren",
+        "price": "49",
+        "period": "/ Zeitraum",
+        "features": {
+          "label1": "Unbegrenzte Umfragen",
+          "label2": "50.000+ Antworten / Monat",
+          "label3": "Individuelle Dashboards & SSO",
+          "label4": "KI-Empfehlungen & Automatisierungen",
+          "label5": "Unbegrenzte Teamzusammenarbeit",
+          "label6": "Priorisierter Support & SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen",
+    "list": {
+      "t1": {
+        "quote": "Ich wollte nur sagen, dass ich bisher sehr zufrieden mit meinem Kauf bin. Die Dokumentation ist hervorragend – klar und detailliert.",
+        "author": "Josh Grazioso",
+        "role": "Produktmanager bei Acme",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      },
+      "t2": {
+        "quote": "Die Plattform hat uns geholfen, schneller als je zuvor Erkenntnisse zu gewinnen. Unser Team kann nun Entscheidungen in Echtzeit treffen.",
+        "author": "Sophie Lee",
+        "role": "Marketing-Leiterin bei Startup X",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "KI-gestützte Empfehlungen sind ein echter Game Changer. Es fühlt sich an, als hätten wir rund um die Uhr einen Analysten.",
+        "author": "Daniel Ruiz",
+        "role": "Betriebsleiter bei Beta Corp",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "Der Umfrage-Builder ist super intuitiv. Ich habe mein erstes Formular in wenigen Minuten erstellt und noch am selben Tag Antworten erhalten.",
+        "author": "Emily Carter",
+        "role": "HR-Spezialistin bei Bright Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t5": {
+        "quote": "Wir konnten die Kundenzufriedenheit steigern, indem wir ihre Bedürfnisse schnell durch visualisierte Daten verstanden haben.",
+        "author": "Michael Tan",
+        "role": "Leiter Kundenerfahrung bei NovaTech",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "Unser Führungsteam trifft jetzt dank der KI-Erkenntnisse selbstbewusst Entscheidungen. Das hat unser Wachstum wirklich beschleunigt.",
+        "author": "Lucía Fernández",
+        "role": "CEO bei Visionary Labs",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      }
+    }
+  },
+  "contact": {
+    "title": "Bleiben wir in Verbindung",
+    "subtitle": "Kontaktieren Sie uns direkt oder folgen Sie unserem Weg auf Ihren bevorzugten Plattformen.",
+    "channels": {
+      "whatsapp": {
+        "label": "Auf WhatsApp chatten",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Senden Sie uns eine E-Mail",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Auf LinkedIn verbinden",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Auf TikTok ansehen",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Auf Instagram folgen",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "Auf GitHub erkunden",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "Wir helfen Organisationen, Feedback in Handlungen umzuwandeln. Inquiro ermöglicht es Ihnen, Umfragen zu erstellen und zu starten, Antworten in Echtzeit zu sammeln, Ergebnisse in klaren Dashboards zu visualisieren und KI-gestützte Empfehlungen zu generieren – damit Teams schneller fundierte, datengesteuerte Entscheidungen treffen können."
+    },
+    "links": {
+      "product": {
+        "title": "Produkt",
+        "items": {
+          "howItWorks": "So funktioniert es",
+          "capabilities": "Kernfunktionen",
+          "plans": "Preispläne"
+        }
+      },
+      "company": {
+        "title": "Unternehmen",
+        "items": {
+          "testimonials": "Referenzen",
+          "contact": "Kontakt",
+          "privacy": "Datenschutz & Bedingungen"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. Alle Rechte vorbehalten."
+  }
+}

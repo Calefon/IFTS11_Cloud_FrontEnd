@@ -1,67 +1,69 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { PlansPlanComponent } from './plans-plan/plans-plan.component';
+import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-plans',
-  imports: [PlansPlanComponent],
+  imports: [PlansPlanComponent, TranslocoPipe],
   templateUrl: './plans.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlansComponent {
+  private transloco = inject(TranslocoService);
+
   billing = signal<'monthly' | 'yearly'>('monthly');
 
   plans: Plan[] = [
     {
       id: 'starter',
-      title: 'Starter',
-      description: 'For trying out surveys and basic reporting.',
-      monthly: 0,
-      yearly: 0,
-      ctaLabel: 'Get started',
+      title: 'plans.tiers.starter.name',
+      description: 'plans.tiers.starter.desc',
+      free: 'plans.tiers.starter.free',
+      ctaLabel: 'plans.tiers.starter.cta',
       ctaHref: '#plans',
       features: [
-        { label: 'Up to 3 active surveys', included: true },
-        { label: '100 responses / month', included: true },
-        { label: 'Basic charts', included: true },
-        { label: 'AI insights', included: false },
-        { label: 'Team collaboration', included: false },
-        { label: 'Priority support', included: false },
+        { label: 'plans.tiers.starter.features.label1', included: true },
+        { label: 'plans.tiers.starter.features.label2', included: true },
+        { label: 'plans.tiers.starter.features.label3', included: true },
+        { label: 'plans.tiers.starter.features.label4', included: false },
+        { label: 'plans.tiers.starter.features.label5', included: false },
+        { label: 'plans.tiers.starter.features.label6', included: false },
       ],
     },
     {
       id: 'pro',
-      title: 'Pro',
-      description: 'Advanced analytics and AI insights for growing teams.',
-      monthly: 19,
-      yearly: 15, // $15/mo billed yearly (~20% off)
-      badge: 'Recommended',
+      title: 'plans.tiers.pro.name',
+      description: 'plans.tiers.pro.desc',
+      price: 19,
+      period: 'plans.tiers.pro.period',
+      badge: 'plans.tiers.pro.badge',
       highlight: true,
-      ctaLabel: 'Start Pro',
+      ctaLabel: 'plans.tiers.pro.cta',
       ctaHref: '#plans',
       features: [
-        { label: 'Unlimited surveys', included: true },
-        { label: '5,000 responses / month', included: true },
-        { label: 'Advanced charts & exports', included: true },
-        { label: 'AI insights & summaries', included: true },
-        { label: 'Team collaboration (5 seats)', included: true },
-        { label: 'Priority support', included: false },
+        { label: 'plans.tiers.pro.features.label1', included: true },
+        { label: 'plans.tiers.pro.features.label2', included: true },
+        { label: 'plans.tiers.pro.features.label3', included: true },
+        { label: 'plans.tiers.pro.features.label4', included: true },
+        { label: 'plans.tiers.pro.features.label5', included: true },
+        { label: 'plans.tiers.pro.features.label6', included: false },
       ],
     },
     {
       id: 'business',
-      title: 'Business',
-      description: 'For organisations that need scale, security and SLA.',
-      monthly: 49,
-      yearly: 39, // $39/mo billed yearly
-      ctaLabel: 'Contact sales',
+      title: 'plans.tiers.business.name',
+      description: 'plans.tiers.business.desc',
+      price: 49,
+      period: 'plans.tiers.business.period',
+      ctaLabel: 'plans.tiers.business.cta',
       ctaHref: '#plans',
       features: [
-        { label: 'Unlimited surveys', included: true },
-        { label: '50,000+ responses / month', included: true },
-        { label: 'Custom dashboards & SSO', included: true },
-        { label: 'AI recommendations & automations', included: true },
-        { label: 'Team collaboration (unlimited)', included: true },
-        { label: 'Priority support & SLA', included: true },
+        { label: 'plans.tiers.pro.features.label1', included: true },
+        { label: 'plans.tiers.pro.features.label2', included: true },
+        { label: 'plans.tiers.pro.features.label3', included: true },
+        { label: 'plans.tiers.pro.features.label4', included: true },
+        { label: 'plans.tiers.pro.features.label5', included: true },
+        { label: 'plans.tiers.pro.features.label6', included: true },
       ],
     },
   ];

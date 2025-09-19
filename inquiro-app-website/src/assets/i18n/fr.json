@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "how": "Comment ça marche",
+    "features": "Technologies phares",
+    "plans": "Offres",
+    "testimonials": "Témoignages",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Formulaires en ligne pour obtenir des insights rapidement",
+    "subtitle": "Créez facilement des formulaires et des enquêtes pour collecter des données et obtenir des insights où que vous soyez.",
+    "ctaSignIn": "Se connecter",
+    "ctaTry": "Essayer gratuitement"
+  },
+  "howItWorks": {
+    "title": "Des données aux décisions",
+    "steps": {
+      "create": {
+        "title": "Créer des enquêtes",
+        "desc": "Concevez facilement des enquêtes adaptées aux besoins de votre entreprise. Définissez les bonnes questions pour obtenir des insights pertinents."
+      },
+      "collect": {
+        "title": "Collecter des réponses",
+        "desc": "Partagez vos enquêtes avec des entreprises, des équipes ou des clients et recueillez des réponses en temps réel, depuis n’importe quel appareil."
+      },
+      "analyse": {
+        "title": "Analyser avec des graphiques",
+        "desc": "Transformez les données brutes en graphiques clairs pour rendre les tendances et les schémas faciles à comprendre."
+      },
+      "ai": {
+        "title": "Obtenir des insights propulsés par l’IA",
+        "desc": "Utilisez l’IA pour interpréter les résultats d’enquête et fournir des recommandations exploitables pour les prochaines étapes de votre entreprise."
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "Propulsé par l’innovation",
+    "items": {
+      "ai": {
+        "title": "Insights propulsés par l’IA",
+        "desc": "Transformez les réponses aux enquêtes en recommandations exploitables grâce à l’intelligence artificielle."
+      },
+      "data": {
+        "title": "Visualisation des données",
+        "desc": "Comprenez les tendances en un coup d’œil avec des graphiques et des tableaux de bord clairs."
+      },
+      "surveys": {
+        "title": "Enquêtes intelligentes",
+        "desc": "Concevez et personnalisez facilement des enquêtes adaptées aux besoins de votre entreprise."
+      },
+      "realtime": {
+        "title": "Analyses en temps réel",
+        "desc": "Recueillez des réponses instantanément et prenez des décisions basées sur des données fraîches et en temps réel."
+      }
+    }
+  },
+  "plans": {
+    "title": "Commencez gratuitement, évoluez avec nous",
+    "billing": {
+      "monthly": "Mensuel",
+      "yearly": "Annuel",
+      "save20": "Économisez 20 %"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Pour essayer les enquêtes et les rapports de base.",
+        "cta": "Commencer",
+        "free": "Gratuit",
+        "features": {
+          "label1": "Jusqu’à 3 enquêtes actives",
+          "label2": "100 réponses / mois",
+          "label3": "Graphiques de base",
+          "label4": "Insights IA",
+          "label5": "Collaboration d’équipe",
+          "label6": "Support prioritaire"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Recommandé",
+        "desc": "Analyses avancées et insights IA pour des équipes en croissance.",
+        "cta": "Commencer Pro",
+        "price": "19",
+        "period": "/ période",
+        "features": {
+          "label1": "Enquêtes illimitées",
+          "label2": "5 000 réponses / mois",
+          "label3": "Graphiques et exports avancés",
+          "label4": "Insights et synthèses IA",
+          "label5": "Collaboration d’équipe (5 places)",
+          "label6": "Support prioritaire"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Pour les organisations ayant besoin d’échelle, de sécurité et de SLA.",
+        "cta": "Contacter les ventes",
+        "price": "49",
+        "period": "/ période",
+        "features": {
+          "label1": "Enquêtes illimitées",
+          "label2": "50 000+ réponses / mois",
+          "label3": "Tableaux de bord personnalisés & SSO",
+          "label4": "Recommandations et automatisations IA",
+          "label5": "Collaboration d’équipe (illimitée)",
+          "label6": "Support prioritaire & SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "list": {
+      "t1": {
+        "quote": "Je voulais simplement dire que je suis très satisfait de mon achat jusqu’à présent. La documentation est exceptionnelle – claire et détaillée.",
+        "author": "Josh Grazioso",
+        "role": "Chef de produit chez Acme",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      },
+      "t2": {
+        "quote": "La plateforme nous a aidés à collecter des insights plus vite que jamais. Notre équipe peut désormais prendre des décisions en temps réel.",
+        "author": "Sophie Lee",
+        "role": "Responsable marketing chez Startup X",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "Les recommandations basées sur l’IA changent la donne. C’est comme avoir un analyste disponible 24h/24 et 7j/7.",
+        "author": "Daniel Ruiz",
+        "role": "Directeur des opérations chez Beta Corp",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "Le créateur d’enquêtes est super intuitif. J’ai créé mon premier formulaire en quelques minutes et reçu des réponses le jour même.",
+        "author": "Emily Carter",
+        "role": "Spécialiste RH chez Bright Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t5": {
+        "quote": "Nous avons pu améliorer la satisfaction client en comprenant rapidement leurs besoins grâce aux données visualisées.",
+        "author": "Michael Tan",
+        "role": "Responsable de l’expérience client chez NovaTech",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "Notre équipe de direction prend désormais des décisions en toute confiance grâce aux insights de l’IA. Cela a réellement accéléré notre croissance.",
+        "author": "Lucía Fernández",
+        "role": "PDG chez Visionary Labs",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      }
+    }
+  },
+  "contact": {
+    "title": "Restons en contact",
+    "subtitle": "Contactez-nous directement ou suivez notre parcours sur vos plateformes préférées.",
+    "channels": {
+      "whatsapp": {
+        "label": "Discuter sur WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Envoyez-nous un e-mail",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Se connecter sur LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Regarder sur TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Suivre sur Instagram",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "Explorer sur GitHub",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "Nous aidons les organisations à transformer les retours en actions. Inquiro vous permet de concevoir et lancer des enquêtes, de collecter des réponses en temps réel, de visualiser les résultats sur des tableaux de bord clairs et de générer des recommandations propulsées par l’IA, afin que les équipes prennent plus rapidement des décisions sûres et fondées sur les données."
+    },
+    "links": {
+      "product": {
+        "title": "Produit",
+        "items": {
+          "howItWorks": "Comment ça marche",
+          "capabilities": "Fonctionnalités clés",
+          "plans": "Offres tarifaires"
+        }
+      },
+      "company": {
+        "title": "Entreprise",
+        "items": {
+          "testimonials": "Témoignages",
+          "contact": "Contact",
+          "privacy": "Confidentialité & Conditions"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. Tous droits réservés."
+  }
+}

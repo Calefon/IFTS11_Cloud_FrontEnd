@@ -1,6 +1,6 @@
 <section class="max-w-7xl mx-auto px-4 py-16 transition">
   <h2 class="text-5xl text-[#0B0430] dark:text-white font-medium text-center">
-    Start Free, Grow with Us
+    {{ 'plans.title' | transloco }}
   </h2>
 
   <!-- Billing toggle -->
@@ -11,7 +11,7 @@
       (click)="billing.set('monthly')"
       class="px-3 py-1.5 bg-[#0B0430] hover:bg-[#2A1F5A] dark:bg-gray-200 dark:hover:bg-gray-100 text-white dark:text-[#0B0430] rounded-lg text-xl border transition cursor-pointer"
     >
-      Monthly
+      {{ 'plans.billing.monthly' | transloco }}
     </button>
 
     <button
@@ -19,7 +19,8 @@
       (click)="billing.set('yearly')"
       class="px-3 py-1.5 rounded-lg text-xl border transition cursor-pointer hover:bg-gray-50 dark:hover:bg-[#2A1F5A]"
     >
-      Yearly <span class="ml-1 text-xm text-emerald-600">Save 20%</span>
+      {{ 'plans.billing.yearly' | transloco }}
+      <span class="ml-1 text-lg text-emerald-600">{{ 'plans.billing.save20' | transloco }}</span>
     </button>
     } @else {
     <button
@@ -27,7 +28,7 @@
       (click)="billing.set('monthly')"
       class="px-3 py-1.5 rounded-lg text-xl border transition cursor-pointer hover:bg-gray-50 dark:hover:bg-[#2A1F5A]"
     >
-      Monthly
+      {{ 'plans.billing.monthly' | transloco }}
     </button>
 
     <button
@@ -35,19 +36,21 @@
       (click)="billing.set('yearly')"
       class="px-3 py-1.5 rounded-lg text-xl border transition bg-[#0B0430] hover:bg-[#2A1F5A] dark:bg-gray-200 dark:hover:bg-gray-100 text-white dark:text-[#0B0430] cursor-pointer"
     >
-      Yearly <span class="ml-1 text-xm text-green-500">Save 20%</span>
+      {{ 'plans.billing.yearly' | transloco }}
+      <span class="ml-1 text-lg text-green-500">{{ 'plans.billing.save20' | transloco }}</span>
     </button>
     }
   </div>
 
   <!-- Cards grid -->
   <div class="mt-10 grid gap-8 md:grid-cols-3">
-    @for (p of plans; track p.id) {
+    @for (p of plans; track $index) {
     <app-plans-plan
       [title]="p.title"
       [description]="p.description"
-      [price]="billing() === 'monthly' ? p.monthly : p.yearly"
-      [period]="billing() === 'monthly' ? 'month' : 'mo (billed yearly)'"
+      [free]="p.free ?? ''"
+      [price]="p ? (billing() === 'monthly' ? p.price ?? 0 : (p.price ? p.price - (p.price * 0.2) : 0)) : 0"
+      [period]="p.period ?? ''"
       [badge]="p.badge"
       [highlight]="p.highlight ?? false"
       [ctaLabel]="p.ctaLabel"

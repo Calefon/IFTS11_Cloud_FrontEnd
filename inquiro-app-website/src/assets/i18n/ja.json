@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "how": "使い方",
+    "features": "主要な技術",
+    "plans": "プラン",
+    "testimonials": "お客様の声",
+    "contact": "お問い合わせ"
+  },
+  "home": {
+    "title": "すばやくインサイトを得るためのオンラインフォーム",
+    "subtitle": "どこからでもデータを収集し、インサイトを得るためのフォームやアンケートを簡単に作成できます。",
+    "ctaSignIn": "ログイン",
+    "ctaTry": "無料で試す"
+  },
+  "howItWorks": {
+    "title": "データから意思決定へ",
+    "steps": {
+      "create": {
+        "title": "アンケートを作成",
+        "desc": "ビジネスニーズに合わせたアンケートを簡単に設計。適切な質問を定義して有益なインサイトを収集しましょう。"
+      },
+      "collect": {
+        "title": "回答を収集",
+        "desc": "企業、チーム、顧客とアンケートを共有し、あらゆるデバイスからリアルタイムで回答を収集。"
+      },
+      "analyse": {
+        "title": "ビジュアルで分析",
+        "desc": "生データを分かりやすいグラフやチャートに変換し、トレンドやパターンを簡単に理解できます。"
+      },
+      "ai": {
+        "title": "AIによるインサイト",
+        "desc": "アンケート結果をAIで解釈し、次のステップに役立つ実用的な推奨事項を提供します。"
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "イノベーションで支える",
+    "items": {
+      "ai": {
+        "title": "AIによるインサイト",
+        "desc": "アンケートの回答を人工知能で実用的な推奨事項に変換。"
+      },
+      "data": {
+        "title": "データの可視化",
+        "desc": "わかりやすいグラフやダッシュボードでトレンドを一目で理解。"
+      },
+      "surveys": {
+        "title": "スマートアンケート",
+        "desc": "会社のニーズに合わせたアンケートを簡単に設計・カスタマイズ。"
+      },
+      "realtime": {
+        "title": "リアルタイム分析",
+        "desc": "すぐに回答を収集し、最新データに基づいて意思決定。"
+      }
+    }
+  },
+  "plans": {
+    "title": "無料で始めて、一緒に成長しましょう",
+    "billing": {
+      "monthly": "月額",
+      "yearly": "年額",
+      "save20": "20%お得"
+    },
+    "tiers": {
+      "starter": {
+        "name": "スターター",
+        "desc": "アンケートと基本レポートを試すために。",
+        "cta": "始める",
+        "free": "無料",
+        "features": {
+          "label1": "最大3つのアクティブアンケート",
+          "label2": "月100件の回答",
+          "label3": "基本的なグラフ",
+          "label4": "AIインサイト",
+          "label5": "チームコラボレーション",
+          "label6": "優先サポート"
+        }
+      },
+      "pro": {
+        "name": "プロ",
+        "badge": "おすすめ",
+        "desc": "成長中のチーム向けの高度な分析とAIインサイト。",
+        "cta": "プロを始める",
+        "price": "19",
+        "period": "/ 期間",
+        "features": {
+          "label1": "無制限のアンケート",
+          "label2": "月5,000件の回答",
+          "label3": "高度なグラフとエクスポート",
+          "label4": "AIインサイトと要約",
+          "label5": "チームコラボレーション（5人）",
+          "label6": "優先サポート"
+        }
+      },
+      "business": {
+        "name": "ビジネス",
+        "desc": "スケール、セキュリティ、SLAを必要とする組織向け。",
+        "cta": "営業に連絡",
+        "price": "49",
+        "period": "/ 期間",
+        "features": {
+          "label1": "無制限のアンケート",
+          "label2": "月50,000件以上の回答",
+          "label3": "カスタムダッシュボードとSSO",
+          "label4": "AIによる推奨と自動化",
+          "label5": "無制限のチームコラボレーション",
+          "label6": "優先サポートとSLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "お客様の声",
+    "list": {
+      "t1": {
+        "quote": "購入にとても満足しています。ドキュメントは非常に明確で詳細です。",
+        "author": "Josh Grazioso",
+        "role": "Acme社 プロダクトマネージャー",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      },
+      "t2": {
+        "quote": "このプラットフォームのおかげで、これまで以上に早くインサイトを得られました。チームはリアルタイムで意思決定ができます。",
+        "author": "Sophie Lee",
+        "role": "Startup X マーケティングリーダー",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "AIによる推奨は革命的です。24時間365日、アナリストがいるような感覚です。",
+        "author": "Daniel Ruiz",
+        "role": "Beta Corp オペレーションディレクター",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "アンケートビルダーはとても直感的です。数分でフォームを作成し、その日のうちに回答を得られました。",
+        "author": "Emily Carter",
+        "role": "Bright Solutions 人事担当",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?..."
+      },
+      "t5": {
+        "quote": "データの可視化によって顧客のニーズを素早く理解し、顧客満足度を向上できました。",
+        "author": "Michael Tan",
+        "role": "NovaTech 顧客体験リーダー",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?..."
+      },
+      "t6": {
+        "quote": "AIインサイトのおかげで、経営陣は自信を持って意思決定を行えるようになり、成長が加速しました。",
+        "author": "Lucía Fernández",
+        "role": "Visionary Labs CEO",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?..."
+      }
+    }
+  },
+  "contact": {
+    "title": "つながり続けましょう",
+    "subtitle": "直接ご連絡いただくか、お気に入りのプラットフォームで私たちをフォローしてください。",
+    "channels": {
+      "whatsapp": {
+        "label": "WhatsAppでチャット",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "メールを送る",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "LinkedInでつながる",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "TikTokで見る",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Instagramでフォロー",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "GitHubで探す",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "私たちは、組織がフィードバックを行動に変えるのを支援します。Inquiroはアンケートを設計・配信し、リアルタイムで回答を収集し、結果を明確なダッシュボードで可視化し、AIによる推奨を生成して、チームが迅速にデータに基づいた意思決定を行えるようにします。"
+    },
+    "links": {
+      "product": {
+        "title": "製品",
+        "items": {
+          "howItWorks": "使い方",
+          "capabilities": "主な機能",
+          "plans": "料金プラン"
+        }
+      },
+      "company": {
+        "title": "会社情報",
+        "items": {
+          "testimonials": "お客様の声",
+          "contact": "お問い合わせ",
+          "privacy": "プライバシーと利用規約"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. 無断転載を禁ず。"
+  }
+}

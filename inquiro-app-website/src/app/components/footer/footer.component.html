@@ -2,37 +2,62 @@
   <div class="flex justify-center gap-10">
     <!-- Branding -->
     <div class="flex flex-col justify-center w-1/4">
-      <h3 class="text-xl font-bold">Inquiro</h3>
+      <h3 class="text-xl font-bold">{{ 'footer.brand.name' | transloco }}</h3>
       <p class="mt-2 text-gray-300 text-sm">
-        We help organisations turn feedback into action. Inquiro lets you design and launch surveys,
-        collect responses in real time, visualise results with clear dashboards, and generate
-        AI-powered recommendations—so teams can make confident, data-driven decisions faster.
+        {{ 'footer.brand.description' | transloco }}
       </p>
     </div>
 
     <!-- Product Links -->
     <div class="flex flex-col justify-center items-start">
-      <h4 class="text-lg font-semibold mb-3">Product</h4>
+      <h4 class="text-lg font-semibold mb-3">{{ 'footer.links.product.title' | transloco }}</h4>
       <ul class="space-y-2 text-gray-300">
-        <li><a href="#how-it-works" class="hover:text-white transition">How It Works</a></li>
-        <li><a href="#features" class="hover:text-white transition">Key Capabilities</a></li>
-        <li><a href="#plans" class="hover:text-white transition">Pricing Plans</a></li>
+        <li>
+          <a href="#how-it-works" class="hover:text-white text-sm transition">{{
+            'footer.links.product.items.howItWorks' | transloco
+          }}</a>
+        </li>
+        <li>
+          <a href="#features" class="hover:text-white text-sm transition"
+            >{{ 'footer.links.product.items.capabilities' | transloco }}</a
+          >
+        </li>
+        
+        <li>
+          <a href="#plans" class="hover:text-white text-sm transition">{{
+            'footer.links.product.items.plans' | transloco
+          }}</a>
+        </li>
       </ul>
     </div>
 
     <!-- Company Links -->
     <div class="flex flex-col justify-center items-start">
-      <h4 class="text-start text-lg font-semibold mb-3">Company</h4>
+      <h4 class="text-start text-lg font-semibold mb-3">
+        {{ 'footer.links.company.title' | transloco }}
+      </h4>
       <ul class="space-y-2 text-gray-300">
-        <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
-        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
-        <li><a href="#privacy" class="hover:text-white transition">Privacy &amp; Terms</a></li>
+        <li>
+          <a href="#testimonials" class="hover:text-white text-sm transition">{{
+            'footer.links.company.items.testimonials' | transloco
+          }}</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-white text-sm transition">{{
+            'footer.links.company.items.contact' | transloco
+          }}</a>
+        </li>
+        <li>
+          <a href="#privacy" class="hover:text-white text-sm transition">{{
+            'footer.links.company.items.privacy' | transloco
+          }}</a>
+        </li>
       </ul>
     </div>
   </div>
 
   <!-- Bottom -->
   <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
-    <p>&copy; 2025 Inquiro. All rights reserved.</p>
+    <p>{{'footer.copyright' | transloco}}</p>
   </div>
 </footer>
