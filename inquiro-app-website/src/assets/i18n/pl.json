@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "how": "Jak to działa",
+    "features": "Kluczowe technologie",
+    "plans": "Plany",
+    "testimonials": "Referencje",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Formularze online, aby szybko uzyskać informacje",
+    "subtitle": "Łatwo twórz formularze i ankiety, aby zbierać dane i uzyskiwać informacje z dowolnego miejsca.",
+    "ctaSignIn": "Zaloguj się",
+    "ctaTry": "Wypróbuj za darmo"
+  },
+  "howItWorks": {
+    "title": "Od danych do decyzji",
+    "steps": {
+      "create": {
+        "title": "Twórz ankiety",
+        "desc": "Łatwo projektuj ankiety dostosowane do potrzeb Twojej firmy. Zdefiniuj właściwe pytania, aby zebrać wartościowe informacje."
+      },
+      "collect": {
+        "title": "Zbieraj odpowiedzi",
+        "desc": "Udostępniaj swoje ankiety firmom, zespołom lub klientom i zbieraj odpowiedzi w czasie rzeczywistym, z dowolnego urządzenia."
+      },
+      "analyse": {
+        "title": "Analizuj z wizualizacjami",
+        "desc": "Przekształć surowe dane w czytelne wykresy i diagramy, aby łatwo zrozumieć trendy i wzorce."
+      },
+      "ai": {
+        "title": "Uzyskaj wnioski oparte na AI",
+        "desc": "Wykorzystaj AI do interpretacji wyników ankiet i uzyskania praktycznych rekomendacji dla kolejnych kroków Twojej firmy."
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "Napędzane innowacją",
+    "items": {
+      "ai": {
+        "title": "Wnioski oparte na AI",
+        "desc": "Przekształcaj odpowiedzi z ankiet w praktyczne rekomendacje dzięki sztucznej inteligencji."
+      },
+      "data": {
+        "title": "Wizualizacja danych",
+        "desc": "Zrozum trendy na pierwszy rzut oka dzięki czytelnym wykresom i panelom."
+      },
+      "surveys": {
+        "title": "Inteligentne ankiety",
+        "desc": "Łatwo projektuj i dostosowuj ankiety do potrzeb Twojej firmy."
+      },
+      "realtime": {
+        "title": "Analiza w czasie rzeczywistym",
+        "desc": "Zbieraj odpowiedzi natychmiast i podejmuj decyzje w oparciu o świeże dane w czasie rzeczywistym."
+      }
+    }
+  },
+  "plans": {
+    "title": "Zacznij za darmo, rozwijaj się z nami",
+    "billing": {
+      "monthly": "Miesięczny",
+      "yearly": "Roczny",
+      "save20": "Oszczędź 20%"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Do wypróbowania ankiet i podstawowych raportów.",
+        "cta": "Rozpocznij",
+        "free": "Darmowy",
+        "features": {
+          "label1": "Do 3 aktywnych ankiet",
+          "label2": "100 odpowiedzi / miesiąc",
+          "label3": "Podstawowe wykresy",
+          "label4": "Wnioski AI",
+          "label5": "Współpraca zespołowa",
+          "label6": "Priorytetowe wsparcie"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Polecane",
+        "desc": "Zaawansowana analiza i wnioski AI dla rozwijających się zespołów.",
+        "cta": "Rozpocznij Pro",
+        "price": "19",
+        "period": "/ okres",
+        "features": {
+          "label1": "Nieograniczone ankiety",
+          "label2": "5 000 odpowiedzi / miesiąc",
+          "label3": "Zaawansowane wykresy i eksporty",
+          "label4": "Wnioski i podsumowania AI",
+          "label5": "Współpraca zespołowa (5 osób)",
+          "label6": "Priorytetowe wsparcie"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Dla organizacji potrzebujących skali, bezpieczeństwa i SLA.",
+        "cta": "Skontaktuj się ze sprzedażą",
+        "price": "49",
+        "period": "/ okres",
+        "features": {
+          "label1": "Nieograniczone ankiety",
+          "label2": "50 000+ odpowiedzi / miesiąc",
+          "label3": "Niestandardowe panele i SSO",
+          "label4": "Rekomendacje i automatyzacje AI",
+          "label5": "Nieograniczona współpraca zespołowa",
+          "label6": "Priorytetowe wsparcie i SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Co mówią nasi klienci",
+    "list": {
+      "t1": {
+        "quote": "Chciałem tylko powiedzieć, że jestem bardzo zadowolony z mojego zakupu. Dokumentacja jest wyjątkowa – jasna i szczegółowa.",
+        "author": "Josh Grazioso",
+        "role": "Product Manager w Acme",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      },
+      "t2": {
+        "quote": "Platforma pomogła nam szybciej niż kiedykolwiek wcześniej zebrać informacje. Nasz zespół może teraz podejmować decyzje w czasie rzeczywistym.",
+        "author": "Sophie Lee",
+        "role": "Marketing Lead w Startup X",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "Rekomendacje oparte na AI to prawdziwa zmiana gry. To jakby mieć analityka dostępnego 24/7.",
+        "author": "Daniel Ruiz",
+        "role": "Dyrektor Operacyjny w Beta Corp",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "Kreator ankiet jest bardzo intuicyjny. Stworzyłem mój pierwszy formularz w kilka minut i otrzymałem odpowiedzi tego samego dnia.",
+        "author": "Emily Carter",
+        "role": "Specjalista HR w Bright Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t5": {
+        "quote": "Udało nam się zwiększyć satysfakcję klientów, szybko rozumiejąc ich potrzeby dzięki wizualizacji danych.",
+        "author": "Michael Tan",
+        "role": "Lider ds. Doświadczenia Klienta w NovaTech",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "Nasz zespół zarządzający podejmuje teraz pewne decyzje dzięki wnioskom AI. To naprawdę przyspieszyło nasz rozwój.",
+        "author": "Lucía Fernández",
+        "role": "CEO w Visionary Labs",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      }
+    }
+  },
+  "contact": {
+    "title": "Pozostańmy w kontakcie",
+    "subtitle": "Skontaktuj się z nami bezpośrednio lub śledź naszą podróż na ulubionych platformach.",
+    "channels": {
+      "whatsapp": {
+        "label": "Czat na WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Wyślij nam e-mail",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Połącz się na LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Obejrzyj na TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Śledź nas na Instagramie",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "Odkryj na GitHub",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "Pomagamy organizacjom przekształcać opinie w działania. Inquiro pozwala projektować i uruchamiać ankiety, zbierać odpowiedzi w czasie rzeczywistym, wizualizować wyniki na przejrzystych panelach i generować rekomendacje oparte na AI – aby zespoły mogły szybciej podejmować pewne decyzje oparte na danych."
+    },
+    "links": {
+      "product": {
+        "title": "Produkt",
+        "items": {
+          "howItWorks": "Jak to działa",
+          "capabilities": "Kluczowe funkcje",
+          "plans": "Plany cenowe"
+        }
+      },
+      "company": {
+        "title": "Firma",
+        "items": {
+          "testimonials": "Referencje",
+          "contact": "Kontakt",
+          "privacy": "Prywatność i warunki"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. Wszelkie prawa zastrzeżone."
+  }
+}

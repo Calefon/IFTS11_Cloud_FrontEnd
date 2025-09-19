@@ -1,52 +1,50 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TestimonialsTestimonialComponent } from './testimonials-testimonial/testimonials-testimonial.component';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-testimonials',
-  imports: [TestimonialsTestimonialComponent],
+  imports: [TestimonialsTestimonialComponent, TranslocoPipe],
   templateUrl: './testimonials.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TestimonialsComponent {
   testimonials: Testimonial[] = [
     {
-      text: "I just wanted to say that I'm very happy with my purchase so far. The documentation is outstanding - clear and detailed.",
-      author: 'Josh Grazioso',
-      role: 'Product Manager at Acme',
-      avatar: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&...',
+      quote: 'testimonials.list.t1.quote',
+      author: 'testimonials.list.t1.author',
+      role: 'testimonials.list.t1.role',
+      avatar: 'testimonials.list.t1.avatar',
     },
     {
-      text: 'The platform helped us collect insights faster than ever. Our team can now make decisions in real time.',
-      author: 'Sophie Lee',
-      role: 'Marketing Lead at Startup X',
-      avatar: 'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?...',
+      quote: 'testimonials.list.t2.quote',
+      author: 'testimonials.list.t2.author',
+      role: 'testimonials.list.t2.role',
+      avatar: 'testimonials.list.t2.avatar',
     },
     {
-      text: 'AI-powered recommendations are a game changer. It feels like having an analyst 24/7.',
-      author: 'Daniel Ruiz',
-      role: 'Operations Director at Beta Corp',
-      avatar: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?...',
+      quote: 'testimonials.list.t3.quote',
+      author: 'testimonials.list.t3.author',
+      role: 'testimonials.list.t3.role',
+      avatar: 'testimonials.list.t3.avatar',
     },
     {
-      text: 'The survey builder is super intuitive. I created my first form in minutes and had responses the same day.',
-      author: 'Emily Carter',
-      role: 'HR Specialist at Bright Solutions',
-      avatar:
-        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
+      quote: 'testimonials.list.t4.quote',
+      author: 'testimonials.list.t4.author',
+      role: 'testimonials.list.t4.role',
+      avatar: 'testimonials.list.t4.avatar',
     },
     {
-      text: 'We were able to increase customer satisfaction by quickly understanding their needs through visualised data.',
-      author: 'Michael Tan',
-      role: 'Customer Experience Lead at NovaTech',
-      avatar:
-        'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
+      quote: 'testimonials.list.t5.quote',
+      author: 'testimonials.list.t5.author',
+      role: 'testimonials.list.t5.role',
+      avatar: 'testimonials.list.t5.avatar',
     },
     {
-      text: 'Our leadership team now makes decisions confidently thanks to the AI insights. It really accelerated our growth.',
-      author: 'Lucía Fernández',
-      role: 'CEO at Visionary Labs',
-      avatar:
-        'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
+      quote: 'testimonials.list.t6.quote',
+      author: 'testimonials.list.t6.author',
+      role: 'testimonials.list.t6.role',
+      avatar: 'testimonials.list.t6.avatar',
     },
   ];
 }

@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-testimonials-testimonial',
-  imports: [],
+  imports: [TranslocoPipe],
   templateUrl: './testimonials-testimonial.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

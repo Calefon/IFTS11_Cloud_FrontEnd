@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "首页",
+    "how": "工作原理",
+    "features": "核心技术",
+    "plans": "方案",
+    "testimonials": "客户评价",
+    "contact": "联系我们"
+  },
+  "home": {
+    "title": "快速获取洞察的在线表单",
+    "subtitle": "轻松创建表单和调查问卷，从任何地方收集数据并获取洞察。",
+    "ctaSignIn": "登录",
+    "ctaTry": "免费试用"
+  },
+  "howItWorks": {
+    "title": "从数据到决策",
+    "steps": {
+      "create": {
+        "title": "创建调查问卷",
+        "desc": "轻松设计符合您业务需求的调查问卷。定义正确的问题以收集有价值的洞察。"
+      },
+      "collect": {
+        "title": "收集反馈",
+        "desc": "与公司、团队或客户分享您的问卷，并可在任何设备上实时收集反馈。"
+      },
+      "analyse": {
+        "title": "可视化分析",
+        "desc": "将原始数据转化为清晰的图表和图形，轻松理解趋势和模式。"
+      },
+      "ai": {
+        "title": "AI驱动的洞察",
+        "desc": "利用人工智能解读调查结果，并为公司提供可执行的下一步建议。"
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "由创新驱动",
+    "items": {
+      "ai": {
+        "title": "AI驱动的洞察",
+        "desc": "将调查反馈转化为人工智能提供的可执行建议。"
+      },
+      "data": {
+        "title": "数据可视化",
+        "desc": "通过清晰的图表和仪表板，一目了然地了解趋势。"
+      },
+      "surveys": {
+        "title": "智能问卷",
+        "desc": "轻松设计并自定义符合您企业需求的问卷。"
+      },
+      "realtime": {
+        "title": "实时分析",
+        "desc": "即时收集反馈，并基于最新数据做出决策。"
+      }
+    }
+  },
+  "plans": {
+    "title": "免费开始，与我们一起成长",
+    "billing": {
+      "monthly": "月付",
+      "yearly": "年付",
+      "save20": "节省20%"
+    },
+    "tiers": {
+      "starter": {
+        "name": "入门版",
+        "desc": "用于体验问卷和基本报告。",
+        "cta": "立即开始",
+        "free": "免费",
+        "features": {
+          "label1": "最多3个有效问卷",
+          "label2": "每月100个反馈",
+          "label3": "基础图表",
+          "label4": "AI洞察",
+          "label5": "团队协作",
+          "label6": "优先支持"
+        }
+      },
+      "pro": {
+        "name": "专业版",
+        "badge": "推荐",
+        "desc": "为成长型团队提供高级分析和AI洞察。",
+        "cta": "开启专业版",
+        "price": "19",
+        "period": "/ 每期",
+        "features": {
+          "label1": "无限问卷",
+          "label2": "每月5000个反馈",
+          "label3": "高级图表与导出",
+          "label4": "AI洞察与总结",
+          "label5": "团队协作（5个席位）",
+          "label6": "优先支持"
+        }
+      },
+      "business": {
+        "name": "企业版",
+        "desc": "为需要规模化、安全性和SLA的组织而设计。",
+        "cta": "联系销售",
+        "price": "49",
+        "period": "/ 每期",
+        "features": {
+          "label1": "无限问卷",
+          "label2": "每月50,000+反馈",
+          "label3": "自定义仪表板与SSO",
+          "label4": "AI推荐与自动化",
+          "label5": "无限团队协作",
+          "label6": "优先支持与SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "客户评价",
+    "list": {
+      "t1": {
+        "quote": "我对目前的购买非常满意。文档清晰而详细，令人印象深刻。",
+        "author": "Josh Grazioso",
+        "role": "Acme 产品经理",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?..."
+      },
+      "t2": {
+        "quote": "该平台帮助我们比以往更快地收集洞察。我们的团队现在可以实时决策。",
+        "author": "Sophie Lee",
+        "role": "Startup X 市场主管",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "AI驱动的推荐是革命性的，就像随时拥有一位分析师。",
+        "author": "Daniel Ruiz",
+        "role": "Beta Corp 运营总监",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "问卷生成器非常直观。我在几分钟内创建了第一个表单，并在当天收到了反馈。",
+        "author": "Emily Carter",
+        "role": "Bright Solutions 人力资源专员",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?..."
+      },
+      "t5": {
+        "quote": "通过可视化数据，我们能够快速了解客户需求，从而提高客户满意度。",
+        "author": "Michael Tan",
+        "role": "NovaTech 客户体验主管",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?..."
+      },
+      "t6": {
+        "quote": "得益于AI洞察，我们的领导团队能够自信地做出决策，真正加速了我们的增长。",
+        "author": "Lucía Fernández",
+        "role": "Visionary Labs 首席执行官",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?..."
+      }
+    }
+  },
+  "contact": {
+    "title": "保持联系",
+    "subtitle": "直接联系我们，或在您喜爱的社交平台上关注我们。",
+    "channels": {
+      "whatsapp": {
+        "label": "在 WhatsApp 上聊天",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "给我们发邮件",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "在 LinkedIn 上连接",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "在 TikTok 上观看",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "在 Instagram 上关注",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "在 GitHub 上探索",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "我们帮助组织将反馈转化为行动。Inquiro 让您能够设计和发布调查问卷，实时收集反馈，用清晰的仪表板可视化结果，并生成 AI 驱动的推荐，从而让团队更快、更自信地做出数据驱动的决策。"
+    },
+    "links": {
+      "product": {
+        "title": "产品",
+        "items": {
+          "howItWorks": "工作原理",
+          "capabilities": "核心功能",
+          "plans": "价格方案"
+        }
+      },
+      "company": {
+        "title": "公司",
+        "items": {
+          "testimonials": "客户评价",
+          "contact": "联系我们",
+          "privacy": "隐私与条款"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. 版权所有。"
+  }
+}

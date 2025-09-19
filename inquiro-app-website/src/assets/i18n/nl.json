@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Home",
+    "how": "Hoe het werkt",
+    "features": "Belangrijkste technologieën",
+    "plans": "Plannen",
+    "testimonials": "Getuigenissen",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Online formulieren om snel inzichten te krijgen",
+    "subtitle": "Maak eenvoudig formulieren en enquêtes om gegevens te verzamelen en inzichten te verkrijgen, overal vandaan.",
+    "ctaSignIn": "Inloggen",
+    "ctaTry": "Probeer gratis"
+  },
+  "howItWorks": {
+    "title": "Van data naar beslissingen",
+    "steps": {
+      "create": {
+        "title": "Enquêtes maken",
+        "desc": "Ontwerp eenvoudig enquêtes die zijn afgestemd op de behoeften van uw bedrijf. Stel de juiste vragen om waardevolle inzichten te verkrijgen."
+      },
+      "collect": {
+        "title": "Antwoorden verzamelen",
+        "desc": "Deel uw enquêtes met bedrijven, teams of klanten en verzamel antwoorden in real time vanaf elk apparaat."
+      },
+      "analyse": {
+        "title": "Analyseren met visuals",
+        "desc": "Zet ruwe gegevens om in duidelijke grafieken en diagrammen, waardoor trends en patronen eenvoudig te begrijpen zijn."
+      },
+      "ai": {
+        "title": "Krijg AI-gestuurde inzichten",
+        "desc": "Gebruik AI om enquêtegegevens te interpreteren en bruikbare aanbevelingen voor de volgende stappen van uw bedrijf te geven."
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "Aangedreven door innovatie",
+    "items": {
+      "ai": {
+        "title": "AI-gestuurde inzichten",
+        "desc": "Zet enquête-antwoorden om in bruikbare aanbevelingen met kunstmatige intelligentie."
+      },
+      "data": {
+        "title": "Datavisualisatie",
+        "desc": "Begrijp trends in één oogopslag met duidelijke grafieken en dashboards."
+      },
+      "surveys": {
+        "title": "Slimme enquêtes",
+        "desc": "Ontwerp en pas eenvoudig enquêtes aan die zijn afgestemd op de behoeften van uw bedrijf."
+      },
+      "realtime": {
+        "title": "Realtime analyse",
+        "desc": "Verzamel onmiddellijk antwoorden en neem beslissingen op basis van actuele realtime gegevens."
+      }
+    }
+  },
+  "plans": {
+    "title": "Begin gratis, groei met ons",
+    "billing": {
+      "monthly": "Maandelijks",
+      "yearly": "Jaarlijks",
+      "save20": "Bespaar 20%"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Voor het uitproberen van enquêtes en basisrapportages.",
+        "cta": "Begin nu",
+        "free": "Gratis",
+        "features": {
+          "label1": "Tot 3 actieve enquêtes",
+          "label2": "100 antwoorden / maand",
+          "label3": "Basisdiagrammen",
+          "label4": "AI-inzichten",
+          "label5": "Team samenwerking",
+          "label6": "Prioritaire ondersteuning"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Aanbevolen",
+        "desc": "Geavanceerde analyses en AI-inzichten voor groeiende teams.",
+        "cta": "Start Pro",
+        "price": "19",
+        "period": "/ periode",
+        "features": {
+          "label1": "Onbeperkte enquêtes",
+          "label2": "5.000 antwoorden / maand",
+          "label3": "Geavanceerde diagrammen & export",
+          "label4": "AI-inzichten & samenvattingen",
+          "label5": "Team samenwerking (5 gebruikers)",
+          "label6": "Prioritaire ondersteuning"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Voor organisaties die schaalbaarheid, beveiliging en SLA nodig hebben.",
+        "cta": "Neem contact op met sales",
+        "price": "49",
+        "period": "/ periode",
+        "features": {
+          "label1": "Onbeperkte enquêtes",
+          "label2": "50.000+ antwoorden / maand",
+          "label3": "Aangepaste dashboards & SSO",
+          "label4": "AI-aanbevelingen & automatiseringen",
+          "label5": "Onbeperkte team samenwerking",
+          "label6": "Prioritaire ondersteuning & SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Wat onze klanten zeggen",
+    "list": {
+      "t1": {
+        "quote": "Ik wil gewoon zeggen dat ik tot nu toe erg tevreden ben met mijn aankoop. De documentatie is uitstekend – duidelijk en gedetailleerd.",
+        "author": "Josh Grazioso",
+        "role": "Productmanager bij Acme",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      },
+      "t2": {
+        "quote": "Het platform heeft ons geholpen sneller dan ooit inzichten te verzamelen. Ons team kan nu in real time beslissingen nemen.",
+        "author": "Sophie Lee",
+        "role": "Marketing Lead bij Startup X",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "AI-gestuurde aanbevelingen zijn een game changer. Het voelt alsof we 24/7 een analist hebben.",
+        "author": "Daniel Ruiz",
+        "role": "Operationeel Directeur bij Beta Corp",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "De enquêtebouwer is super intuïtief. Ik maakte mijn eerste formulier in enkele minuten en kreeg dezelfde dag nog antwoorden.",
+        "author": "Emily Carter",
+        "role": "HR-specialist bij Bright Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t5": {
+        "quote": "We konden de klanttevredenheid vergroten door hun behoeften snel te begrijpen via gevisualiseerde gegevens.",
+        "author": "Michael Tan",
+        "role": "Customer Experience Lead bij NovaTech",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "Ons leiderschapsteam neemt nu vol vertrouwen beslissingen dankzij de AI-inzichten. Het heeft onze groei echt versneld.",
+        "author": "Lucía Fernández",
+        "role": "CEO bij Visionary Labs",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      }
+    }
+  },
+  "contact": {
+    "title": "Blijf verbonden",
+    "subtitle": "Neem direct contact met ons op of volg ons traject op uw favoriete platforms.",
+    "channels": {
+      "whatsapp": {
+        "label": "Chat op WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Stuur ons een e-mail",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Verbind op LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Bekijk op TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Volg ons op Instagram",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "Verken op GitHub",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "Wij helpen organisaties feedback om te zetten in actie. Inquiro laat u enquêtes ontwerpen en lanceren, antwoorden in real time verzamelen, resultaten visualiseren met duidelijke dashboards en AI-gestuurde aanbevelingen genereren – zodat teams sneller zelfverzekerde, datagestuurde beslissingen kunnen nemen."
+    },
+    "links": {
+      "product": {
+        "title": "Product",
+        "items": {
+          "howItWorks": "Hoe het werkt",
+          "capabilities": "Belangrijkste functies",
+          "plans": "Prijsplannen"
+        }
+      },
+      "company": {
+        "title": "Bedrijf",
+        "items": {
+          "testimonials": "Getuigenissen",
+          "contact": "Contact",
+          "privacy": "Privacy & Voorwaarden"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. Alle rechten voorbehouden."
+  }
+}

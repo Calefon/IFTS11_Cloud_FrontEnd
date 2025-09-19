@@ -1,5 +1,5 @@
 <div class="flex flex-col justify-center items-center w-3/4 transition">
-  <h2 class="text-5xl text-[#0B0430] dark:text-white font-medium">From Data to Decisions</h2>
+  <h2 class="text-5xl text-[#0B0430] dark:text-white font-medium">{{'howItWorks.title' | transloco}}</h2>
 
   <div class="flex justify-center items-center w-full">
     <div class="relative w-1/2 h-[340px] md:h-[420px]">
@@ -47,7 +47,7 @@
           aria-controls="hs-basic-active-bordered-collapse-two"
           (click)="setActive(0)"
         >
-          Create Surveys
+          {{'howItWorks.steps.create.title' | transloco}}
 
           <svg
             data-slot="icon"
@@ -91,8 +91,7 @@
         >
           <div class="pb-4 px-5">
             <p class="text-gray-600 dark:text-gray-300">
-              Easily design surveys tailored to your business needs. Define the right questions to
-              gather meaningful insights.
+              {{'howItWorks.steps.create.desc' | transloco}}
             </p>
           </div>
         </div>
@@ -108,7 +107,7 @@
           aria-controls="hs-basic-active-bordered-collapse-three"
           (click)="setActive(1)"
         >
-          Collect Responses
+          {{'howItWorks.steps.collect.title' | transloco}}
           <svg
             data-slot="icon"
             fill="none"
@@ -151,8 +150,7 @@
         >
           <div class="pb-4 px-5">
             <p class="text-gray-600 dark:text-gray-300">
-              Share your surveys with companies, teams, or customers and gather responses in real
-              time, from any device.
+              {{'howItWorks.steps.collect.desc' | transloco}}
             </p>
           </div>
         </div>
@@ -168,7 +166,7 @@
           aria-controls="hs-basic-active-bordered-collapse-three"
           (click)="setActive(2)"
         >
-          Analyse with Visuals
+          {{'howItWorks.steps.analyse.title' | transloco}}
           <svg
             data-slot="icon"
             fill="none"
@@ -211,8 +209,7 @@
         >
           <div class="pb-4 px-5">
             <p class="text-gray-600 dark:text-gray-300">
-              Transform raw data into clear charts and graphs, making trends and patterns easy to
-              understand.
+              {{'howItWorks.steps.analyse.desc' | transloco}}
             </p>
           </div>
         </div>
@@ -228,7 +225,7 @@
           aria-controls="hs-basic-active-bordered-collapse-three"
           (click)="setActive(3)"
         >
-          Get AI-powered Insights
+          {{'howItWorks.steps.ai.title' | transloco}}
           <svg
             data-slot="icon"
             fill="none"
@@ -271,8 +268,7 @@
         >
           <div class="pb-4 px-5">
             <p class="text-gray-600 dark:text-gray-300">
-              Use AI to interpret survey results and provide actionable recommendations for your
-              company's next steps.
+              {{'howItWorks.steps.ai.desc' | transloco}}
             </p>
           </div>
         </div>

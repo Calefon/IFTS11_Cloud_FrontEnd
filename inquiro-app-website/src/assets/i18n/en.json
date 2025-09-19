@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Home",
+    "how": "How It Works",
+    "features": "Featured Technologies",
+    "plans": "Plans",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Online forms to get insights quickly",
+    "subtitle": "Easily create forms and surveys to gather data and gain insights from anywhere.",
+    "ctaSignIn": "Sign in",
+    "ctaTry": "Try for free"
+  },
+  "howItWorks": {
+    "title": "From Data to Decisions",
+    "steps": {
+      "create": {
+        "title": "Create Surveys",
+        "desc": "Easily design surveys tailored to your business needs. Define the right questions to gather meaningful insights."
+      },
+      "collect": {
+        "title": "Collect Responses",
+        "desc": "Share your surveys with companies, teams, or customers and gather responses in real time, from any device."
+      },
+      "analyse": {
+        "title": "Analyse with Visuals",
+        "desc": "Transform raw data into clear charts and graphs, making trends and patterns easy to understand."
+      },
+      "ai": {
+        "title": "Get AI-powered Insights",
+        "desc": "Use AI to interpret survey results and provide actionable recommendations for your company's next steps."
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "Powered by Innovation",
+    "items": {
+      "ai": {
+        "title": "AI-Powered Insights",
+        "desc": "Transform survey responses into actionable recommendations with artificial intelligence."
+      },
+      "data": {
+        "title": "Data Visualisation",
+        "desc": "Understand trends at a glance with clear charts, graphs, and dashboards."
+      },
+      "surveys": {
+        "title": "Smart Surveys",
+        "desc": "Easily design and customise surveys tailored to your company's needs."
+      },
+      "realtime": {
+        "title": "Real-Time Analytics",
+        "desc": "Collect responses instantly and make decisions based on fresh, real-time data."
+      }
+    }
+  },
+  "plans": {
+    "title": "Start Free, Grow with Us",
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "save20": "Save 20%"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "For trying out surveys and basic reporting.",
+        "cta": "Get started",
+        "free": "Free",
+        "features": {
+          "label1": "Up to 3 active surveys",
+          "label2": "100 responses / month",
+          "label3": "Basic charts",
+          "label4": "AI insights",
+          "label5": "Team collaboration",
+          "label6": "Priority support"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Recommended",
+        "desc": "Advanced analytics and AI insights for growing teams.",
+        "cta": "Start Pro",
+        "price": "19",
+        "period": "/ period",
+        "features": {
+          "label1": "Unlimited surveys",
+          "label2": "5,000 responses / month",
+          "label3": "Advanced charts & exports",
+          "label4": "AI insights & summaries",
+          "label5": "Team collaboration (5 seats)",
+          "label6": "Priority support"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "desc": "For organisations that need scale, security and SLA.",
+        "cta": "Contact sales",
+        "price": "49",
+        "period": "/ period",
+        "features": {
+          "label1": "Unlimited surveys",
+          "label2": "50,000+ responses / month",
+          "label3": "Custom dashboards & SSO",
+          "label4": "AI recommendations & automations",
+          "label5": "Team collaboration (unlimited)",
+          "label6": "Priority support & SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "list": {
+      "t1": {
+        "quote": "I just wanted to say that I'm very happy with my purchase so far. The documentation is outstanding - clear and detailed.",
+        "author": "Josh Grazioso",
+        "role": "Product Manager at Acme",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      },
+      "t2": {
+        "quote": "The platform helped us collect insights faster than ever. Our team can now make decisions in real time.",
+        "author": "Sophie Lee",
+        "role": "Marketing Lead at Startup X",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "AI-powered recommendations are a game changer. It feels like having an analyst 24/7.",
+        "author": "Daniel Ruiz",
+        "role": "Operations Director at Beta Corp",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "The survey builder is super intuitive. I created my first form in minutes and had responses the same day.",
+        "author": "Emily Carter",
+        "role": "HR Specialist at Bright Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t5": {
+        "quote": "We were able to increase customer satisfaction by quickly understanding their needs through visualised data.",
+        "author": "Michael Tan",
+        "role": "Customer Experience Lead at NovaTech",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "Our leadership team now makes decisions confidently thanks to the AI insights. It really accelerated our growth.",
+        "author": "Lucía Fernández",
+        "role": "CEO at Visionary Labs",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Stay Connected",
+    "subtitle": "Reach out to us directly or follow our journey on your favourite platforms.",
+    "channels": {
+      "whatsapp": {
+        "label": "Chat on WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Send us an Email",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Connect on LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Watch on TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Follow on Instagram",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "Explore on GitHub",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "We help organisations turn feedback into action. Inquiro lets you design and launch surveys, collect responses in real time, visualise results with clear dashboards, and generate AI-powered recommendations—so teams can make confident, data-driven decisions faster."
+    },
+    "links": {
+      "product": {
+        "title": "Product",
+        "items": {
+          "howItWorks": "How It Works",
+          "capabilities": "Key Capabilities",
+          "plans": "Pricing Plans"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "items": {
+          "testimonials": "Testimonials",
+          "contact": "Contact",
+          "privacy": "Privacy & Terms"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. All rights reserved."
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "홈",
+    "how": "사용 방법",
+    "features": "주요 기술",
+    "plans": "요금제",
+    "testimonials": "고객 후기",
+    "contact": "문의하기"
+  },
+  "home": {
+    "title": "빠르게 인사이트를 얻는 온라인 양식",
+    "subtitle": "어디서나 데이터를 수집하고 인사이트를 얻을 수 있는 양식과 설문조사를 쉽게 만들 수 있습니다.",
+    "ctaSignIn": "로그인",
+    "ctaTry": "무료로 시작하기"
+  },
+  "howItWorks": {
+    "title": "데이터에서 의사결정까지",
+    "steps": {
+      "create": {
+        "title": "설문조사 만들기",
+        "desc": "비즈니스 요구에 맞는 설문조사를 손쉽게 설계하세요. 올바른 질문을 정의하여 의미 있는 인사이트를 수집합니다."
+      },
+      "collect": {
+        "title": "응답 수집",
+        "desc": "기업, 팀, 고객과 설문조사를 공유하고 어떤 기기에서든 실시간으로 응답을 받으세요."
+      },
+      "analyse": {
+        "title": "시각화로 분석",
+        "desc": "원시 데이터를 명확한 차트와 그래프로 변환하여 트렌드와 패턴을 쉽게 이해할 수 있습니다."
+      },
+      "ai": {
+        "title": "AI 기반 인사이트",
+        "desc": "AI를 사용하여 설문조사 결과를 해석하고 기업의 다음 단계를 위한 실행 가능한 권장 사항을 제공합니다."
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "혁신으로 구동",
+    "items": {
+      "ai": {
+        "title": "AI 기반 인사이트",
+        "desc": "설문 응답을 인공지능으로 실행 가능한 권장 사항으로 변환합니다."
+      },
+      "data": {
+        "title": "데이터 시각화",
+        "desc": "명확한 차트, 그래프 및 대시보드로 한눈에 트렌드를 이해하세요."
+      },
+      "surveys": {
+        "title": "스마트 설문조사",
+        "desc": "귀사의 요구에 맞는 설문조사를 손쉽게 설계하고 사용자 정의할 수 있습니다."
+      },
+      "realtime": {
+        "title": "실시간 분석",
+        "desc": "즉시 응답을 수집하고 최신 데이터를 기반으로 의사결정을 내리세요."
+      }
+    }
+  },
+  "plans": {
+    "title": "무료로 시작하고 함께 성장하세요",
+    "billing": {
+      "monthly": "월간",
+      "yearly": "연간",
+      "save20": "20% 절약"
+    },
+    "tiers": {
+      "starter": {
+        "name": "스타터",
+        "desc": "설문조사와 기본 보고를 체험해 보세요.",
+        "cta": "시작하기",
+        "free": "무료",
+        "features": {
+          "label1": "최대 3개의 활성 설문조사",
+          "label2": "월 100개의 응답",
+          "label3": "기본 차트",
+          "label4": "AI 인사이트",
+          "label5": "팀 협업",
+          "label6": "우선 지원"
+        }
+      },
+      "pro": {
+        "name": "프로",
+        "badge": "추천",
+        "desc": "성장하는 팀을 위한 고급 분석 및 AI 인사이트.",
+        "cta": "프로 시작하기",
+        "price": "19",
+        "period": "/ 기간",
+        "features": {
+          "label1": "무제한 설문조사",
+          "label2": "월 5,000개 응답",
+          "label3": "고급 차트 및 내보내기",
+          "label4": "AI 인사이트 및 요약",
+          "label5": "팀 협업 (5명)",
+          "label6": "우선 지원"
+        }
+      },
+      "business": {
+        "name": "비즈니스",
+        "desc": "확장성, 보안 및 SLA가 필요한 조직을 위한 플랜.",
+        "cta": "영업팀에 문의하기",
+        "price": "49",
+        "period": "/ 기간",
+        "features": {
+          "label1": "무제한 설문조사",
+          "label2": "월 50,000개 이상 응답",
+          "label3": "맞춤형 대시보드 및 SSO",
+          "label4": "AI 추천 및 자동화",
+          "label5": "무제한 팀 협업",
+          "label6": "우선 지원 및 SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "고객 후기",
+    "list": {
+      "t1": {
+        "quote": "구매에 매우 만족합니다. 문서는 명확하고 상세합니다.",
+        "author": "Josh Grazioso",
+        "role": "Acme 제품 매니저",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?..."
+      },
+      "t2": {
+        "quote": "플랫폼 덕분에 그 어느 때보다 빠르게 인사이트를 얻을 수 있었습니다. 우리 팀은 이제 실시간으로 결정을 내릴 수 있습니다.",
+        "author": "Sophie Lee",
+        "role": "Startup X 마케팅 리드",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "AI 기반 추천은 혁신적입니다. 마치 24시간 상주하는 분석가가 있는 것 같습니다.",
+        "author": "Daniel Ruiz",
+        "role": "Beta Corp 운영 이사",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "설문조사 빌더는 매우 직관적입니다. 몇 분 만에 첫 폼을 만들고 같은 날 응답을 받을 수 있었습니다.",
+        "author": "Emily Carter",
+        "role": "Bright Solutions 인사 담당자",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?..."
+      },
+      "t5": {
+        "quote": "데이터 시각화를 통해 고객의 니즈를 빠르게 이해하고 고객 만족도를 높일 수 있었습니다.",
+        "author": "Michael Tan",
+        "role": "NovaTech 고객 경험 리드",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?..."
+      },
+      "t6": {
+        "quote": "AI 인사이트 덕분에 경영진이 자신 있게 결정을 내릴 수 있었고, 성장 속도가 빨라졌습니다.",
+        "author": "Lucía Fernández",
+        "role": "Visionary Labs CEO",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?..."
+      }
+    }
+  },
+  "contact": {
+    "title": "함께 연결되어 있어요",
+    "subtitle": "직접 문의하시거나 좋아하는 플랫폼에서 저희를 팔로우하세요.",
+    "channels": {
+      "whatsapp": {
+        "label": "WhatsApp으로 채팅하기",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "이메일 보내기",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "LinkedIn에서 연결하기",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "TikTok에서 보기",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Instagram에서 팔로우하기",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "GitHub에서 탐색하기",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "우리는 조직이 피드백을 행동으로 전환할 수 있도록 지원합니다. Inquiro는 설문조사를 설계 및 배포하고, 실시간으로 응답을 수집하며, 명확한 대시보드로 결과를 시각화하고, AI 기반 추천을 생성하여 팀이 더 빠르고 자신 있게 데이터 기반 결정을 내릴 수 있도록 합니다."
+    },
+    "links": {
+      "product": {
+        "title": "제품",
+        "items": {
+          "howItWorks": "사용 방법",
+          "capabilities": "주요 기능",
+          "plans": "요금제"
+        }
+      },
+      "company": {
+        "title": "회사",
+        "items": {
+          "testimonials": "고객 후기",
+          "contact": "문의하기",
+          "privacy": "개인정보 및 약관"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. 모든 권리 보유."
+  }
+}

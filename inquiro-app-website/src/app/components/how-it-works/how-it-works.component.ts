@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-how-it-works',
-  imports: [],
+  imports: [TranslocoPipe],
   templateUrl: './how-it-works.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

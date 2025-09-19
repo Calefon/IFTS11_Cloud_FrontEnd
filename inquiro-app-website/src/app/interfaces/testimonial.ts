@@ -1,5 +1,5 @@
 type Testimonial = {
-  text: string;
+  quote: string;
   author: string;
   role: string;
   avatar: string;

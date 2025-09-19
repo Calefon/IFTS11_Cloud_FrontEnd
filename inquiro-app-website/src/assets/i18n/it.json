@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "home": "Home",
+    "how": "Come Funziona",
+    "features": "Tecnologie in Evidenza",
+    "plans": "Piani",
+    "testimonials": "Testimonianze",
+    "contact": "Contatti"
+  },
+  "home": {
+    "title": "Moduli online per ottenere rapidamente informazioni",
+    "subtitle": "Crea facilmente moduli e sondaggi per raccogliere dati e ottenere informazioni ovunque tu sia.",
+    "ctaSignIn": "Accedi",
+    "ctaTry": "Prova gratis"
+  },
+  "howItWorks": {
+    "title": "Dai Dati alle Decisioni",
+    "steps": {
+      "create": {
+        "title": "Crea Sondaggi",
+        "desc": "Progetta facilmente sondaggi su misura per le esigenze della tua azienda. Definisci le domande giuste per ottenere informazioni significative."
+      },
+      "collect": {
+        "title": "Raccogli Risposte",
+        "desc": "Condividi i tuoi sondaggi con aziende, team o clienti e raccogli risposte in tempo reale, da qualsiasi dispositivo."
+      },
+      "analyse": {
+        "title": "Analizza con Grafici",
+        "desc": "Trasforma i dati grezzi in grafici chiari, rendendo facile comprendere tendenze e schemi."
+      },
+      "ai": {
+        "title": "Ottieni Insight con l'IA",
+        "desc": "Usa l'intelligenza artificiale per interpretare i risultati dei sondaggi e fornire raccomandazioni pratiche per i prossimi passi della tua azienda."
+      }
+    }
+  },
+  "featuredTechnologies": {
+    "title": "Alimentato dall'Innovazione",
+    "items": {
+      "ai": {
+        "title": "Insight con l'IA",
+        "desc": "Trasforma le risposte dei sondaggi in raccomandazioni pratiche con l'intelligenza artificiale."
+      },
+      "data": {
+        "title": "Visualizzazione dei Dati",
+        "desc": "Comprendi le tendenze a colpo d'occhio con grafici e dashboard chiari."
+      },
+      "surveys": {
+        "title": "Sondaggi Intelligenti",
+        "desc": "Progetta e personalizza facilmente sondaggi adattati alle esigenze della tua azienda."
+      },
+      "realtime": {
+        "title": "Analisi in Tempo Reale",
+        "desc": "Raccogli risposte istantaneamente e prendi decisioni basate su dati freschi e in tempo reale."
+      }
+    }
+  },
+  "plans": {
+    "title": "Inizia Gratis, Cresci con Noi",
+    "billing": {
+      "monthly": "Mensile",
+      "yearly": "Annuale",
+      "save20": "Risparmia 20%"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Per provare i sondaggi e i report di base.",
+        "cta": "Inizia ora",
+        "free": "Gratis",
+        "features": {
+          "label1": "Fino a 3 sondaggi attivi",
+          "label2": "100 risposte / mese",
+          "label3": "Grafici di base",
+          "label4": "Insight con l'IA",
+          "label5": "Collaborazione del team",
+          "label6": "Supporto prioritario"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Raccomandato",
+        "desc": "Analisi avanzate e insight con l'IA per team in crescita.",
+        "cta": "Inizia Pro",
+        "price": "19",
+        "period": "/ periodo",
+        "features": {
+          "label1": "Sondaggi illimitati",
+          "label2": "5.000 risposte / mese",
+          "label3": "Grafici ed esportazioni avanzati",
+          "label4": "Insight e riepiloghi con l'IA",
+          "label5": "Collaborazione del team (5 utenti)",
+          "label6": "Supporto prioritario"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Per organizzazioni che necessitano di scala, sicurezza e SLA.",
+        "cta": "Contatta le vendite",
+        "price": "49",
+        "period": "/ periodo",
+        "features": {
+          "label1": "Sondaggi illimitati",
+          "label2": "50.000+ risposte / mese",
+          "label3": "Dashboard personalizzate & SSO",
+          "label4": "Raccomandazioni e automazioni con l'IA",
+          "label5": "Collaborazione del team (illimitata)",
+          "label6": "Supporto prioritario & SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Cosa Dicono i Nostri Clienti",
+    "list": {
+      "t1": {
+        "quote": "Volevo solo dire che sono molto soddisfatto del mio acquisto finora. La documentazione è eccezionale - chiara e dettagliata.",
+        "author": "Josh Grazioso",
+        "role": "Product Manager presso Acme",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      },
+      "t2": {
+        "quote": "La piattaforma ci ha aiutato a raccogliere informazioni più velocemente che mai. Ora il nostro team può prendere decisioni in tempo reale.",
+        "author": "Sophie Lee",
+        "role": "Responsabile Marketing presso Startup X",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "Le raccomandazioni basate sull'IA sono rivoluzionarie. È come avere un analista disponibile 24/7.",
+        "author": "Daniel Ruiz",
+        "role": "Direttore Operativo presso Beta Corp",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t4": {
+        "quote": "Il costruttore di sondaggi è super intuitivo. Ho creato il mio primo modulo in pochi minuti e ho ricevuto risposte lo stesso giorno.",
+        "author": "Emily Carter",
+        "role": "Specialista HR presso Bright Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t5": {
+        "quote": "Siamo riusciti ad aumentare la soddisfazione dei clienti comprendendo rapidamente le loro esigenze attraverso dati visualizzati.",
+        "author": "Michael Tan",
+        "role": "Responsabile Esperienza Clienti presso NovaTech",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "Il nostro team di leadership ora prende decisioni con fiducia grazie agli insight dell'IA. Ha davvero accelerato la nostra crescita.",
+        "author": "Lucía Fernández",
+        "role": "CEO presso Visionary Labs",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      }
+    }
+  },
+  "contact": {
+    "title": "Rimaniamo Connessi",
+    "subtitle": "Contattaci direttamente o segui il nostro percorso sulle tue piattaforme preferite.",
+    "channels": {
+      "whatsapp": {
+        "label": "Chatta su WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Inviaci un'Email",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Connettiti su LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Guarda su TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Segui su Instagram",
+        "url": "https://instagram.com"
+      },
+      "github": {
+        "label": "Esplora su GitHub",
+        "url": "https://github.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "Aiutiamo le organizzazioni a trasformare il feedback in azione. Inquiro ti permette di creare e lanciare sondaggi, raccogliere risposte in tempo reale, visualizzare i risultati con dashboard chiare e generare raccomandazioni basate sull'IA, così i team possono prendere decisioni sicure e basate sui dati più velocemente."
+    },
+    "links": {
+      "product": {
+        "title": "Prodotto",
+        "items": {
+          "howItWorks": "Come Funziona",
+          "capabilities": "Funzionalità Principali",
+          "plans": "Piani Tariffari"
+        }
+      },
+      "company": {
+        "title": "Azienda",
+        "items": {
+          "testimonials": "Testimonianze",
+          "contact": "Contatti",
+          "privacy": "Privacy & Termini"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. Tutti i diritti riservati."
+  }
+}
