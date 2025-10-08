@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, Event, NavigationEnd, RouterLink, RouterOutlet } from '@angular/router';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { inject } from '@angular/core';
 import { OidcSecurityService } from 'angular-auth-oidc-client';
@@ -17,6 +17,10 @@ export class AppComponent {
   public isAuthenticated = false;
   private debugMessages: string[] = [];
   inquiroLogo: string = '../../public/inquiroLogo.webp';
+
+  //Preline config - Router for reinitialization
+  constructor(private router: Router) {
+  }
 
 
   ngOnInit() {
@@ -43,6 +47,13 @@ export class AppComponent {
     this.oidcSecurityService.getConfiguration().subscribe(config => {
       this.addDebugMessage('Configuración OIDC cargada');
       console.log('Configuración completa:', config);
+    });
+
+    //Preline config - add a reinitialization helper
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        setTimeout(() => window.HSStaticMethods.autoInit(), 100);
+      }
     });
   }
 

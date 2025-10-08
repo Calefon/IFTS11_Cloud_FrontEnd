@@ -1,22 +1,29 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, Signal, signal } from '@angular/core';
+import { Component, inject, Signal, signal, ViewChild, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { EncuestasApiService } from '../../services/encuestas-api.service';
 import { Encuesta, Pregunta } from '../../interfaces/encuestaInterface';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @Component({
   selector: 'app-interfaz-creacion',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, ClipboardModule],
   templateUrl: './interfaz-creacion.component.html',
   styleUrl: './interfaz-creacion.component.css',
 })
 export class InterfazCreacionComponent {
+  @ViewChild('modal') modalRef!: ElementRef;
+  @ViewChild('openModalButton') openModalRef!: ElementRef;
+  
+
   opciones_preguntas: opcionesPregunta[] = [
     { valor: 'default', texto: '-- Elija un tipo --' },
     { valor: 'abierta', texto: 'Pregunta abierta' },
     { valor: 'opciones_radio', texto: 'Radio' },
   ];
 
+  link_encuesta_signal = signal('');
+  copyClicked = signal(false);
 
   pregunta_a_crear = signal<string>('default');
   encuestasService = inject(EncuestasApiService);
@@ -31,6 +38,23 @@ export class InterfazCreacionComponent {
   preguntaKevin = signal('');
   opcionRadio = signal<string>('');
   opcionesRadio = signal<string[]>([]);
+
+  openModal() {
+    this.openModalRef.nativeElement.click()
+  }
+
+  onCopied(success : boolean){
+    console.log(success)
+    if (success) {
+      this.copyClicked.set(true);
+      setTimeout(
+        ()=>{
+          this.copyClicked.set(false);
+        },
+        1000
+      );
+    }
+  }
 
   agregarPregunta(): void {
     let preguntaCreada: PreguntaEnc;
@@ -108,6 +132,10 @@ export class InterfazCreacionComponent {
     this.preguntas.splice(index, 1);
   }
 
+  updateLinkEncuesta(newLink: string){
+    this.link_encuesta_signal.set(newLink);
+  }
+
   crearEncuesta() {
     let encuesta = <Encuesta>{};
     // encuesta.email = this.idEmail;
@@ -115,7 +143,20 @@ export class InterfazCreacionComponent {
     // encuesta.titulo = 'Encuesta';
     encuesta.titulo = this.tituloEncuesta();
     encuesta.preguntas = this.preguntas;
-    this.encuestasService.crearEncuesta(encuesta);
+    this.encuestasService.crearEncuesta(encuesta).subscribe((resp) => {
+      console.log('Respuesta: ', resp);
+    
+      let idEncuesta = resp.InquiroSK;
+      if (idEncuesta) {
+              this.updateLinkEncuesta(
+                `encuestas.inquiro.site/${idEncuesta}`
+              );
+              this.openModal();
+              console.log(
+                `Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`
+              );
+      }
+    });
     this.tituloEncuesta.set('');
     this.descEncuesta.set('');
     this.emailEncuesta.set('');

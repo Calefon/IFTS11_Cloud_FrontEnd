@@ -58,21 +58,7 @@ export class EncuestasApiService {
   constructor() {}
 
   crearEncuesta(encuesta: Encuesta) {
-    this.http
-      .post<EncuestaResponse>(this.apiLinkEncuestas, encuesta)
-      .subscribe((resp) => {
-        console.log('Respuesta: ', resp);
-
-        let idEncuesta = resp.InquiroSK;
-        if (idEncuesta) {
-          alert(
-            `Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`
-          );
-          console.log(
-            `Encuesta creada! idEncuesta: ${idEncuesta}\nLink encuesta: encuestas.inquiro.site/${idEncuesta}`
-          );
-        }
-      });
+    return this.http.post<EncuestaResponse>(this.apiLinkEncuestas, encuesta);
   }
 
   async verEncuestas(): Promise<EncuestaResponse[]> {
