@@ -62,7 +62,7 @@ export class EncuestasApiService {
   }
 
   async verEncuestas(): Promise<EncuestaResponse[]> {
-  const url = 'https://api.inquiro.site/encuestas/all';
+  const url = `${this.apiLinkEncuestas}/all`;
   try {
     const response = await firstValueFrom(this.http.get<EncuestaHistorial>(url));
     const mappedEncuestas = response.encuestas.map((encuesta: any) => ({
