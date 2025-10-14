@@ -252,3 +252,87 @@
     }
   </section>
 </section>
+
+<!--MODAL preline-->
+<button #openModalButton type="button" class="hidden py-3 px-4 items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-scale-animation-modal" data-hs-overlay="#preline-modal-creacion">
+  Open modal
+</button>  
+<div  #modal   id="preline-modal-creacion"
+        class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none"
+        role="dialog" tabindex="-1" aria-labelledby="hs-scale-animation-modal-label"
+    >
+    <div
+        class="hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 scale-95 opacity-0 ease-in-out transition-all duration-200 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
+        <div
+            class="w-full flex flex-col backdrop-blur-lg bg-purple-300/30 rounded-xl pointer-events-auto">
+            
+            <!--Top bar-->
+            <div class="flex justify-between items-center py-3 px-4">
+                
+                <!--Modal title-->
+                <h3 id="hs-scale-animation-modal-label" class="font-bold text-neutral-900 ">
+                    Encuesta creada con éxito!
+                </h3>
+
+                <!--Close X-->
+                <button type="button"
+                    data-hs-overlay="#preline-modal-creacion"
+                    class="size-6 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-purple-800 text-gray-100 hover:bg-purple-700 focus:outline-hidden focus:bg-purple-600 disabled:opacity-50 disabled:pointer-events-none"
+                    aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+
+
+            </div>
+
+            <!--Content-->
+            <div class="p-4 overflow-y-auto">
+
+                <!--Clipboard-->
+                <button type="button"
+                    class="relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border shadow-2xs  focus:outline-hidden  disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 border-neutral-700 text-white hover:bg-neutral-800 focus:bg-neutral-800"
+                    [cdkCopyToClipboard]="link_encuesta_signal()"
+                    (cdkCopyToClipboardCopied)="onCopied($event)">
+
+                    {{link_encuesta_signal()}}
+
+                    <span class="border-s border-gray-200 ps-3.5 dark:border-neutral-700">
+                        <svg [ngClass]="{'hidden': copyClicked(), '': !copyClicked()}"
+                        class="size-4 group-hover:rotate-6 transition"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>
+
+                        <svg 
+                        [ngClass]="{'hidden': !copyClicked(), '': copyClicked()}"
+                        class="hidden size-4 text-blue-600 rotate-6"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </span>
+
+                </button>
+
+            </div>
+
+            <!--Bottom - buttons-->
+            <div
+                class="flex justify-end items-center gap-x-2 py-3 px-4 dark:border-neutral-700">
+                <button type="button"
+                    class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border  shadow-2xs focus:outline-hidden  disabled:opacity-50 disabled:pointer-events-none bg-neutral-800 border-neutral-700 text-white hover:bg-neutral-700 focus:bg-neutral-700"
+                    data-hs-overlay="#preline-modal-creacion">
+                    Listo!
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
