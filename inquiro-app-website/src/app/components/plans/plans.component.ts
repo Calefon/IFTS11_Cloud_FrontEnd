@@ -26,8 +26,6 @@ export class PlansComponent {
         { label: 'plans.tiers.starter.features.label2', included: true },
         { label: 'plans.tiers.starter.features.label3', included: true },
         { label: 'plans.tiers.starter.features.label4', included: false },
-        { label: 'plans.tiers.starter.features.label5', included: false },
-        { label: 'plans.tiers.starter.features.label6', included: false },
       ],
     },
     {
@@ -44,9 +42,7 @@ export class PlansComponent {
         { label: 'plans.tiers.pro.features.label1', included: true },
         { label: 'plans.tiers.pro.features.label2', included: true },
         { label: 'plans.tiers.pro.features.label3', included: true },
-        { label: 'plans.tiers.pro.features.label4', included: true },
-        { label: 'plans.tiers.pro.features.label5', included: true },
-        { label: 'plans.tiers.pro.features.label6', included: false },
+        { label: 'plans.tiers.pro.features.label4', included: false },
       ],
     },
     {
@@ -58,12 +54,10 @@ export class PlansComponent {
       ctaLabel: 'plans.tiers.business.cta',
       ctaHref: '#plans',
       features: [
-        { label: 'plans.tiers.pro.features.label1', included: true },
-        { label: 'plans.tiers.pro.features.label2', included: true },
-        { label: 'plans.tiers.pro.features.label3', included: true },
-        { label: 'plans.tiers.pro.features.label4', included: true },
-        { label: 'plans.tiers.pro.features.label5', included: true },
-        { label: 'plans.tiers.pro.features.label6', included: true },
+        { label: 'plans.tiers.business.features.label1', included: true },
+        { label: 'plans.tiers.business.features.label2', included: true },
+        { label: 'plans.tiers.business.features.label3', included: true },
+        { label: 'plans.tiers.business.features.label4', included: true },
       ],
     },
   ];

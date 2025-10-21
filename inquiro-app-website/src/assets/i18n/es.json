@@ -8,17 +8,17 @@
     "contact": "Contacto"
   },
   "home": {
-    "title": "Formularios en línea para obtener información rápidamente",
-    "subtitle": "Crea fácilmente formularios y encuestas para recopilar datos y obtener información desde cualquier lugar.",
-    "ctaSignIn": "Iniciar sesión",
-    "ctaTry": "Prueba gratis"
+    "title": "Encuestas a medida",
+    "subtitle": "Obtén información clave para tu negocio.",
+    "ctaSignIn": "Conocé más",
+    "ctaTry": "Quienes somos"
   },
   "howItWorks": {
     "title": "De los Datos a las Decisiones",
     "steps": {
       "create": {
         "title": "Crea Encuestas",
-        "desc": "Diseña encuestas adaptadas a las necesidades de tu negocio. Define las preguntas correctas para obtener información valiosa."
+        "desc": "Diseñamos encuestas adaptadas a las necesidades de tu negocio. Te ayudamos a definir las preguntas correctas para obtener información valiosa."
       },
       "collect": {
         "title": "Recoge Respuestas",
@@ -26,32 +26,11 @@
       },
       "analyse": {
         "title": "Analiza con Visuales",
-        "desc": "Transforma datos en gráficos claros y comprensibles, facilitando la detección de tendencias y patrones."
+        "desc": "Transformamos datos en gráficos claros y comprensibles, facilitando la detección de tendencias y patrones."
       },
       "ai": {
         "title": "Obtén Insights con IA",
-        "desc": "Usa inteligencia artificial para interpretar resultados y ofrecer recomendaciones accionables para los próximos pasos de tu empresa."
-      }
-    }
-  },
-  "featuredTechnologies": {
-    "title": "Impulsado por la Innovación",
-    "items": {
-      "ai": {
-        "title": "Insights con IA",
-        "desc": "Transforma las respuestas de encuestas en recomendaciones accionables gracias a la inteligencia artificial."
-      },
-      "data": {
-        "title": "Visualización de Datos",
-        "desc": "Comprende las tendencias de un vistazo con gráficos, tablas y paneles claros."
-      },
-      "surveys": {
-        "title": "Encuestas Inteligentes",
-        "desc": "Diseña y personaliza fácilmente encuestas adaptadas a las necesidades de tu empresa."
-      },
-      "realtime": {
-        "title": "Analítica en Tiempo Real",
-        "desc": "Recoge respuestas al instante y toma decisiones basadas en datos frescos y en tiempo real."
+        "desc": "Usamos inteligencia artificial para interpretar resultados y ofrecer recomendaciones accionables para los próximos pasos de tu empresa."
       }
     }
   },
@@ -70,11 +49,9 @@
         "free": "Gratis",
         "features": {
           "label1": "Hasta 3 encuestas activas",
-          "label2": "100 respuestas / mes",
-          "label3": "Gráficos básicos",
-          "label4": "Insights con IA",
-          "label5": "Colaboración en equipo",
-          "label6": "Soporte prioritario"
+          "label2": "Gráficos básicos",
+          "label3": "Insights con IA",
+          "label4": "Soporte prioritario"
         }
       },
       "pro": {
@@ -86,11 +63,9 @@
         "period": "/ período",
         "features": {
           "label1": "Encuestas ilimitadas",
-          "label2": "5,000 respuestas / mes",
-          "label3": "Gráficos y exportaciones avanzadas",
-          "label4": "Insights y resúmenes con IA",
-          "label5": "Colaboración en equipo (5 miembros)",
-          "label6": "Soporte prioritario"
+          "label2": "Gráficos y exportaciones avanzadas",
+          "label3": "Insights y resúmenes con IA",
+          "label4": "Soporte prioritario"
         }
       },
       "business": {
@@ -101,11 +76,9 @@
         "period": "/ período",
         "features": {
           "label1": "Encuestas ilimitadas",
-          "label2": "50,000+ respuestas / mes",
-          "label3": "Paneles personalizados y SSO",
-          "label4": "Recomendaciones y automatizaciones con IA",
-          "label5": "Colaboración en equipo (ilimitada)",
-          "label6": "Soporte prioritario y SLA"
+          "label2": "Paneles personalizados y SSO",
+          "label3": "Recomendaciones y automatizaciones con IA avanzado",
+          "label4": "Soporte prioritario y SLA"
         }
       }
     }
@@ -114,43 +87,44 @@
     "title": "Lo Que Dicen Nuestros Clientes",
     "list": {
       "t1": {
-        "quote": "Solo quería decir que estoy muy contento con mi compra hasta ahora. La documentación es excepcional: clara y detallada.",
-        "author": "Josh Grazioso",
-        "role": "Gerente de Producto en Acme",
-        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+        "quote": "Gracias a Inquiro Forms pudimos entender en profundidad por qué nuestros usuarios abandonaban el proceso de registro. El análisis con IA nos mostró patrones que antes pasaban desapercibidos.",
+        "author": "Camila Rojas",
+        "role": "UX Researcher en FlowTech",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
       },
       "t2": {
-        "quote": "La plataforma nos ayudó a recopilar información más rápido que nunca. Ahora nuestro equipo puede tomar decisiones en tiempo real.",
-        "author": "Sophie Lee",
-        "role": "Líder de Marketing en Startup X",
+        "quote": "Lo que más me sorprendió fue la rapidez del análisis. En minutos teníamos un informe con gráficos, tendencias y una síntesis con IA que nos ayudó a decidir el rumbo de la campaña.",
+        "author": "Mariano Díaz",
+        "role": "Líder de Marketing en Bluewave Agency",
         "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
       },
       "t3": {
-        "quote": "Las recomendaciones impulsadas por IA son un cambio radical. Es como tener un analista disponible las 24 horas, los 7 días de la semana.",
-        "author": "Daniel Ruiz",
-        "role": "Director de Operaciones en Beta Corp",
-        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
-      },
-      "t4": {
-        "quote": "El creador de encuestas es súper intuitivo. Creé mi primer formulario en minutos y recibí respuestas el mismo día.",
-        "author": "Emily Carter",
-        "role": "Especialista en RRHH en Bright Solutions",
+        "quote": "Antes teníamos los datos dispersos en hojas de cálculo. Ahora, con Inquiro Forms, exportamos todo en CSV y obtenemos resúmenes automáticos que facilitan las reuniones con dirección.",
+        "author": "Sofía Navarro",
+        "role": "Analista de Datos en InData Solutions",
         "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
       },
+      "t4": {
+        "quote": "La IA nos ayudó a identificar las causas principales detrás de la baja satisfacción de nuestros clientes. En base a eso rediseñamos el servicio y mejoramos los indicadores un 30%.",
+        "author": "Leandro Gómez",
+        "role": "Director de Experiencia del Cliente en Zenith",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
       "t5": {
-        "quote": "Pudimos aumentar la satisfacción del cliente al comprender rápidamente sus necesidades a través de datos visualizados.",
-        "author": "Michael Tan",
-        "role": "Líder de Experiencia del Cliente en NovaTech",
+        "quote": "“La plataforma nos permitió validar hipótesis rápidamente. Nos diseñaron la encuesta, se analizó las respuestas con IA y en pocas horas teníamos conclusiones sólidas para presentar al equipo.”",
+        "author": "Ernesto Morales",
+        "role": "Consultora Independiente de Investigación Social",
         "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
       },
       "t6": {
-        "quote": "Nuestro equipo directivo ahora toma decisiones con confianza gracias a los insights de IA. Realmente aceleró nuestro crecimiento.",
-        "author": "Lucía Fernández",
-        "role": "CEO en Visionary Labs",
-        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+        "quote": "Usamos Inquiro Forms para un estudio interno de clima laboral. El análisis con IA reveló puntos críticos que pudimos abordar antes de que escalaran. Una herramienta clave.",
+        "author": "Tomás Herrera",
+        "role": "Gerente de RRHH en BrightCorp",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
       }
     }
   },
+
   "contact": {
     "title": "Mantente Conectado",
     "subtitle": "Comunícate con nosotros directamente o sigue nuestro camino en tus plataformas favoritas.",
@@ -174,10 +148,6 @@
       "instagram": {
         "label": "Síguenos en Instagram",
         "url": "https://instagram.com"
-      },
-      "github": {
-        "label": "Explora en GitHub",
-        "url": "https://github.com"
       }
     }
   },

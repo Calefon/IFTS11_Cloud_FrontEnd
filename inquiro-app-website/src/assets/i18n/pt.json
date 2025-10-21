@@ -1,62 +1,41 @@
 {
   "nav": {
     "home": "Início",
-    "how": "Como Funciona",
-    "features": "Tecnologias em Destaque",
+    "how": "Como funciona",
+    "features": "Tecnologias principais",
     "plans": "Planos",
     "testimonials": "Depoimentos",
     "contact": "Contato"
   },
   "home": {
-    "title": "Formulários online para obter insights rapidamente",
-    "subtitle": "Crie facilmente formulários e pesquisas para coletar dados e obter insights de qualquer lugar.",
-    "ctaSignIn": "Entrar",
-    "ctaTry": "Experimente grátis"
+    "title": "Pesquisas sob medida",
+    "subtitle": "Obtenha insights essenciais para o seu negócio.",
+    "ctaSignIn": "Saiba mais",
+    "ctaTry": "Quem somos"
   },
   "howItWorks": {
-    "title": "Dos Dados às Decisões",
+    "title": "Dos dados às decisões",
     "steps": {
       "create": {
-        "title": "Crie Pesquisas",
-        "desc": "Desenhe facilmente pesquisas adaptadas às necessidades do seu negócio. Defina as perguntas certas para obter insights significativos."
+        "title": "Crie pesquisas",
+        "desc": "Desenhamos pesquisas personalizadas de acordo com as necessidades do seu negócio e ajudamos a definir as perguntas certas para obter informações valiosas."
       },
       "collect": {
-        "title": "Colete Respostas",
-        "desc": "Compartilhe suas pesquisas com empresas, equipes ou clientes e colete respostas em tempo real, de qualquer dispositivo."
+        "title": "Colete respostas",
+        "desc": "Compartilhe suas pesquisas com empresas, equipes ou clientes e colete respostas em tempo real de qualquer dispositivo."
       },
       "analyse": {
-        "title": "Analise com Gráficos",
-        "desc": "Transforme dados brutos em gráficos e tabelas claras, facilitando a compreensão de tendências e padrões."
+        "title": "Analise com visuais",
+        "desc": "Transformamos dados em gráficos claros e fáceis de entender, facilitando a identificação de tendências e padrões."
       },
       "ai": {
-        "title": "Obtenha Insights com IA",
-        "desc": "Use inteligência artificial para interpretar os resultados das pesquisas e fornecer recomendações acionáveis para os próximos passos da sua empresa."
-      }
-    }
-  },
-  "featuredTechnologies": {
-    "title": "Impulsionado por Inovação",
-    "items": {
-      "ai": {
-        "title": "Insights com IA",
-        "desc": "Transforme respostas de pesquisas em recomendações acionáveis com inteligência artificial."
-      },
-      "data": {
-        "title": "Visualização de Dados",
-        "desc": "Entenda as tendências de imediato com gráficos, tabelas e painéis claros."
-      },
-      "surveys": {
-        "title": "Pesquisas Inteligentes",
-        "desc": "Desenhe e personalize facilmente pesquisas adaptadas às necessidades da sua empresa."
-      },
-      "realtime": {
-        "title": "Análises em Tempo Real",
-        "desc": "Colete respostas instantaneamente e tome decisões com base em dados frescos e em tempo real."
+        "title": "Obtenha insights com IA",
+        "desc": "Utilizamos inteligência artificial para interpretar resultados e oferecer recomendações práticas para os próximos passos da sua empresa."
       }
     }
   },
   "plans": {
-    "title": "Comece Grátis, Cresça Conosco",
+    "title": "Comece grátis e cresça conosco",
     "billing": {
       "monthly": "Mensal",
       "yearly": "Anual",
@@ -64,17 +43,15 @@
     },
     "tiers": {
       "starter": {
-        "name": "Starter",
-        "desc": "Para testar pesquisas e relatórios básicos.",
-        "cta": "Começar agora",
+        "name": "Inicial",
+        "desc": "Para testar pesquisas e gerar relatórios básicos.",
+        "cta": "Começar",
         "free": "Grátis",
         "features": {
           "label1": "Até 3 pesquisas ativas",
-          "label2": "100 respostas / mês",
-          "label3": "Gráficos básicos",
-          "label4": "Insights com IA",
-          "label5": "Colaboração em equipe",
-          "label6": "Suporte prioritário"
+          "label2": "Gráficos básicos",
+          "label3": "Insights com IA",
+          "label4": "Suporte prioritário"
         }
       },
       "pro": {
@@ -86,81 +63,77 @@
         "period": "/ período",
         "features": {
           "label1": "Pesquisas ilimitadas",
-          "label2": "5.000 respostas / mês",
-          "label3": "Gráficos e exportações avançados",
-          "label4": "Insights e resumos com IA",
-          "label5": "Colaboração em equipe (5 usuários)",
-          "label6": "Suporte prioritário"
+          "label2": "Gráficos e exportações avançadas",
+          "label3": "Resumos e insights com IA",
+          "label4": "Suporte prioritário"
         }
       },
       "business": {
-        "name": "Business",
+        "name": "Empresarial",
         "desc": "Para organizações que precisam de escala, segurança e SLA.",
         "cta": "Fale com vendas",
         "price": "49",
         "period": "/ período",
         "features": {
           "label1": "Pesquisas ilimitadas",
-          "label2": "50.000+ respostas / mês",
-          "label3": "Painéis personalizados & SSO",
-          "label4": "Recomendações e automações com IA",
-          "label5": "Colaboração em equipe (ilimitada)",
-          "label6": "Suporte prioritário & SLA"
+          "label2": "Painéis personalizados e SSO",
+          "label3": "Recomendações e automações com IA avançada",
+          "label4": "Suporte prioritário e SLA"
         }
       }
     }
   },
   "testimonials": {
-    "title": "O que Nossos Clientes Dizem",
+    "title": "O que dizem nossos clientes",
     "list": {
       "t1": {
-        "quote": "Quero apenas dizer que estou muito feliz com minha compra até agora. A documentação é excelente - clara e detalhada.",
-        "author": "Josh Grazioso",
-        "role": "Gerente de Produto na Acme",
-        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+        "quote": "Graças ao Inquiro Forms, entendemos profundamente por que os usuários abandonavam o processo de registro. A análise com IA revelou padrões que antes passavam despercebidos.",
+        "author": "Camila Rojas",
+        "role": "Pesquisadora de UX na FlowTech",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
       },
       "t2": {
-        "quote": "A plataforma nos ajudou a coletar insights mais rápido do que nunca. Nossa equipe agora pode tomar decisões em tempo real.",
-        "author": "Sophie Lee",
-        "role": "Líder de Marketing na Startup X",
+        "quote": "O que mais me impressionou foi a rapidez da análise. Em poucos minutos, tínhamos um relatório com gráficos, tendências e um resumo gerado por IA que ajudou a definir o rumo da campanha.",
+        "author": "Mariano Díaz",
+        "role": "Líder de Marketing na Bluewave Agency",
         "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
       },
       "t3": {
-        "quote": "As recomendações com IA são uma virada de jogo. É como ter um analista disponível 24/7.",
-        "author": "Daniel Ruiz",
-        "role": "Diretor de Operações na Beta Corp",
-        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
-      },
-      "t4": {
-        "quote": "O construtor de pesquisas é super intuitivo. Criei meu primeiro formulário em minutos e tive respostas no mesmo dia.",
-        "author": "Emily Carter",
-        "role": "Especialista de RH na Bright Solutions",
+        "quote": "Antes, nossos dados estavam espalhados em várias planilhas. Agora, com o Inquiro Forms, exportamos tudo em CSV e recebemos resumos automáticos que facilitam as reuniões de diretoria.",
+        "author": "Sofía Navarro",
+        "role": "Analista de Dados na InData Solutions",
         "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
       },
+      "t4": {
+        "quote": "A IA nos ajudou a identificar as causas principais da baixa satisfação dos clientes. Com base nesses insights, redesenhamos o serviço e melhoramos nossos indicadores em 30%.",
+        "author": "Leandro Gómez",
+        "role": "Diretor de Experiência do Cliente na Zenith",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
       "t5": {
-        "quote": "Conseguimos aumentar a satisfação do cliente ao entender rapidamente suas necessidades através de dados visualizados.",
-        "author": "Michael Tan",
-        "role": "Líder de Experiência do Cliente na NovaTech",
+        "quote": "A plataforma nos permitiu validar hipóteses rapidamente. Criamos a pesquisa, analisamos as respostas com IA e em poucas horas tínhamos conclusões sólidas para apresentar à equipe.",
+        "author": "Ernesto Morales",
+        "role": "Consultor independente de pesquisa social",
         "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
       },
       "t6": {
-        "quote": "Nossa equipe de liderança agora toma decisões com confiança graças aos insights de IA. Isso realmente acelerou nosso crescimento.",
-        "author": "Lucía Fernández",
-        "role": "CEO na Visionary Labs",
-        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+        "quote": "Usamos o Inquiro Forms em uma pesquisa interna de clima organizacional. A análise com IA revelou pontos críticos que conseguimos resolver antes que piorassem. Uma ferramenta essencial.",
+        "author": "Tomás Herrera",
+        "role": "Gerente de RH na BrightCorp",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
       }
     }
   },
   "contact": {
-    "title": "Vamos Ficar Conectados",
-    "subtitle": "Entre em contato conosco diretamente ou acompanhe nossa jornada nas suas plataformas favoritas.",
+    "title": "Mantenha-se conectado",
+    "subtitle": "Entre em contato diretamente conosco ou acompanhe nossa jornada nas suas plataformas favoritas.",
     "channels": {
       "whatsapp": {
         "label": "Converse no WhatsApp",
         "url": "https://www.whatsapp.com"
       },
       "email": {
-        "label": "Envie-nos um Email",
+        "label": "Envie um e-mail",
         "url": "mailto:hello@inquiro.com"
       },
       "linkedin": {
@@ -174,25 +147,21 @@
       "instagram": {
         "label": "Siga no Instagram",
         "url": "https://instagram.com"
-      },
-      "github": {
-        "label": "Explore no GitHub",
-        "url": "https://github.com"
       }
     }
   },
   "footer": {
     "brand": {
       "name": "Inquiro",
-      "description": "Ajudamos organizações a transformar feedback em ação. O Inquiro permite criar e lançar pesquisas, coletar respostas em tempo real, visualizar resultados em painéis claros e gerar recomendações com IA, para que as equipes possam tomar decisões confiantes e baseadas em dados mais rapidamente."
+      "description": "Ajudamos organizações a transformar feedback em ação. O Inquiro permite criar e lançar pesquisas, coletar respostas em tempo real, visualizar resultados com painéis claros e gerar recomendações baseadas em IA, para que as equipes tomem decisões mais rápidas e baseadas em dados."
     },
     "links": {
       "product": {
         "title": "Produto",
         "items": {
-          "howItWorks": "Como Funciona",
-          "capabilities": "Capacidades Principais",
-          "plans": "Planos de Preços"
+          "howItWorks": "Como funciona",
+          "capabilities": "Principais recursos",
+          "plans": "Planos e preços"
         }
       },
       "company": {
@@ -200,7 +169,7 @@
         "items": {
           "testimonials": "Depoimentos",
           "contact": "Contato",
-          "privacy": "Privacidade e Termos"
+          "privacy": "Privacidade e termos"
         }
       }
     },
