@@ -102,7 +102,7 @@ export class EncuestasApiService {
   transformRespuestas(respuestasApi: RespuestaAPI[], encuesta: EncuestaResponse): RespuestaEncuesta[] {
     return respuestasApi.map(respuesta => ({
       respuestaId: respuesta.respuestasInquiroSK,
-      encuestaId: respuesta.respuestasInquiroSK,
+    encuestaId: respuesta.respuestasInquiroSK,
       fecha: respuesta.fechaRespuesta,
       respuestas: this.transformarRespuestasIndividuales(respuesta, encuesta)
     }));
@@ -186,7 +186,86 @@ private escapeCSVField(field: any): string {
     );
     this.encuestasFiltradasPorNombre.set(filtradas);
   }
-
+async obtenerEncuestaPorId(pk: string, sk: string): Promise<EncuestaResponse> {
+  try {
+    const url = `${this.apiLinkEncuestas}/${sk}`;
+    const response = await firstValueFrom(this.http.get<{encuesta: EncuestaResponse[]}>(url));
+    
+    if (response.encuesta && response.encuesta.length > 0) {
+      return response.encuesta[0];
+    } else {
+      throw new Error('Encuesta no encontrada');
+    }
+  } catch (error) {
+    console.error('Error al obtener la encuesta por ID:', error);
+    throw error;
+  }
+}
+    async actualizarEncuesta(encuesta: EncuestaResponse): Promise<EncuestaResponse> {
+    try {
+      const url = `${this.apiLinkEncuestas}/${encuesta.InquiroPK}/${encuesta.InquiroSK}`;
+      const response = await firstValueFrom(
+        this.http.put<EncuestaResponse>(url, {
+          titulo: encuesta.titulo,
+          estado: encuesta.estado,
+          preguntas: encuesta.preguntas
+        }).pipe(
+          catchError(error => {
+            console.error('Error al actualizar encuesta:', error);
+            throw error;
+          })
+        )
+      );
+      return response;
+    } catch (error) {
+      console.error('Error en actualizarEncuesta:', error);
+      throw error;
+    }
+  }
+  async actualizarEstadoEncuesta(id: string, estado: string): Promise<void> {
+    try {
+      const url = `${this.apiLinkEncuestas}/${id}/estado`;
+      await firstValueFrom(this.http.put<void>(url, { estado }));
+    } catch (error) {
+      console.error('Error al actualizar el estado de la encuesta:', error);
+      throw error;
+    }
+  }
+  async eliminarEncuesta(pk: string, sk: string): Promise<void> {
+  try {
+    const url = `${this.apiLinkEncuestas}/${pk}/${sk}`;
+    await firstValueFrom(
+      this.http.delete(url).pipe(
+        catchError(error => {
+          console.error('Error al eliminar encuesta:', error);
+          throw error;
+        })
+      )
+    );
+  } catch (error) {
+    console.error('Error en eliminarEncuesta:', error);
+    throw error;
+  }
+}
+async recargarEncuestas(): Promise<EncuestaResponse[]> {
+  const url = `${this.apiLinkEncuestas}/all`;
+  
+  try {
+    const response = await firstValueFrom(this.http.get<EncuestaHistorial>(url));
+    const mappedEncuestas = response.encuestas.map((encuesta: any) => ({
+      InquiroPK: encuesta.InquiroPK,
+      InquiroSK: encuesta.InquiroSK,
+      titulo: encuesta.titulo,
+      preguntas: encuesta.preguntas,
+      fechaCreacion: this.formatearFecha(encuesta.fechaCreacion),
+    }));
+    this.encuestasHistorial.set(mappedEncuestas);
+    return mappedEncuestas;
+  } catch (error) {
+    console.error('Error al recargar encuestas:', error);
+    return [];
+  }
+}
   cargarEncuestasPorEmail(email: string) {
     const filtradas = this.encuestasHistorial().filter((encuesta) =>
       encuesta.InquiroPK.toLowerCase().includes(email.toLowerCase())

@@ -1,0 +1,43 @@
+<div class="container mx-auto p-6">
+  <h1 class="text-2xl font-bold mb-4 text-blue-700 text-center">
+    Detalles de la Encuesta
+  </h1>
+
+  <div *ngIf="cargando">
+    <p class="text-gray-500 text-center">Cargando encuesta...</p>
+  </div>
+
+  <div *ngIf="errorMessage && !cargando" class="text-center text-red-600">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="!cargando && encuesta" class="bg-white rounded-2xl shadow-md p-6">
+    <h2 class="text-xl font-semibold">{{ encuesta.titulo }}</h2>
+    <p class="italic text-gray-600">Autor: {{ encuesta.InquiroPK }}</p>
+    <p><strong>Estado:</strong> {{ encuesta.estado || 'activa' }}</p>
+    <p><strong>Fecha de creación:</strong> {{ encuesta.fechaCreacion }}</p>
+
+    <hr class="my-4" />
+
+    <!-- Verificar que preguntas existe y tiene elementos -->
+    <div *ngIf="encuesta.preguntas && encuesta.preguntas.length > 0; else sinPreguntas">
+      <h3 class="font-semibold text-lg mb-2">Preguntas:</h3>
+      <ul class="list-disc pl-5">
+        <li *ngFor="let pregunta of encuesta.preguntas" class="mb-2">
+          <span class="font-medium">{{ pregunta.pregunta }}</span>
+          <span class="text-sm text-gray-500 ml-2">
+            ({{ pregunta.tipoPregunta }})
+          </span>
+          <!-- Mostrar opciones si existen -->
+          <div *ngIf="pregunta.opciones && pregunta.opciones.length > 0" class="ml-4 text-sm text-gray-600">
+            Opciones: {{ pregunta.opciones.join(', ') }}
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <ng-template #sinPreguntas>
+      <p class="text-gray-500">Esta encuesta no tiene preguntas.</p>
+    </ng-template>
+  </div>
+</div>

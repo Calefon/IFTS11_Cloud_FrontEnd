@@ -80,7 +80,7 @@ export class ResponsePageComponentComponent implements OnInit {
 
     return respuestasApi.map(respuesta => ({
       respuestaId: respuesta.respuestasInquiroSK,
-      encuestaId: respuesta.respuestasInquiroSK,
+      encuestaId: respuesta.respuestasInquiroPK,
       fecha: respuesta.fechaRespuesta,
       respuestas: this.transformarRespuestasIndividuales(respuesta)
     }));

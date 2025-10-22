@@ -27,4 +27,19 @@ export class HistoryPageComponentComponent {
   searchSurveyByEmail(email: string) {
     this.encuestaService.cargarEncuestasPorEmail(email);
   }
+ async eliminarEncuesta(pk: string, sk: string) {
+  const confirmar = confirm(`¿Estás seguro de que querés eliminar la encuesta "${sk}"?`);
+  
+  if (!confirmar) return;
+
+  try {
+    await this.encuestaService.eliminarEncuesta(pk, sk);
+    alert('Encuesta eliminada correctamente');
+    
+    await this.encuestaService.recargarEncuestas();
+  } catch (error) {
+    console.error('Error al eliminar encuesta:', error);
+    alert('Error al eliminar la encuesta');
+  }
+}
 }
