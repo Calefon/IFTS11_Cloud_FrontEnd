@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "home": "Home",
+    "how": "Hoe het werkt",
+    "features": "Belangrijke technologieën",
+    "plans": "Plannen",
+    "testimonials": "Getuigenissen",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Op maat gemaakte enquêtes",
+    "subtitle": "Verkrijg waardevolle inzichten voor je bedrijf.",
+    "ctaSignIn": "Meer informatie",
+    "ctaTry": "Over ons"
+  },
+  "howItWorks": {
+    "title": "Van data naar beslissingen",
+    "steps": {
+      "create": {
+        "title": "Maak enquêtes",
+        "desc": "We ontwerpen enquêtes die zijn afgestemd op de behoeften van je bedrijf en helpen je de juiste vragen te stellen om waardevolle informatie te verzamelen."
+      },
+      "collect": {
+        "title": "Verzamel antwoorden",
+        "desc": "Deel je enquêtes met bedrijven, teams of klanten en verzamel reacties in real-time vanaf elk apparaat."
+      },
+      "analyse": {
+        "title": "Analyseer met visualisaties",
+        "desc": "We zetten gegevens om in duidelijke, begrijpelijke grafieken, waardoor het gemakkelijk wordt om trends en patronen te herkennen."
+      },
+      "ai": {
+        "title": "Ontvang AI-inzichten",
+        "desc": "We gebruiken kunstmatige intelligentie om resultaten te interpreteren en bruikbare aanbevelingen te bieden voor de volgende stappen van je organisatie."
+      }
+    }
+  },
+  "plans": {
+    "title": "Begin gratis en groei met ons mee",
+    "billing": {
+      "monthly": "Maandelijks",
+      "yearly": "Jaarlijks",
+      "save20": "Bespaar 20%"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Om enquêtes te testen en basisrapporten te ontvangen.",
+        "cta": "Aan de slag",
+        "free": "Gratis",
+        "features": {
+          "label1": "Tot 3 actieve enquêtes",
+          "label2": "Basisgrafieken",
+          "label3": "AI-inzichten",
+          "label4": "Prioritaire ondersteuning"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Aanbevolen",
+        "desc": "Geavanceerde analyses en AI-inzichten voor groeiende teams.",
+        "cta": "Start Pro",
+        "price": "19",
+        "period": "/ periode",
+        "features": {
+          "label1": "Onbeperkte enquêtes",
+          "label2": "Geavanceerde grafieken en exportfuncties",
+          "label3": "AI-samenvattingen en inzichten",
+          "label4": "Prioritaire ondersteuning"
+        }
+      },
+      "business": {
+        "name": "Zakelijk",
+        "desc": "Voor organisaties die schaalbaarheid, veiligheid en SLA nodig hebben.",
+        "cta": "Neem contact op met sales",
+        "price": "49",
+        "period": "/ periode",
+        "features": {
+          "label1": "Onbeperkte enquêtes",
+          "label2": "Aangepaste dashboards en SSO",
+          "label3": "Geavanceerde AI-aanbevelingen en automatiseringen",
+          "label4": "Prioritaire ondersteuning en SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Wat onze klanten zeggen",
+    "list": {
+      "t1": {
+        "quote": "Dankzij Inquiro Forms hebben we beter begrepen waarom gebruikers het registratieproces verlieten. De AI-analyse onthulde patronen die we eerder niet hadden opgemerkt.",
+        "author": "Camila Rojas",
+        "role": "UX-onderzoeker bij FlowTech",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t2": {
+        "quote": "Wat me het meest verbaasde, was de snelheid van de analyse. Binnen enkele minuten hadden we een rapport met grafieken, trends en een AI-samenvatting waarmee we de richting van onze campagne konden bepalen.",
+        "author": "Mariano Díaz",
+        "role": "Marketingleider bij Bluewave Agency",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "Eerder waren onze gegevens verspreid over verschillende spreadsheets. Nu exporteren we alles met Inquiro Forms naar CSV en ontvangen we automatische samenvattingen die onze vergaderingen vereenvoudigen.",
+        "author": "Sofía Navarro",
+        "role": "Data-analist bij InData Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t4": {
+        "quote": "AI hielp ons de belangrijkste oorzaken van lage klanttevredenheid te ontdekken. Op basis van die inzichten hebben we onze service herontworpen en onze KPI’s met 30% verbeterd.",
+        "author": "Leandro Gómez",
+        "role": "Directeur Klantbeleving bij Zenith",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t5": {
+        "quote": "Het platform stelde ons in staat om snel hypotheses te valideren. We ontwierpen de enquête, analyseerden de antwoorden met AI en hadden binnen enkele uren betrouwbare conclusies voor het team.",
+        "author": "Ernesto Morales",
+        "role": "Onafhankelijk sociaal onderzoeksconsultant",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "We gebruikten Inquiro Forms voor een interne medewerkerstevredenheidsenquête. De AI-analyse bracht kritieke punten aan het licht die we konden oplossen voordat ze erger werden. Een essentieel hulpmiddel.",
+        "author": "Tomás Herrera",
+        "role": "HR-manager bij BrightCorp",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      }
+    }
+  },
+  "contact": {
+    "title": "Blijf verbonden",
+    "subtitle": "Neem direct contact met ons op of volg ons op je favoriete platforms.",
+    "channels": {
+      "whatsapp": {
+        "label": "Chat op WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Stuur een e-mail",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Verbind op LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Bekijk ons op TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Volg ons op Instagram",
+        "url": "https://instagram.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "Wij helpen organisaties om feedback om te zetten in actie. Met Inquiro kun je enquêtes ontwerpen en lanceren, reacties in realtime verzamelen, resultaten visualiseren met duidelijke dashboards en AI-gestuurde aanbevelingen genereren zodat teams sneller en op data gebaseerde beslissingen kunnen nemen."
+    },
+    "links": {
+      "product": {
+        "title": "Product",
+        "items": {
+          "howItWorks": "Hoe het werkt",
+          "capabilities": "Belangrijkste functies",
+          "plans": "Prijsplannen"
+        }
+      },
+      "company": {
+        "title": "Bedrijf",
+        "items": {
+          "testimonials": "Getuigenissen",
+          "contact": "Contact",
+          "privacy": "Privacy en voorwaarden"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. Alle rechten voorbehouden."
+  }
+}

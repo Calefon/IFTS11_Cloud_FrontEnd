@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "how": "Comment ça marche",
+    "features": "Technologies clés",
+    "plans": "Plans",
+    "testimonials": "Témoignages",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Sondages sur mesure",
+    "subtitle": "Obtenez des informations essentielles pour votre entreprise.",
+    "ctaSignIn": "En savoir plus",
+    "ctaTry": "Qui nous sommes"
+  },
+  "howItWorks": {
+    "title": "Des données aux décisions",
+    "steps": {
+      "create": {
+        "title": "Créez des sondages",
+        "desc": "Nous concevons des enquêtes adaptées aux besoins de votre entreprise et vous aidons à formuler les bonnes questions pour obtenir des informations précieuses."
+      },
+      "collect": {
+        "title": "Collectez des réponses",
+        "desc": "Partagez vos enquêtes avec des entreprises, des équipes ou des clients et recueillez des réponses en temps réel depuis n’importe quel appareil."
+      },
+      "analyse": {
+        "title": "Analysez avec des visuels",
+        "desc": "Nous transformons les données en graphiques clairs et compréhensibles, facilitant la détection des tendances et des schémas."
+      },
+      "ai": {
+        "title": "Obtenez des insights avec l’IA",
+        "desc": "Nous utilisons l’intelligence artificielle pour interpréter les résultats et offrir des recommandations concrètes pour les prochaines étapes de votre entreprise."
+      }
+    }
+  },
+  "plans": {
+    "title": "Commencez gratuitement, évoluez avec nous",
+    "billing": {
+      "monthly": "Mensuel",
+      "yearly": "Annuel",
+      "save20": "Économisez 20 %"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Initial",
+        "desc": "Pour tester des sondages et obtenir des rapports de base.",
+        "cta": "Commencer",
+        "free": "Gratuit",
+        "features": {
+          "label1": "Jusqu’à 3 sondages actifs",
+          "label2": "Graphiques de base",
+          "label3": "Insights avec IA",
+          "label4": "Support prioritaire"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Recommandé",
+        "desc": "Analytique avancée et insights IA pour les équipes en croissance.",
+        "cta": "Commencer Pro",
+        "price": "19",
+        "period": "/ période",
+        "features": {
+          "label1": "Sondages illimités",
+          "label2": "Graphiques et exports avancés",
+          "label3": "Synthèses et insights avec IA",
+          "label4": "Support prioritaire"
+        }
+      },
+      "business": {
+        "name": "Entreprise",
+        "desc": "Pour les organisations nécessitant échelle, sécurité et SLA.",
+        "cta": "Contacter les ventes",
+        "price": "49",
+        "period": "/ période",
+        "features": {
+          "label1": "Sondages illimités",
+          "label2": "Tableaux de bord personnalisés et SSO",
+          "label3": "Recommandations et automatisations avec IA avancée",
+          "label4": "Support prioritaire et SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "list": {
+      "t1": {
+        "quote": "Grâce à Inquiro Forms, nous avons compris en profondeur pourquoi les utilisateurs quittaient notre processus d’inscription. L’analyse IA a révélé des schémas que nous n’avions jamais remarqués auparavant.",
+        "author": "Camila Rojas",
+        "role": "Chercheuse UX chez FlowTech",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t2": {
+        "quote": "Ce qui m’a le plus impressionné, c’est la rapidité de l’analyse. En quelques minutes, nous avions un rapport complet avec graphiques, tendances et synthèse IA pour orienter notre campagne.",
+        "author": "Mariano Díaz",
+        "role": "Responsable marketing chez Bluewave Agency",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "Avant, nos données étaient dispersées dans plusieurs feuilles de calcul. Aujourd’hui, avec Inquiro Forms, nous exportons tout en CSV et obtenons des résumés automatiques qui facilitent nos réunions.",
+        "author": "Sofía Navarro",
+        "role": "Analyste de données chez InData Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t4": {
+        "quote": "L’IA nous a aidés à identifier les causes profondes de l’insatisfaction client. Grâce à ces insights, nous avons repensé notre service et amélioré nos indicateurs de 30 %.",
+        "author": "Leandro Gómez",
+        "role": "Directeur de l’expérience client chez Zenith",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t5": {
+        "quote": "La plateforme nous a permis de valider des hypothèses rapidement. Nous avons conçu l’enquête, analysé les réponses avec l’IA et obtenu des conclusions solides en quelques heures seulement.",
+        "author": "Ernesto Morales",
+        "role": "Consultant indépendant en recherche sociale",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "Nous avons utilisé Inquiro Forms pour une étude interne sur le climat de travail. L’analyse IA a révélé des points critiques que nous avons pu corriger avant qu’ils ne s’aggravent. Un outil essentiel.",
+        "author": "Tomás Herrera",
+        "role": "Responsable RH chez BrightCorp",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      }
+    }
+  },
+  "contact": {
+    "title": "Restez connecté",
+    "subtitle": "Contactez-nous directement ou suivez notre parcours sur vos plateformes préférées.",
+    "channels": {
+      "whatsapp": {
+        "label": "Discuter sur WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Envoyez un e-mail",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Connectez-vous sur LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Regardez-nous sur TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Suivez-nous sur Instagram",
+        "url": "https://instagram.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "Nous aidons les organisations à transformer les retours en actions. Inquiro vous permet de concevoir et lancer des sondages, de recueillir des réponses en temps réel, de visualiser les résultats à travers des tableaux clairs et de générer des recommandations basées sur l’IA pour aider les équipes à prendre des décisions rapides et fondées sur les données."
+    },
+    "links": {
+      "product": {
+        "title": "Produit",
+        "items": {
+          "howItWorks": "Comment ça marche",
+          "capabilities": "Fonctionnalités clés",
+          "plans": "Plans tarifaires"
+        }
+      },
+      "company": {
+        "title": "Entreprise",
+        "items": {
+          "testimonials": "Témoignages",
+          "contact": "Contact",
+          "privacy": "Confidentialité et conditions"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. Tous droits réservés."
+  }
+}

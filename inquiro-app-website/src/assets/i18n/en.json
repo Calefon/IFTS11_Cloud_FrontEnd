@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "home": "Home",
+    "how": "How It Works",
+    "features": "Key Technologies",
+    "plans": "Plans",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Tailored Surveys",
+    "subtitle": "Gain key insights for your business.",
+    "ctaSignIn": "Learn More",
+    "ctaTry": "About Us"
+  },
+  "howItWorks": {
+    "title": "From Data to Decisions",
+    "steps": {
+      "create": {
+        "title": "Create Surveys",
+        "desc": "We design surveys tailored to your business needs, helping you define the right questions to obtain valuable insights."
+      },
+      "collect": {
+        "title": "Collect Responses",
+        "desc": "Share your surveys with companies, teams, or clients and gather responses in real time from any device."
+      },
+      "analyse": {
+        "title": "Analyse with Visuals",
+        "desc": "We transform data into clear, easy-to-understand charts, making it simple to spot trends and patterns."
+      },
+      "ai": {
+        "title": "Get AI Insights",
+        "desc": "We use artificial intelligence to interpret results and provide actionable recommendations for your company’s next steps."
+      }
+    }
+  },
+  "plans": {
+    "title": "Start Free, Grow with Us",
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Annual",
+      "save20": "Save 20%"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "For testing surveys and getting basic reports.",
+        "cta": "Get Started",
+        "free": "Free",
+        "features": {
+          "label1": "Up to 3 active surveys",
+          "label2": "Basic charts",
+          "label3": "AI insights",
+          "label4": "Priority support"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Recommended",
+        "desc": "Advanced analytics and AI insights for growing teams.",
+        "cta": "Start Pro",
+        "price": "19",
+        "period": "/ period",
+        "features": {
+          "label1": "Unlimited surveys",
+          "label2": "Advanced charts and exports",
+          "label3": "AI summaries and insights",
+          "label4": "Priority support"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "desc": "For organizations that need scale, security, and SLA.",
+        "cta": "Contact Sales",
+        "price": "49",
+        "period": "/ period",
+        "features": {
+          "label1": "Unlimited surveys",
+          "label2": "Custom dashboards and SSO",
+          "label3": "Advanced AI recommendations and automation",
+          "label4": "Priority support and SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "list": {
+      "t1": {
+        "quote": "Thanks to Inquiro Forms, we gained a deep understanding of why users were dropping out of our registration process. The AI analysis revealed patterns we had completely overlooked.",
+        "author": "Camila Rojas",
+        "role": "UX Researcher at FlowTech",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t2": {
+        "quote": "What impressed me most was the speed of the analysis. Within minutes, we had a report with charts, trends, and an AI summary that helped us steer our campaign.",
+        "author": "Mariano Díaz",
+        "role": "Marketing Lead at Bluewave Agency",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "We used to have data scattered across spreadsheets. Now, with Inquiro Forms, we export everything to CSV and get automatic summaries that simplify our management meetings.",
+        "author": "Sofía Navarro",
+        "role": "Data Analyst at InData Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t4": {
+        "quote": "AI helped us uncover the root causes behind our low customer satisfaction. Based on those insights, we redesigned our service and improved key metrics by 30%.",
+        "author": "Leandro Gómez",
+        "role": "Customer Experience Director at Zenith",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t5": {
+        "quote": "The platform allowed us to validate hypotheses quickly. We designed the survey, analysed responses with AI, and within hours had solid conclusions ready for the team.",
+        "author": "Ernesto Morales",
+        "role": "Independent Social Research Consultant",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "We used Inquiro Forms for an internal workplace climate study. The AI analysis revealed critical points we were able to address before they escalated. A key tool.",
+        "author": "Tomás Herrera",
+        "role": "HR Manager at BrightCorp",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      }
+    }
+  },
+  "contact": {
+    "title": "Stay Connected",
+    "subtitle": "Get in touch directly or follow our journey on your favourite platforms.",
+    "channels": {
+      "whatsapp": {
+        "label": "Chat on WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Send an Email",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Connect on LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Watch Us on TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Follow Us on Instagram",
+        "url": "https://instagram.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "We help organizations turn feedback into action. Inquiro lets you design and launch surveys, collect real-time responses, visualize results with clear dashboards, and generate AI-powered recommendations so teams can make faster, data-driven decisions with confidence."
+    },
+    "links": {
+      "product": {
+        "title": "Product",
+        "items": {
+          "howItWorks": "How It Works",
+          "capabilities": "Key Capabilities",
+          "plans": "Pricing Plans"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "items": {
+          "testimonials": "Testimonials",
+          "contact": "Contact",
+          "privacy": "Privacy & Terms"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. All rights reserved."
+  }
+}

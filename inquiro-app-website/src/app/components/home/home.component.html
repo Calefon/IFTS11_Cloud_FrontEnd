@@ -1,0 +1,26 @@
+<div class="flex flex-col gap-4 w-[30rem] transition">
+  <h1 class="flex items-center font-medium text-2xl">
+    @if(theme.darkMode()){
+    <img src="assets/img/img-home/form-dark.svg" alt="icon form" /> Inquiro Forms } @else {
+    <img src="assets/img/img-home/form.svg" alt="icon form" /> Inquiro Forms }
+  </h1>
+  <p class="font-semibold text-5xl">{{ 'home.title' | transloco }}</p>
+  <p class="font-normal text-2xl">
+    {{ 'home.subtitle' | transloco }}
+  </p>
+
+  <div class="flex gap-4">
+    <button
+      class="p-4 bg-[#0B0430] hover:bg-[#2A1F5A] dark:bg-gray-200 hover:dark:bg-gray-100 text-white dark:text-[#0B0430] font-medium rounded-2xl hover:cursor-pointer"
+    >
+      {{ 'home.ctaSignIn' | transloco }}
+    </button>
+    <button
+      class="p-4 border-2 border-[#0B0430] hover:border-[#2A1F5A] dark:border-gray-200 hover:dark:border-gray-100 text-[#0B0430] hover:text-[#2A1F5A] dark:text-gray-200 hover:dark:text-gray-100 font-medium rounded-2xl hover:cursor-pointer"
+    >
+      {{ 'home.ctaTry' | transloco }}
+    </button>
+  </div>
+</div>
+
+<img src="assets/img/img-home/graphic.webp" alt="graphic" width="600px" height="600px" />

@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "how": "Funktionsweise",
+    "features": "Wichtige Technologien",
+    "plans": "Pläne",
+    "testimonials": "Erfahrungsberichte",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Individuelle Umfragen",
+    "subtitle": "Gewinne entscheidende Erkenntnisse für dein Unternehmen.",
+    "ctaSignIn": "Mehr erfahren",
+    "ctaTry": "Über uns"
+  },
+  "howItWorks": {
+    "title": "Von Daten zu Entscheidungen",
+    "steps": {
+      "create": {
+        "title": "Umfragen erstellen",
+        "desc": "Wir entwerfen Umfragen, die auf die Bedürfnisse deines Unternehmens zugeschnitten sind, und helfen dir, die richtigen Fragen zu stellen, um wertvolle Informationen zu erhalten."
+      },
+      "collect": {
+        "title": "Antworten sammeln",
+        "desc": "Teile deine Umfragen mit Unternehmen, Teams oder Kunden und sammle Antworten in Echtzeit von jedem Gerät aus."
+      },
+      "analyse": {
+        "title": "Analysiere mit Visualisierungen",
+        "desc": "Wir verwandeln Daten in klare, leicht verständliche Diagramme, um Trends und Muster schnell zu erkennen."
+      },
+      "ai": {
+        "title": "Erhalte KI-gestützte Erkenntnisse",
+        "desc": "Wir nutzen künstliche Intelligenz, um Ergebnisse zu interpretieren und umsetzbare Empfehlungen für die nächsten Schritte deines Unternehmens zu liefern."
+      }
+    }
+  },
+  "plans": {
+    "title": "Starte kostenlos, wachse mit uns",
+    "billing": {
+      "monthly": "Monatlich",
+      "yearly": "Jährlich",
+      "save20": "Spare 20%"
+    },
+    "tiers": {
+      "starter": {
+        "name": "Start",
+        "desc": "Zum Testen von Umfragen und Erhalten grundlegender Berichte.",
+        "cta": "Jetzt starten",
+        "free": "Kostenlos",
+        "features": {
+          "label1": "Bis zu 3 aktive Umfragen",
+          "label2": "Einfache Diagramme",
+          "label3": "KI-Einblicke",
+          "label4": "Priorisierter Support"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Empfohlen",
+        "desc": "Erweiterte Analysen und KI-Einblicke für wachsende Teams.",
+        "cta": "Pro starten",
+        "price": "19",
+        "period": "/ Zeitraum",
+        "features": {
+          "label1": "Unbegrenzte Umfragen",
+          "label2": "Erweiterte Diagramme und Exporte",
+          "label3": "KI-Zusammenfassungen und Einblicke",
+          "label4": "Priorisierter Support"
+        }
+      },
+      "business": {
+        "name": "Unternehmen",
+        "desc": "Für Organisationen, die Skalierbarkeit, Sicherheit und SLA benötigen.",
+        "cta": "Vertrieb kontaktieren",
+        "price": "49",
+        "period": "/ Zeitraum",
+        "features": {
+          "label1": "Unbegrenzte Umfragen",
+          "label2": "Individuelle Dashboards und SSO",
+          "label3": "Erweiterte KI-Empfehlungen und Automatisierungen",
+          "label4": "Priorisierter Support und SLA"
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen",
+    "list": {
+      "t1": {
+        "quote": "Dank Inquiro Forms konnten wir genau verstehen, warum Nutzer unseren Registrierungsprozess abbrachen. Die KI-Analyse zeigte Muster auf, die wir zuvor übersehen hatten.",
+        "author": "Camila Rojas",
+        "role": "UX Researcherin bei FlowTech",
+        "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t2": {
+        "quote": "Am meisten beeindruckte mich die Geschwindigkeit der Analyse. Innerhalb weniger Minuten erhielten wir einen Bericht mit Diagrammen, Trends und einer KI-Zusammenfassung, die uns half, die Kampagne zu steuern.",
+        "author": "Mariano Díaz",
+        "role": "Marketingleiter bei Bluewave Agency",
+        "avatar": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?..."
+      },
+      "t3": {
+        "quote": "Früher waren unsere Daten über mehrere Tabellenkalkulationen verstreut. Jetzt exportieren wir mit Inquiro Forms alles als CSV und erhalten automatische Zusammenfassungen, die unsere Besprechungen vereinfachen.",
+        "author": "Sofía Navarro",
+        "role": "Datenanalystin bei InData Solutions",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t4": {
+        "quote": "Die KI half uns, die Hauptursachen für die geringe Kundenzufriedenheit zu erkennen. Auf dieser Grundlage haben wir unseren Service neu gestaltet und unsere Kennzahlen um 30 % verbessert.",
+        "author": "Leandro Gómez",
+        "role": "Leiter Kundenerfahrung bei Zenith",
+        "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?..."
+      },
+      "t5": {
+        "quote": "Die Plattform ermöglichte es uns, Hypothesen schnell zu validieren. Wir erstellten die Umfrage, analysierten die Antworten mit KI und hatten innerhalb weniger Stunden belastbare Ergebnisse für das Team.",
+        "author": "Ernesto Morales",
+        "role": "Unabhängiger Sozialforschungsberater",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      },
+      "t6": {
+        "quote": "Wir nutzten Inquiro Forms für eine interne Mitarbeiterbefragung. Die KI-Analyse zeigte kritische Punkte auf, die wir rechtzeitig beheben konnten. Ein unverzichtbares Tool.",
+        "author": "Tomás Herrera",
+        "role": "HR-Manager bei BrightCorp",
+        "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&..."
+      }
+    }
+  },
+  "contact": {
+    "title": "Bleib in Verbindung",
+    "subtitle": "Kontaktiere uns direkt oder folge unserem Weg auf deinen bevorzugten Plattformen.",
+    "channels": {
+      "whatsapp": {
+        "label": "Chatte auf WhatsApp",
+        "url": "https://www.whatsapp.com"
+      },
+      "email": {
+        "label": "Sende eine E-Mail",
+        "url": "mailto:hello@inquiro.com"
+      },
+      "linkedin": {
+        "label": "Vernetze dich auf LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      "tiktok": {
+        "label": "Sieh uns auf TikTok",
+        "url": "https://tiktok.com"
+      },
+      "instagram": {
+        "label": "Folge uns auf Instagram",
+        "url": "https://instagram.com"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Inquiro",
+      "description": "Wir helfen Organisationen, Feedback in Handlung umzuwandeln. Mit Inquiro kannst du Umfragen entwerfen und starten, Antworten in Echtzeit sammeln, Ergebnisse in klaren Dashboards visualisieren und KI-gestützte Empfehlungen generieren – damit Teams schnellere, datenbasierte Entscheidungen treffen können."
+    },
+    "links": {
+      "product": {
+        "title": "Produkt",
+        "items": {
+          "howItWorks": "Funktionsweise",
+          "capabilities": "Wichtige Funktionen",
+          "plans": "Preispläne"
+        }
+      },
+      "company": {
+        "title": "Unternehmen",
+        "items": {
+          "testimonials": "Erfahrungsberichte",
+          "contact": "Kontakt",
+          "privacy": "Datenschutz & Bedingungen"
+        }
+      }
+    },
+    "copyright": "© 2025 Inquiro. Alle Rechte vorbehalten."
+  }
+}
