@@ -12,32 +12,46 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
   styleUrl: './interfaz-creacion.component.css',
 })
 export class InterfazCreacionComponent {
-  @ViewChild('modal') modalRef!: ElementRef;
-  @ViewChild('openModalButton') openModalRef!: ElementRef;
-  
+  //Class variables
+  idEmail: string = '';
 
-  opciones_preguntas: opcionesPregunta[] = [
-    { valor: 'default', texto: '-- Elija un tipo --' },
+  preguntas: PreguntaEnc[] = [];
+
+  readonly opciones_preguntas: opcionesPregunta[] = [
+    { valor: 'default', texto: 'Seleccione un tipo de pregunta' },
     { valor: 'abierta', texto: 'Pregunta abierta' },
     { valor: 'opciones_radio', texto: 'Radio' },
   ];
 
+  //Services
+  encuestasService = inject(EncuestasApiService);
+
+  //Signals - state management
+
   link_encuesta_signal = signal('');
+
   copyClicked = signal(false);
 
   pregunta_a_crear = signal<string>('default');
-  encuestasService = inject(EncuestasApiService);
-
+  
+  //Datos encuesta a crear
   tituloEncuesta = signal<string>('');
   descEncuesta = signal<string>('');
   emailEncuesta = signal<string>('');
 
-  idEmail: string = '';
-  preguntas: PreguntaEnc[] = [];
-
-  preguntaKevin = signal('');
+  texto_pregunta_a_crear = signal('');
   opcionRadio = signal<string>('');
   opcionesRadio = signal<string[]>([]);
+
+  @ViewChild('modal') modalRef!: ElementRef;
+  @ViewChild('openModalButton') openModalRef!: ElementRef;
+  
+
+  
+
+  
+
+  
 
   openModal() {
     this.openModalRef.nativeElement.click()
@@ -56,41 +70,15 @@ export class InterfazCreacionComponent {
     }
   }
 
+
   agregarPregunta(): void {
     let preguntaCreada: PreguntaEnc;
-    let texto = prompt('Ingrese texto de pregunta');
-    if (!texto || texto.length == 0) return;
-    switch (this.pregunta_a_crear()) {
-      case 'abierta':
-        preguntaCreada = new PreguntaEnc(
-          this.pregunta_a_crear(),
-          this.preguntaKevin() || ''
-        );
-        this.preguntas.push(preguntaCreada);
-        break;
-      case 'opciones_radio':
-        let opcionesTxt = prompt('Ingrese opciones separadas por ;');
-        if (!opcionesTxt || opcionesTxt.length == 0) return;
-        let opciones = opcionesTxt.split(';');
-
-        preguntaCreada = new PreguntaEnc(
-          this.pregunta_a_crear(),
-          texto || '',
-          opciones
-        );
-        this.preguntas.push(preguntaCreada);
-        break;
-    }
-  }
-
-  agregarPreguntaKevin(): void {
-    let preguntaCreada: PreguntaEnc;
 
     switch (this.pregunta_a_crear()) {
       case 'abierta':
         preguntaCreada = new PreguntaEnc(
           this.pregunta_a_crear(),
-          this.preguntaKevin() || ''
+          this.texto_pregunta_a_crear() || ''
         );
         this.preguntas.push(preguntaCreada);
         this.pregunta_a_crear.set('default');
@@ -99,7 +87,7 @@ export class InterfazCreacionComponent {
       case 'opciones_radio':
         preguntaCreada = new PreguntaEnc(
           this.pregunta_a_crear(),
-          this.preguntaKevin() || '',
+          this.texto_pregunta_a_crear() || '',
           this.opcionesRadio() || []
         );
         if(preguntaCreada.opciones.length == 0){
@@ -123,8 +111,12 @@ export class InterfazCreacionComponent {
     this.opcionRadio.set('');
   }
 
+  deleteOptionRadio( index_to_delete : number ){
+    this.opcionesRadio.update((opciones) => [...opciones].filter( (v,i) => i !== index_to_delete ));
+  }
+
   resetField() {
-    this.preguntaKevin.set('');
+    this.texto_pregunta_a_crear.set('');
     this.opcionesRadio.set([])
   }
 

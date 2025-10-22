@@ -1,7 +1,7 @@
 @if (isAuthenticated){
-<div class="bg-indigo-950 w-screen h-screen flex flex-row justify-center p-5 gap-5">
+<div class="bg-indigo-950 dark:bg-[#080224] w-screen h-screen flex flex-row justify-center p-5 gap-5">
   <app-nav-menu (logOutClickEvent)="logout()"></app-nav-menu>
-  <main class="flex-4/5 flex flex-col items-center justify-start bg-gray-100 text-black rounded-3xl p-5 h-full overflow-y-scroll scroll-hidden">
+  <main class="flex-4/5 flex flex-col items-center justify-start bg-gray-200 dark:bg-[#170e40] text-black rounded-3xl p-5 h-full overflow-y-scroll scroll-hidden">
     <router-outlet />
   </main>
 </div>
