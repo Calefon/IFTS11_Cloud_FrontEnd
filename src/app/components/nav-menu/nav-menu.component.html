@@ -16,7 +16,9 @@
         </ul>
 </nav> -->
 <nav class="flex flex-col items-center text-gray-300 text-center">
-  <img src="assets/img/inquiroLogo.png" alt="inquiro logo" class="w-20">
+  <div class="w-24 h-24 rounded-full dark:bg-gray-100 flex flex-col items-center justify-items-center">
+    <img src="assets/img/inquiroLogo.png" alt="inquiro logo" class="w-20 m-auto">
+  </div>
 
   <ul class="flex flex-col items-start gap-2 pt-3">
     <!-- <li class="w-full py-1 px-2 hover:bg-purple-700 hover:text-white rounded-2xl">
@@ -35,4 +37,22 @@
       <a class="font-medium px-2 py-1" routerLink="/" (click)="logOutClick()">Log out</a>
     </li>
   </ul>
+  <button
+        (click)="toggleTheme()"
+        class="flex items-center justify-center hover:cursor-pointer transition mt-6"
+      >
+        @if(themeService.darkMode()){
+        <img
+          src="assets/svg/dark-mode.svg"
+          alt="dark mode"
+          class="w-[2.5rem] transition-transform duration-300 ease-in-out"
+        />
+        } @else {
+        <img
+          src="assets/svg/light-mode.svg"
+          alt="light mode"
+          class="w-[2.5rem] transition-transform duration-300 ease-in-out"
+        />
+        }
+      </button>
 </nav>

@@ -1,5 +1,6 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-nav-menu',
@@ -9,7 +10,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class NavMenuComponent {
   @Output() logOutClickEvent = new EventEmitter<void>();
+  readonly themeService = inject(ThemeService);
 
+  toggleTheme() { this.themeService.toggleTheme(); }
+    
   logOutClick(){
     this.logOutClickEvent.emit();
   }
