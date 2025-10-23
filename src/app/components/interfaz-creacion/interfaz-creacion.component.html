@@ -7,16 +7,24 @@
     <h3 class="font-bold text-xm">Información de la encuesta</h3>
 
     <div
-      class="px-2 py-1 focus-within:outline-2 outline-purple-700 rounded-2xl"
+      class="w-full"
     >
-      <label class="font-medium text-xm" for="nombreEncuesta"
-        >Titulo encuesta:
+      
+      <label 
+        class="font-medium text-xm" for="nombreEncuesta"
+        >Título:
       </label>
       <input
-        class="outline-none placeholder:text-gray-400 placeholder:italic"
+        class="w-full p-3 rounded-lg
+        bg-purple-800/10 outline-none
+        dark:bg-neutral-900/30
+        dark:focus-within:ring-purple-700
+        placeholder:italic placeholder:text-gray-400 
+        focus-within:ring-2 focus-within:ring-purple-800/50
+        "
         type="text"
         id="nombreEncuesta"
-        placeholder="Nombre de la encuesta"
+        placeholder="Ingrese un título para la encuesta"
         [value]="tituloEncuesta()"
         (input)="tituloEncuesta.set(txtTituloEncuesta.value)"
         #txtTituloEncuesta
@@ -24,39 +32,52 @@
     </div>
 
     <div
-      class="px-2 py-1 focus-within:outline-2 outline-purple-700 rounded-2xl"
-    >
-      <label class="font-medium text-xm" for="nombreEncuesta"
-        >Descripción encuesta:
-      </label>
-      <input
-        class="outline-none placeholder:text-gray-400 placeholder:italic"
-        type="text"
-        id="nombreEncuesta"
-        placeholder="Descripción de la encuesta"
-        [value]="descEncuesta()"
-        (input)="descEncuesta.set(txtDescEncuesta.value)"
-        #txtDescEncuesta
-      />
-    </div>
-
-    <div
-      class="px-2 py-1 focus-within:outline-2 outline-purple-700 rounded-2xl"
+      class="w-full"
     >
       <label class="font-medium text-xm" for="emailCliente"
         >E-mail cliente:
       </label>
       <input
-        class="outline-none placeholder:text-gray-400 placeholder:italic"
+        class="w-full p-3 rounded-lg
+        bg-purple-800/10 outline-none
+        dark:bg-neutral-900/30
+        dark:focus-within:ring-purple-700
+        placeholder:italic placeholder:text-gray-400 
+        focus-within:ring-2 focus-within:ring-purple-800/50
+        "
         type="email"
         [(ngModel)]="idEmail"
         id="emailCliente"
-        placeholder="Email de la encuesta"
+        placeholder="Ingrese el e-mail del cliente"
         [value]="emailEncuesta()"
         (input)="emailEncuesta.set(txtEmailEncuesta.value)"
         #txtEmailEncuesta
       />
     </div>
+
+    <div
+      class="w-full"
+    >
+      <label class="font-medium text-xm" for="descripcionEncuesta"
+        >Descripción:
+      </label>
+      <textarea
+        class="w-full p-3 rounded-lg
+        bg-purple-800/10 outline-none
+        dark:bg-neutral-900/30
+        dark:focus-within:ring-purple-700
+        placeholder:italic placeholder:text-gray-400 
+        focus-within:ring-2 focus-within:ring-purple-800/50
+        "
+        type="text"
+        id="descripcionEncuesta"
+        placeholder="Ingrese una breve descripción"
+        [value]="descEncuesta()"
+        (input)="descEncuesta.set(txtDescEncuesta.value)"
+        #txtDescEncuesta
+      ></textarea>
+    </div>
+    
   </section>
 
   <div
@@ -80,7 +101,11 @@
               <span class="font-normal">{{ pregunta.pregunta }} </span>
             </label>
             @for (opcion of pregunta.opciones; track $index){
-              <div class="mt-2 bg-purple-800/10 rounded-lg w-full h-fit px-2 py-1 flex flex-row items-center text-wrap">
+              <div class="mt-2 rounded-lg w-full h-fit px-2 py-1
+                          bg-purple-800/10 
+                          dark:bg-neutral-900/30
+                          flex flex-row items-center text-wrap"
+              >
                   <input
                     class=""
                     type="radio"
@@ -103,7 +128,10 @@
                 <span class="font-normal">{{ pregunta.pregunta }} </span>
               </label>
               <input
-                class="bg-purple-800/10 px-3 py-2 w-full h-12 rounded-lg placeholder:text-gray-400 placeholder:italic"
+                class="px-3 py-2 w-full h-12 rounded-lg
+                      bg-purple-800/10 
+                      dark:bg-neutral-900/30
+                      placeholder:text-gray-400 placeholder:italic"
                 placeholder="Respuesta..."
                 id="{{ preguntaId }}"
                 type="text"
@@ -114,7 +142,7 @@
         }
 
         <button
-          class="bg-red-700/90 self-end me-6 border border-red-400/50 text-white hover:bg-red-600 text-xs font-medium py-2 px-4 mt-4 mb-2 rounded-2xl cursor-pointer w-fit"
+          class="bg-red-700/90 self-end me-6 border border-red-400/50 text-white hover:bg-red-600 text-xs font-medium py-2 px-4 mt-4 mb-2 rounded-2xl cursor-pointer w-fit hover:scale-105 transition ease-in-out duration-100"
           id="boton-eliminar"
           (click)="eliminarPregunta($index)"
         >
@@ -145,7 +173,12 @@
           >Tipo de pregunta:
         </label>
         <select
-          class="px-3 py-2 border-r-8 border-transparent outline-none w-fit dark:bg-neutral-900/30 rounded-lg block focus:outline-none focus:ring-2 focus:ring-purple-500"
+          class="px-3 py-2 w-fit rounded-lg block
+          border-r-8 border-transparent outline-none
+          bg-purple-800/10   
+          dark:bg-neutral-900/30
+          dark:focus:ring-purple-700
+          focus:outline-none focus:ring-2 focus:ring-purple-800/50"
           [(ngModel)]="pregunta_a_crear"
           name="seleccionar_pregunta"
           id="seleccionar_pregunta"
@@ -180,7 +213,12 @@
         } @else {
         <textarea
           type="text"
-          class="outline-none px-3 py-2 rounded-lg h-24 text-start bg-purple-800/10 placeholder:text-gray-400 placeholder:italic"
+          class="outline-none px-3 py-2 rounded-lg h-24 text-start 
+              bg-purple-800/10
+              dark:bg-neutral-900/30
+              dark:focus-within:ring-purple-700
+              focus-within:ring-purple-800/50 focus-within:ring-2 
+              placeholder:text-gray-400 placeholder:italic"
           placeholder="Escriba su pregunta"
           name="pregunta"
           [value]="texto_pregunta_a_crear()"
@@ -207,16 +245,22 @@
 
           <label class="font-medium" for="opcionRadio">Opciones</label>
           @for(opcion of opcionesRadio(); track $index) {
-            <div class="flex flex-row items-center gap-2 h-fit mt-2 bg-purple-800/10 rounded-lg w-full px-2 py-1 text-wrap">
-              <input type="radio" name="opcionRadio" id="opcionRadio-{{ $index }}" />
+            <div class="flex flex-row items-center gap-2 h-fit mt-2 
+                      bg-purple-800/10 
+                      dark:bg-neutral-900/30
+                      rounded-lg w-full px-2 py-1 text-wrap">
+              <input type="radio" name="opcionRadio" id="opcionRadio-{{ $index }}" disabled/>
               <label 
                 for="opcionRadio-{{ $index }}"
                 class="ms-1 text-wrap w-[90%] whitespace-normal block break-words px-2"
               >
                 {{ opcion }}
               </label>
-              <button (click)="deleteOptionRadio($index)" class="flex flex-col items-center justify-items-center h-fit w-7 rounded-xl dark:hover:bg-red-600/30 p-1">
-                <div class="text-center size-full m-auto p-0 text-red-600/70 hover:text-red-300 ">
+              <button (click)="deleteOptionRadio($index)" class="flex flex-col items-center justify-items-center h-fit w-7 rounded-xl hover:scale-105 transition ease-in-out duration-150">
+                <div class="text-center size-full m-auto text-red-600/70 
+                          hover:text-red-200 hover:bg-red-500
+                          dark:hover:bg-red-600/70 dark:hover:text-neutral-900/80
+                          rounded-md p-0.5 ">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor">
                     <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                     <path d="M232.7 69.9C237.1 56.8 249.3 48 263.1 48L377 48C390.8 48 403 56.8 407.4 69.9L416 96L512 96C529.7 96 544 110.3 544 128C544 145.7 529.7 160 512 160L128 160C110.3 160 96 145.7 96 128C96 110.3 110.3 96 128 96L224 96L232.7 69.9zM128 208L512 208L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 208zM216 272C202.7 272 192 282.7 192 296L192 488C192 501.3 202.7 512 216 512C229.3 512 240 501.3 240 488L240 296C240 282.7 229.3 272 216 272zM320 272C306.7 272 296 282.7 296 296L296 488C296 501.3 306.7 512 320 512C333.3 512 344 501.3 344 488L344 296C344 282.7 333.3 272 320 272zM424 272C410.7 272 400 282.7 400 296L400 488C400 501.3 410.7 512 424 512C437.3 512 448 501.3 448 488L448 296C448 282.7 437.3 272 424 272z"/>
@@ -229,8 +273,13 @@
           <div>
             <input
             type="text"
-            placeholder="Agregue su nueva opción aquí"
-            class="rounded-lg px-3 py-2 w-1/2 me-4 outline-none bg-purple-800/10 placeholder:text-neutral-400 dark:placeholder:text-gray-300 dark:bg-neutral-900/30 focus-within:ring-2 focus-within:ring-purple-500 placeholder:italic"
+            placeholder="Ingrese su nueva opción aquí"
+            class="rounded-lg px-3 py-2 w-1/2 me-4 outline-none 
+            bg-purple-800/10 placeholder:text-neutral-400 
+            dark:placeholder:text-gray-300 
+            dark:bg-neutral-900/30 
+            dark:focus-within:ring-purple-700
+            focus-within:ring-2 focus-within:ring-purple-800/50 placeholder:italic"
             name="opcionRadio"
             id="opcionRadio"
             [value]="opcionRadio()"
@@ -238,7 +287,7 @@
             #txtOpcionRadio
           />
           <button
-            class="bg-purple-800 hover:bg-purple-700 dark:bg-purple-400/30 dark:hover:bg-purple-400/50 text-white shadow-2xl text-xs font-medium px-3 py-2 mt-2 rounded-2xl cursor-pointer w-32"
+            class="bg-purple-700/80 hover:bg-purple-700/75 hover:scale-105 transition ease-in-out duration-100 dark:bg-purple-400/30 dark:hover:bg-purple-400/50 text-white shadow-2xl text-xs font-medium px-3 py-2 mt-2 rounded-2xl cursor-pointer w-32"
             (click)="addOptionRadio()"
           >
             Agregar opción
@@ -260,7 +309,7 @@
         } 
         @default {
           <button
-            class="bg-blue-600 dark:bg-blue-600/70 dark:hover:bg-blue-600/90 dark:text-gray-200 hover:text-gray-100 text-xs font-medium px-3 py-2 mt-2 rounded-2xl cursor-pointer w-32"
+            class="bg-green-700/80 text-white hover:bg-green-700/75 dark:bg-blue-600/70 dark:hover:bg-blue-600/90 dark:text-gray-200 text-xs font-medium px-3 py-2 mt-2 rounded-2xl cursor-pointer w-32 hover:scale-105 transition ease-in-out duration-100"
             (click)="agregarPregunta()"
           >
             Agregar pregunta
@@ -276,7 +325,7 @@
     @if(this.preguntas.length > 0) {
     <button
       id="boton-crear"
-      class="bg-green-600 text-white hover:text-gray-200 font-bold py-2 px-4 mt-2 rounded-2xl cursor-pointer"
+      class="bg-green-700/80 hover:bg-green-700/75 text-white font-bold py-2 px-4 mt-2 rounded-2xl cursor-pointer hover:scale-105 transition ease-in-out duration-100"
       (click)="crearEncuesta()"
     >
       Crear
@@ -284,6 +333,7 @@
     }
   </section>
 </section>
+
 
 <!--MODAL preline-->
 <button #openModalButton type="button" class="hidden py-3 px-4 items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-scale-animation-modal" data-hs-overlay="#preline-modal-creacion">
