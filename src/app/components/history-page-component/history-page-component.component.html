@@ -36,11 +36,16 @@
               <h3 class="text-xm font-semibold">{{ historial.fechaCreacion }}</h3>
 
               <div class="flex justify-between gap-2">
-                <button
-                  class="bg-blue-200 text-white text-xs font-medium px-3 py-2 rounded-2xl cursor-no-drop"
-                >
-                  Encuesta
-                </button>
+      <a
+  class="bg-blue-600 text-white hover:bg-blue-700 text-xs font-medium px-3 py-2 rounded-2xl cursor-pointer"
+ [routerLink]="['/encuesta', historial.InquiroPK, historial.InquiroSK]"
+
+
+>
+  Encuesta
+</a>
+
+
 
                 <a
                   class="bg-green-600 text-white hover:text-gray-200 text-xs font-medium px-3 py-2 rounded-2xl cursor-pointer"
@@ -48,12 +53,18 @@
                 >
                   Respuestas
                 </a>
-
-                <button
-                  class="bg-red-200 text-white text-xs font-medium px-3 py-2 rounded-2xl cursor-no-drop"
-                >
-                  Eliminar
-                </button>
+ <a
+                    [routerLink]="['/editar-encuesta', historial.InquiroPK, historial.InquiroSK]"
+                    class="bg-yellow-500 hover:bg-yellow-600 text-white text-xs font-medium px-3 py-2 rounded-2xl cursor-pointer"
+                  >
+                    Editar
+                  </a>
+<a
+  (click)="eliminarEncuesta(historial.InquiroPK, historial.InquiroSK)"
+  class="bg-red-500 hover:bg-red-600 text-white text-xs font-medium px-3 py-2 rounded-2xl cursor-pointer transition-colors duration-200"
+>
+  Eliminar
+                </a>
               </div>
             </div>
           }
@@ -83,11 +94,16 @@
                 <h3 class="text-xm font-semibold">{{ historial.fechaCreacion }}</h3>
 
                 <div class="flex justify-between gap-2">
-                  <button
-                    class="bg-blue-200 text-white text-xs font-medium px-3 py-2 rounded-2xl cursor-no-drop"
-                  >
-                    Encuesta
-                  </button>
+              <a
+  class="bg-blue-600 text-white hover:bg-blue-700 text-xs font-medium px-3 py-2 rounded-2xl cursor-pointer"
+ [routerLink]="['/encuesta', historial.InquiroPK, historial.InquiroSK]"
+
+
+>
+  Encuesta
+</a>
+
+
 
                   <a
                     class="bg-green-600 text-white hover:text-gray-200 text-xs font-medium px-3 py-2 rounded-2xl cursor-pointer"
@@ -95,12 +111,20 @@
                   >
                     Respuestas
                   </a>
+  <button
+  [routerLink]="['/editar-encuesta', historial.InquiroPK, historial.InquiroSK]"
+  class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded"
+>
+  Editar
+</button>
 
-                  <button
-                    class="bg-red-200 text-white text-xs font-medium px-3 py-2 rounded-2xl cursor-no-drop"
-                  >
-                    Eliminar
-                  </button>
+
+                 <button
+  (click)="eliminarEncuesta(historial.InquiroPK, historial.InquiroSK)"
+  class="bg-red-500 hover:bg-red-600 text-white text-xs font-medium px-3 py-2 rounded-2xl cursor-pointer transition-colors duration-200"
+>
+   Eliminar
+</button>
                 </div>
               </div>
             }

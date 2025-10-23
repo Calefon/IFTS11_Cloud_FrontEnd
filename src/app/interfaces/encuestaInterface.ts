@@ -20,10 +20,12 @@ export interface EncuestaResponse {
     titulo: string;
     preguntas: Pregunta[];
     fechaCreacion: string;
+     descripcion?: string; 
+  estado?: string; 
 }
 
 export interface RespuestaAPI {
-    respuestasInquiroPK: string;
+   respuestasInquiroPK: string;
     respuestasInquiroSK: string;
     fechaRespuesta: string;
     respuestas: Array<{

@@ -4,7 +4,7 @@ import { authGuard } from './guards/auth-guard.guard';
 import { HomePageComponentComponent } from './components/home-page-component/home-page-component.component';
 import { HistoryPageComponentComponent } from './components/history-page-component/history-page-component.component';
 import { ResponsePageComponentComponent } from './components/response-page-component/response-page-component.component';
-
+import { EditarPageComponentComponent} from './components/editar-page-component/editar-page-component.component';
 export const routes: Routes = [
   {
     path: 'nuevo',
@@ -26,4 +26,19 @@ export const routes: Routes = [
     component: ResponsePageComponentComponent,
     canActivate: [authGuard],
   },
+  {
+  path: 'editar-encuesta/:pk/:sk',
+  component: EditarPageComponentComponent,
+ canActivate: [authGuard]
+}
+,
+{
+  path: 'encuesta/:pk/:sk',
+  loadComponent: () =>
+    import('./pages/encuesta-page/encuesta-page.component').then(
+      (m) => m.EncuestaPageComponent
+    ),
+},
+
+
 ];
