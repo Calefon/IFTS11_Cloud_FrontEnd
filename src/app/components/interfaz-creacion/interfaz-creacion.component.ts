@@ -135,6 +135,7 @@ export class InterfazCreacionComponent {
     // encuesta.titulo = 'Encuesta';
     encuesta.titulo = this.tituloEncuesta();
     encuesta.preguntas = this.preguntas;
+    encuesta.descripcion = this.descEncuesta();
     this.encuestasService.crearEncuesta(encuesta).subscribe((resp) => {
       console.log('Respuesta: ', resp);
     
