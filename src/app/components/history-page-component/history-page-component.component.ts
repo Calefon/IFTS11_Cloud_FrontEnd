@@ -3,7 +3,7 @@ import {
   Component,
   inject,
 } from '@angular/core';
-import { EncuestasApiService } from '../../services/encuestas-api.service';
+import { EncuestasApiService,} from '../../services/encuestas-api.service';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -27,6 +27,8 @@ export class HistoryPageComponentComponent {
   searchSurveyByEmail(email: string) {
     this.encuestaService.cargarEncuestasPorEmail(email);
   }
+
+
  async eliminarEncuesta(pk: string, sk: string) {
   const confirmar = confirm(`¿Estás seguro de que querés eliminar la encuesta "${sk}"?`);
   

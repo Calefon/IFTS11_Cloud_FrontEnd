@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, Signal, signal, ViewChild, ElementRef } from '@angular/core';
+import { Component, inject, signal, ViewChild, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { EncuestasApiService } from '../../services/encuestas-api.service';
 import { Encuesta, Pregunta } from '../../interfaces/encuestaInterface';

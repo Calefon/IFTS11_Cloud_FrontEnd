@@ -7,5 +7,6 @@ export const environment = {
         responseType: 'code',
         postLogoutRedirectUri: 'http://localhost:4200/'
     },
-    INQUIRO_API_LINK: 'http://127.0.0.1:8080'
+    INQUIRO_API_LINK: 'http://127.0.0.1:8080',
+    INQUIRO_ENCUESTAS_LINK: ''
 };

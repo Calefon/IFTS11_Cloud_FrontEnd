@@ -1,19 +1,23 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, signal, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { EncuestasApiService } from '../../services/encuestas-api.service';
 import { EncuestaResponse } from '../../interfaces/encuestaInterface';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-encuesta-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ClipboardModule],
   templateUrl: './encuesta-page.component.html',
   styleUrls: ['./encuesta-page.component.css'],
 })
 export class EncuestaPageComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private encuestaService = inject(EncuestasApiService);
+  copyClicked = signal(false);
+  link_encuesta_signal = signal("");
 
   encuesta: EncuestaResponse | null = null;
   cargando = true;
@@ -47,7 +51,7 @@ export class EncuestaPageComponent implements OnInit {
       this.errorMessage = 'No se encontró la encuesta solicitada.';
       return;
     }
-
+    this.link_encuesta_signal.set(environment.INQUIRO_ENCUESTAS_LINK+sk);
     this.encuesta = encontrada;
   } catch (error) {
     console.error('Error al cargar encuesta:', error);
@@ -55,4 +59,19 @@ export class EncuestaPageComponent implements OnInit {
   } finally {
     this.cargando = false;
   }
-}}
+  }
+
+  onCopied(success : boolean){
+    console.log(success)
+    if (success) {
+      this.copyClicked.set(true);
+      setTimeout(
+        ()=>{
+          this.copyClicked.set(false);
+        },
+        1000
+      );
+    }
+  }
+
+}
