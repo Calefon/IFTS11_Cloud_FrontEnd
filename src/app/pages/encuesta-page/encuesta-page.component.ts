@@ -51,7 +51,7 @@ export class EncuestaPageComponent implements OnInit {
       this.errorMessage = 'No se encontró la encuesta solicitada.';
       return;
     }
-    this.link_encuesta_signal.set(environment.INQUIRO_ENCUESTAS_LINK+sk);
+    this.link_encuesta_signal.set(environment.INQUIRO_ENCUESTAS_LINK+"/"+sk);
     this.encuesta = encontrada;
   } catch (error) {
     console.error('Error al cargar encuesta:', error);
