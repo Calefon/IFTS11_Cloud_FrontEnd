@@ -34,12 +34,10 @@ export interface RespuestaAPI {
         respuesta: string | string[];
     }>;
 }
-
 export interface RespuestaEncuesta {
     respuestaId: string;
     encuestaId: string;
     fecha: string;
     respuestas: {
         [pregunta: string]: string | string[];
-    };
-}
+}}
