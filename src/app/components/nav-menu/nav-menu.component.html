@@ -15,7 +15,7 @@
         </li>
         </ul>
 </nav> -->
-<nav class="flex flex-col items-center text-gray-300 text-center">
+<nav class="flex flex-col items-center text-gray-300 text-center h-full">
   <div class="w-24 h-24 rounded-full dark:bg-gray-100 flex flex-col items-center justify-items-center">
     <img src="assets/img/inquiroLogo.png" alt="inquiro logo" class="w-20 m-auto">
   </div>
@@ -54,5 +54,11 @@
           class="w-[2.5rem] transition-transform duration-300 ease-in-out"
         />
         }
-      </button>
+  </button>
+  <button
+        (click)="toggleDyslexic()"
+        class="flex mt-auto mb-10 items-center justify-center hover:cursor-pointer transition dyslexic text-sm p-1"
+      >
+        Modo dislexia
+  </button>
 </nav>

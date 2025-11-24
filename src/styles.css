@@ -4,10 +4,25 @@
 @source "../node_modules/preline/dist/*.js";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../public/fonts/OpenDyslexic-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenDyslexic bold";
+  src: url("../public/fonts/OpenDyslexic-Bold.woff2") format("woff2");
+}
+
+
 html{
     width: 100vw;
     min-height: 100vh;
     height: auto;
+}
+
+.dyslexic{
+  font-family: "OpenDyslexic";
 }
 
 body{
@@ -26,36 +41,6 @@ app-root{
     justify-content: center;
 }
 
-.inter-100 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-.inter-300 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-.inter-500 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.inter-700 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-.inter-900 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
 
 /* Oculta el scrollbar pero mantiene el scroll funcional */
 .scroll-hidden {
