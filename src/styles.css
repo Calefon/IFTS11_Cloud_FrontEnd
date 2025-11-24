@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: "OpenDyslexic";
-  src: url("../public/fonts/OpenDyslexic-Regular.woff2") format("woff2");
+  src: url("assets/fonts/OpenDyslexic-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "OpenDyslexic bold";
-  src: url("../public/fonts/OpenDyslexic-Bold.woff2") format("woff2");
+  src: url("assets/fonts/OpenDyslexic-Bold.woff2") format("woff2");
 }
 
 
